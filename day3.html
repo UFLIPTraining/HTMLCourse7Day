@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day 3 - Title of the Day</title>
+    <title>Day 3 - HTML Forms and User Input</title>
   </head>
   <body>
     <header>
-      <h1>Day 3: Title of the Day</h1>
+      <h1>Day 3: HTML Forms and User Input</h1>
       <nav>
         <a href="mainpage.html">Home</a>
         <a href="day1.html">Day 1</a>
@@ -21,8 +21,39 @@
     </header>
 
     <article>
-      <h2>Welcome to Day 3</h2>
-      <p>Content specific to Day 3.</p>
+      <h2>Welcome to Day 3: HTML Forms and User Input</h2>
+      <p>
+        Today, we'll learn how to create interactive forms that allow users to
+        submit information. Forms are crucial for capturing user input in
+        various web applications.
+      </p>
+
+      <section>
+        <h3>Example Form with Basic Validation</h3>
+        <form action="submit.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="100"
+            required
+          /><br /><br />
+
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" rows="4" required></textarea
+          ><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
     </article>
 
     <footer>
