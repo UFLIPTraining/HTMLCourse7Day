@@ -57,11 +57,12 @@ Welcome to the 7-Day Intensive HTML Course designed to equip you with the founda
 
 ### Day 7: Capstone Project and Course Review
 
-- **Objective:** Apply everything learned to build and refine a complete HTML-only website.
+- **Objective:** Apply everything learned to build and refine a complete HTML-only website, including a personal profile and a dynamic blog post layout.
 - **Topics Covered:**
   - Integrating all learned skills into a comprehensive project.
-  - Peer reviews and debugging techniques.
-- **Assignment:** Finalize the blog, add multiple posts, and ensure all features are integrated and functioning.
+  - Creating a personal profile page (`myprofile.html`) that mimics a social media profile with features like posts, followers, and interaction buttons.
+  - Enhancing the blog post with social media-like interactive elements such as like, comment, and share buttons, and incorporating multiple images with captions.
+- **Assignment:** Finalize the blog, add multiple posts, and ensure all features are integrated and functioning. Create a 'My Profile' page that includes user interaction features and social media elements.
 
 ## Getting Started
 

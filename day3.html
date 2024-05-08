@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 3 - HTML Forms and User Input</title>
+    <style>
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -30,7 +37,7 @@
 
       <section>
         <h3>Example Form with Basic Validation</h3>
-        <form action="submit.php" method="post">
+        <form action="submit.php" method="post" id="myForm">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required /><br /><br />
 
@@ -47,6 +54,16 @@
             required
           /><br /><br />
 
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="Enter a phone number in the format: 123-456-7890"
+            required
+          /><br /><br />
+
           <label for="comment">Comment:</label>
           <textarea id="comment" name="comment" rows="4" required></textarea
           ><br /><br />
@@ -54,10 +71,41 @@
           <input type="submit" value="Submit" />
         </form>
       </section>
+
+      <section>
+        <h3>JavaScript Interactions</h3>
+        <p>Add dynamic validations and interactions using JavaScript:</p>
+        <pre>
+&lt;script&gt;
+document.getElementById('myForm').onsubmit = function() {
+    var name = document.getElementById('name').value;
+    if (name.length < 4) {
+        alert('Name must be at least 4 characters long.');
+        return false;
+    }
+    return true;
+};
+&lt;/script&gt;</pre
+        >
+        <script>
+          document.getElementById("myForm").onsubmit = function () {
+            var name = document.getElementById("name").value;
+            if (name.length < 4) {
+              alert("Name must be at least 4 characters long.");
+              return false;
+            }
+            return true;
+          };
+        </script>
+      </section>
     </article>
 
     <footer>
-      <p>Copyright © 2024 by My Blog. All rights reserved.</p>
+      <p>
+        Product created by Josh Martin, Developer at UFLIP. For more
+        information, contact us at UFLIP.com.
+      </p>
+      <p>© 2024 UFLIP. All rights reserved.</p>
     </footer>
   </body>
 </html>
