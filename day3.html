@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 3 - HTML Forms and User Input</title>
-    <style>
-      pre {
-        background-color: #f4f4f4;
-        padding: 10px;
-        border: 1px solid #ddd;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -49,7 +42,7 @@
             type="number"
             id="age"
             name="age"
-            min="18"
+            min="16"
             max="100"
             required
           /><br /><br />
@@ -59,8 +52,8 @@
             type="tel"
             id="phone"
             name="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            title="Enter a phone number in the format: 123-456-7890"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            title="Please add your area code."
             required
           /><br /><br />
 
@@ -78,7 +71,7 @@
         <pre>
 &lt;script&gt;
 document.getElementById('myForm').onsubmit = function() {
-    var name = document.getElementById('name').value;
+    let name = document.getElementById('name').value;
     if (name.length < 4) {
         alert('Name must be at least 4 characters long.');
         return false;
@@ -89,7 +82,7 @@ document.getElementById('myForm').onsubmit = function() {
         >
         <script>
           document.getElementById("myForm").onsubmit = function () {
-            var name = document.getElementById("name").value;
+            let name = document.getElementById("name").value;
             if (name.length < 4) {
               alert("Name must be at least 4 characters long.");
               return false;
