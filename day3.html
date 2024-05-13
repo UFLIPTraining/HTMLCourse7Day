@@ -30,7 +30,7 @@
 
       <section>
         <h3>Example Form with Basic Validation</h3>
-        <form action="submit.php" method="post">
+        <form action="submit.php" method="post" id="myForm">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required /><br /><br />
 
@@ -42,8 +42,18 @@
             type="number"
             id="age"
             name="age"
-            min="18"
+            min="16"
             max="100"
+            required
+          /><br /><br />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            title="Please add your area code."
             required
           /><br /><br />
 
@@ -54,10 +64,45 @@
           <input type="submit" value="Submit" />
         </form>
       </section>
+
+      <section>
+        <h3>JavaScript Interactions</h3>
+        <p>Add dynamic validations and interactions using JavaScript:</p>
+        <pre>
+&lt;script&gt;
+document.getElementById('myForm').onsubmit = function() {
+    let name = document.getElementById('name').value;
+    if (name.length < 4) {
+        alert('Name must be at least 4 characters long.');
+        return false;
+    }
+    return true;
+};
+&lt;/script&gt;</pre
+        >
+        <script>
+          document.getElementById("myForm").onsubmit = function () {
+            let name = document.getElementById("name").value;
+            if (name.length < 4) {
+              alert("Name must be at least 4 characters long.");
+              return false;
+            }
+            return true;
+          };
+        </script>
+      </section>
     </article>
 
     <footer>
-      <p>Copyright © 2024 by My Blog. All rights reserved.</p>
+      <nav>
+        <a href="day2.html">Day 2</a>
+        <a href="day4.html">Day 4</a>
+      </nav>
+      <p>
+        Product created by Josh Martin, Developer at UFLIP. For more
+        information, contact us at UFLIP.com.
+      </p>
+      <p>© 2024 UFLIP. All rights reserved.</p>
     </footer>
   </body>
 </html>
