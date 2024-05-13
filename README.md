@@ -1,86 +1,46 @@
-# HTMLCourse
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting to Know HTML!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our HTML Course</h1>
+      <nav>
+        <a href="mainpage.html">Home</a>
+        <a href="day1.html">Day 1</a>
+        <a href="day2.html">Day 2</a>
+        <a href="day3.html">Day 3</a>
+        <a href="day4.html">Day 4</a>
+        <a href="day5.html">Day 5</a>
+        <a href="day6.html">Day 6</a>
+        <a href="day7.html">Day 7</a>
+      </nav>
+    </header>
 
-## 7-Day Intensive HTML Course
+    <article>
+      <h2>Welcome to HTML!</h2>
+      <p>
+        HTML, or HyperText Markup Language, is the standard markup language used
+        to create web pages. It serves as the backbone of web design and
+        development, enabling the structure and presentation of content on the
+        internet.
+      </p>
+      <p>
+        This course is designed to introduce you to the basics and then
+        gradually explore more advanced aspects of HTML. Each day will focus on
+        different topics, ensuring a comprehensive understanding of web
+        development using HTML.
+      </p>
+    </article>
 
-Welcome to the 7-Day Intensive HTML Course designed to equip you with the foundational skills to build web pages from scratch. This course covers everything from basic document structure to advanced HTML5 features and SEO optimization. Each day's lesson builds upon the previous, culminating in a capstone project where you will create a fully functional HTML blog.
+    <footer>
+      <a href="day1.html">Day 1</a>
+      <a href="myprofile.html">My Profile</a>
+      <p>Copyright © 2024 by My Blog. All rights reserved.</p>
+    </footer>
 
-## Course Schedule
-
-### Day 1: HTML Basics and Document Structure
-
-- **Objective:** Learn the basics of HTML and set up your development environment.
-- **Topics Covered:**
-  - Introduction to HTML: Its history and importance.
-  - Setting up a text editor and a web browser.
-  - Basic HTML document structure: `<!DOCTYPE>`, `<html>`, `<head>`, `<title>`, and `<body>`.
-- **Assignment:** Create the basic structure of a blog with a header and a footer.
-
-### Day 2: Text Formatting and Multimedia Integration
-
-- **Objective:** Learn to format text and integrate multimedia.
-- **Topics Covered:**
-  - Text formatting with tags like `<p>`, `<h1>` to `<h6>`, `<br>`, `<strong>`, `<em>`.
-  - Embedding images, audio, and video.
-- **Assignment:** Add a welcome post with text formatting and an embedded welcome image or video.
-
-### Day 3: HTML Forms and User Input
-
-- **Objective:** Learn to capture user input through forms.
-- **Topics Covered:**
-  - Building forms with `<input>`, `<textarea>`, `<button>`, `<select>`, `<option>`.
-  - Basic validation techniques.
-- **Assignment:** Implement a comment section for the welcome post.
-
-### Day 4: Organizing Content with Lists and Tables
-
-- **Objective:** Learn to use lists and tables for data organization.
-- **Topics Covered:**
-  - Using unordered and ordered lists.
-  - Creating and styling tables.
-- **Assignment:** Add a sidebar with a list of posts and a table summarizing post categories.
-
-### Day 5: Semantic HTML and Advanced Layout Techniques
-
-- **Objective:** Learn to use semantic HTML for better structure and accessibility.
-- **Topics Covered:**
-  - Semantic elements like `<article>`, `<section>`, `<nav>`, `<aside>`.
-  - Advanced embedding techniques with `<iframe>`, `<embed>`, and `<object>`.
-- **Assignment:** Refactor the blog using semantic HTML and embed a Google map.
-
-### Day 6: HTML5 Features, Accessibility, and SEO
-
-- **Objective:** Upgrade your blog with HTML5 features and optimize for accessibility and SEO.
-- **Topics Covered:**
-  - New HTML5 elements and APIs.
-  - ARIA roles and SEO best practices.
-- **Assignment:** Enhance your blog for accessibility and search engines.
-
-### Day 7: Capstone Project and Course Review
-
-- **Objective:** Apply everything learned to build and refine a complete HTML-only website, including a personal profile and a dynamic blog post layout.
-- **Topics Covered:**
-  - Integrating all learned skills into a comprehensive project.
-  - Creating a personal profile page (`myprofile.html`) that mimics a social media profile with features like posts, followers, and interaction buttons.
-  - Enhancing the blog post with social media-like interactive elements such as like, comment, and share buttons, and incorporating multiple images with captions.
-- **Assignment:** Finalize the blog, add multiple posts, and ensure all features are integrated and functioning. Create a 'My Profile' page that includes user interaction features and social media elements.
-
-## Getting Started
-
-- **Prerequisites:**
-  - Install a modern web browser such as Google Chrome or Firefox.
-  - Install a text editor like Visual Studio Code or Sublime Text.
-- **Resources:**
-  - Course materials and assignments will be provided daily.
-  - Access to mentors and peers for discussion and feedback.
-
-## Evaluation
-
-Participants will be evaluated on their daily assignments and the final capstone project. Peer reviews will contribute to your final assessment.
-
-## Certification
-
-Upon successful completion of the course and capstone project, participants will receive a certificate.
-
-## Feedback
-
-Your feedback is crucial for improving our courses. A feedback session will be held on the last day.
+  </body>
+</html>
