@@ -1,4 +1,4 @@
-theme: Lanyon
 title: HTML Course!
 description: Bookmark this to keep an eye on my project updates!
+theme: minima
 permalink: /:basename/
