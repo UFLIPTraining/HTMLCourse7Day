@@ -4,21 +4,21 @@ title: Day 3 - HTML Forms and User Input
 ---
 
 <article>
-      <h2>Welcome to Day 3: HTML Forms and User Input</h2>
-      <p>
-        Today, we'll learn how to create interactive forms that allow users to
-        submit information. Forms are crucial for capturing user input in
-        various web applications.
-      </p>
+  <h2>Welcome to Day 3: HTML Forms and User Input</h2>
+  <p>
+    Today, we'll learn how to create interactive forms that allow users to
+    submit information. Forms are crucial for capturing user input in
+    various web applications.
+  </p>
 
-      <section>
-        <h3>Example Form with Basic Validation</h3>
-        <form action="submit.php" method="post" id="myForm">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required /><br /><br />
+  <section>
+    <h3>Example Form with Basic Validation</h3>
+    <form action="submit.php" method="post" id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
 
           <label for="age">Age:</label>
           <input
@@ -40,18 +40,18 @@ title: Day 3 - HTML Forms and User Input
             required
           /><br /><br />
 
-          <label for="comment">Comment:</label>
-          <textarea id="comment" name="comment" rows="4" required></textarea
-          ><br /><br />
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea
+      ><br /><br />
 
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
 
-      <section>
-        <h3>JavaScript Interactions</h3>
-        <p>Add dynamic validations and interactions using JavaScript:</p>
-        <pre>
+  <section>
+    <h3>JavaScript Interactions</h3>
+    <p>Add dynamic validations and interactions using JavaScript:</p>
+    <pre>
 &lt;script&gt;
 document.getElementById('myForm').onsubmit = function() {
     let name = document.getElementById('name').value;
