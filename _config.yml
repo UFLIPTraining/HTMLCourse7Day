@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+theme: Lanyon
 title: HTML Course!
 description: Bookmark this to keep an eye on my project updates!
-permalink: /:Master/
+permalink: /:basename/
