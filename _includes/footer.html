@@ -1,3 +1,17 @@
 <footer>
+  <nav>
+    {% assign pages_sorted = site.pages | sort: 'nav_order' %} {% for page in
+    pages_sorted %} {% if page.url == page.url %} {% assign previous =
+    forloop.index | minus: 2 %} {% assign next = forloop.index %} {% break %} {%
+    endif %} {% endfor %} {% if previous >= 0 %}
+    <a href="{{ pages_sorted[previous].url }}"
+      >Previous: {{ pages_sorted[previous].title }}</a
+    >
+    {% endif %} {% if next < pages_sorted.size %}
+    <a href="{{ pages_sorted[next].url }}"
+      >Next: {{ pages_sorted[next].title }}</a
+    >
+    {% endif %}
+  </nav>
   <p>&copy; 2024 by My Blog. All rights reserved.</p>
 </footer>
