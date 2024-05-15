@@ -1,111 +1,78 @@
 ---
 layout: default
-title: Day 7: Capstone Project - Building a Complete Blog Post
-nav_order: 7
+title: Day 6 - HTML5 Features, Accessibility, and SEO
+nav_order: 6
 ---
 
-<html>
+
   <article>
-    <h2>Everything You Need to Know About HTML</h2>
-    <p><strong>Date:</strong> April 26, 2024</p>
+    <h2>Welcome to Day 6: Exploring HTML5, Accessibility, and SEO</h2>
+    <p>
+      Today, we'll focus on enhancing our web pages with HTML5's new features,
+      improving accessibility using ARIA roles, and optimizing for search
+      engines.
+    </p>
 
     <section>
-      <h3>Introduction to HTML</h3>
+      <h3>New HTML5 Features</h3>
       <p>
-        HTML, or HyperText Markup Language, is the foundational building block
-        of the web. It helps structure all web pages and applications across the
-        internet.
+        HTML5 introduces a range of elements and APIs that enhance the
+        capabilities of web pages, such as:
       </p>
-    </section>
-
-    <section>
-      <h3>Embedding Multimedia</h3>
-      <p>
-        One of the most engaging aspects of modern web design is the ability to
-        integrate multimedia. Here's an example of an embedded video related to
-        web development:
-      </p>
-      <video controls>
-        <source src="example-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
-
-    <section>
-      <h3>Interactive HTML Forms</h3>
-      <p>
-        We've learned how to create interactive forms. Below is a simple
-        feedback form:
-      </p>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="feedback">Feedback:</label>
-        <textarea id="feedback" name="feedback" rows="4" required></textarea>
-        <button type="submit">Submit Feedback</button>
-      </form>
-    </section>
-
-    <section>
-      <h3>Using Lists to Organize Data</h3>
       <ul>
-        <li>HTML Basics and Document Structure</li>
-        <li>Multimedia Integration</li>
-        <li>Complex Forms and User Interaction</li>
+        <li>
+          <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+          <code>&lt;aside&gt;</code>, and <code>&lt;header&gt;</code> tags for
+          better document structure.
+        </li>
+        <li>
+          <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for
+          associating images with captions.
+        </li>
+        <li>
+          <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags for
+          embedded media.
+        </li>
       </ul>
     </section>
 
     <section>
-      <h3>Image Gallery with Interactions</h3>
+      <h3>Accessibility with ARIA Roles</h3>
       <p>
-        Below is an example of a simple image gallery with interaction buttons
-        like you might find on social media platforms:
+        Accessible Rich Internet Applications (ARIA) roles help improve the
+        accessibility of web elements by providing extra context to screen
+        readers:
       </p>
-      <div>
-        <img
-          src="src/img/Day7img1.jpg"
-          alt="Sample Image 1"
-          width="280"
-          height="157"
-        />
-        <p>
-          Caption for Image 1 <a href="#">❤</a> <a href="#">💬</a>
-          <a href="#">Share</a>
-        </p>
-      </div>
-      <div>
-        <img
-          src="src/img/Day7img2.jpg"
-          alt="Sample Image 2"
-          width="280"
-          height="157"
-        />
-        <p>
-          Caption for Image 2 <a href="#">❤</a> <a href="#">💬</a>
-          <a href="#">Share</a>
-        </p>
-      </div>
-      <div>
-        <img
-          src="src/img/Day7img3.jpg"
-          alt="Sample Image 3"
-          width="280"
-          height="157"
-        />
-        <p>
-          Caption for Image 3 <a href="#">❤</a> <a href="#">💬</a>
-          <a href="#">Share</a>
-        </p>
+      <div role="complementary">
+        More details on ARIA roles:
+        <ul>
+          <li><code>role="navigation"</code> for navigation links.</li>
+          <li><code>role="search"</code> for search form areas.</li>
+          <li>
+            <code>role="form"</code> for marking up forms distinctly from other
+            content.
+          </li>
+        </ul>
       </div>
     </section>
 
     <section>
-      <h3>Conclusion</h3>
+      <h3>SEO Best Practices</h3>
       <p>
-        This blog post is a demonstration of what can be achieved with the
-        skills we've built up over the last week. From basic structure to
-        complex interactions, HTML is an incredibly powerful tool.
+        Optimizing our pages for search engines can significantly improve the
+        visibility and reach of our content. Here are some basic SEO techniques:
       </p>
+      <ul>
+        <li>
+          Using relevant keywords in the <code>&lt;title&gt;</code> and
+          <code>&lt;meta name="description"&gt;</code> tags.
+        </li>
+        <li>
+          Ensuring all images have alt text with the
+          <code>&lt;img alt="description"&gt;</code> attribute.
+        </li>
+        <li>Creating clean, descriptive URLs.</li>
+      </ul>
     </section>
   </article>
 </html>
