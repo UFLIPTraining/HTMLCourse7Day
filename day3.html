@@ -82,6 +82,7 @@ document.getElementById('myForm').onsubmit = function() {
     }
     return true;
 };
+&lt;/script&gt;
     </pre>
   </section>
 
@@ -127,17 +128,6 @@ document.getElementById('myForm').onsubmit = function() {
 <script>
 document.getElementById('show-form-example-btn').addEventListener('click', function() {
   var exampleCode = document.getElementById('form-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-js-example-btn').addEventListener('click', function() {
-  var exampleCode = document.getElementById('js-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
