@@ -21,32 +21,52 @@ nav_order: 3
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required /><br /><br />
 
-          <label for="age">Age:</label>
-          <input
-            type="number"
-            id="age"
-            name="age"
-            min="16"
-            max="100"
-            required
-          /><br /><br />
+      <label for="age">Age:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="16"
+        max="100"
+        required
+      /><br /><br />
 
-          <label for="phone">Phone:</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-            title="Please add your area code."
-            required
-          /><br /><br />
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+        title="Please add your area code."
+        required
+      /><br /><br />
 
       <label for="comment">Comment:</label>
-      <textarea id="comment" name="comment" rows="4" required></textarea
-      ><br /><br />
+      <textarea id="comment" name="comment" rows="4" required></textarea><br /><br />
 
       <input type="submit" value="Submit" />
     </form>
+    <button id="show-form-example-btn">Show Example</button>
+    <pre id="form-example-code" style="display: none;">
+&lt;form action="submit.php" method="post" id="myForm"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="age"&gt;Age:&lt;/label&gt;
+  &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="phone"&gt;Phone:&lt;/label&gt;
+  &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="comment"&gt;Comment:&lt;/label&gt;
+  &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;input type="submit" value="Submit" /&gt;
+&lt;/form&gt;
+    </pre>
   </section>
 
   <section>
@@ -62,19 +82,91 @@ document.getElementById('myForm').onsubmit = function() {
     }
     return true;
 };
-&lt;/script&gt;</pre
-        >
-        <script>
-          document.getElementById("myForm").onsubmit = function () {
-            let name = document.getElementById("name").value;
-            if (name.length < 4) {
-              alert("Name must be at least 4 characters long.");
-              return false;
-            }
-            return true;
-          };
-        </script>
-      </section>
-    </article>
-  </body>
+    </pre>
+  </section>
+
+  <section>
+    <h3>Try it yourself!</h3>
+    <p>Create an HTML document with a form of your choice and also create some basic validation. Use the document structure to get started to show off what you've learned!</p>
+    <button id="show-html-example-btn">Show Example</button>
+    <pre id="html-example-code" style="display: none;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My First Web Page&lt;/h1&gt;
+    &lt;p&gt;"Always do your best. What you plant now, you will harvest later." - Og Mandino&lt;/p&gt;
+    &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;form action="submit.php" method="post" id="myForm"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="age"&gt;Age:&lt;/label&gt;
+  &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="phone"&gt;Phone:&lt;/label&gt;
+  &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="comment"&gt;Comment:&lt;/label&gt;
+  &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;input type="submit" value="Submit" /&gt;
+&lt;/form&gt;
+    </pre>
+  </section>
+</article>
+
+<script>
+document.getElementById('show-form-example-btn').addEventListener('click', function() {
+  var exampleCode = document.getElementById('form-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-js-example-btn').addEventListener('click', function() {
+  var exampleCode = document.getElementById('js-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-html-example-btn').addEventListener('click', function() {
+  var exampleCode = document.getElementById('html-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+</script>
+
+<script>
+document.getElementById("myForm").onsubmit = function () {
+  let name = document.getElementById("name").value;
+  if (name.length < 4) {
+    alert("Name must be at least 4 characters long.");
+    return false;
+  }
+  return true;
+};
+</script>
 </html>
