@@ -67,7 +67,8 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
     Create an HTML document that includes a heading, a paragraph with your
     favorite quote, and a link to a website you like.
   </p>
-  <pre>
+  <button id="show-example-btn">Show Example</button>
+  <pre id="example-code" style="display: none">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -81,3 +82,18 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
 &lt;/html&gt;
   </pre>
 </article>
+
+<script>
+  document
+    .getElementById("show-example-btn")
+    .addEventListener("click", function () {
+      var exampleCode = document.getElementById("example-code");
+      if (exampleCode.style.display === "none") {
+        exampleCode.style.display = "block";
+        this.textContent = "Hide Example";
+      } else {
+        exampleCode.style.display = "none";
+        this.textContent = "Show Example";
+      }
+    });
+</script>
