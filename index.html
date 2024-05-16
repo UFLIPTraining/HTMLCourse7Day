@@ -147,22 +147,46 @@ title: Section 1 - HTML Basics and Document Structure
 To display a less than sign, we write &amp;lt; which appears as &lt;
   </pre>
 
-  <h3>Exercise: Create Your First Web Page</h3>
-  <p>
-    Create an HTML document that includes a heading, a paragraph with your
-    favorite quote, and a link to a website you like.
-  </p>
+  <h3>Exercise: Create a Structured Web Page</h3>
+  <p>Create an HTML document that includes the following elements:</p>
+  <ul>
+    <li>A header with a heading and a navigation menu</li>
+    <li>A main section with an article containing a heading and a paragraph</li>
+    <li>An aside with related content</li>
+    <li>A footer with copyright information</li>
+  </ul>
   <button id="show-example-btn">Show Example</button>
   <pre id="example-code" style="display: none">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;My First Page&lt;/title&gt;
+    &lt;title&gt;My Structured Web Page&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;Welcome to My First Web Page&lt;/h1&gt;
-    &lt;p&gt;"Always do your best. What you plant now, you will harvest later." - Og Mandino&lt;/p&gt;
-    &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Article Title&lt;/h3&gt;
+            &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Content&lt;/h3&gt;
+        &lt;p&gt;This is some related content.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
+    &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
   </pre>
