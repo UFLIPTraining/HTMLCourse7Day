@@ -21,63 +21,93 @@ title: Section 1 - HTML Basics and Document Structure
     </p>
   </article>
 
+  <h3>HTML Editors and Tools</h3>
   <p>
-    Today, we'll start by learning the foundational elements of HTML. You will
-    understand how to structure a basic HTML document, which includes
-    understanding the purpose of the
-    <code>&lt;!DOCTYPE&gt;</code> declaration, and using the
-    <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and
-    <code>&lt;body&gt;</code> tags.
-  </p>
-  <p>Here's what a basic HTML page structure looks like:</p>
-  <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Your Page Title Here&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
-    &lt;p&gt;This is a paragraph of text in the body of the HTML document.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-  </pre>
-
-  <h3>Understanding the Head Section</h3>
-  <p>
-    The <code>&lt;head&gt;</code> section of an HTML document contains meta
-    information about the document that isn't displayed directly on the web
-    page. This includes links to stylesheets, page metadata, and scripts.
-  </p>
-
-  <h3>Using HTML5 Semantic Elements</h3>
-  <p>
-    HTML5 introduced several semantic elements that provide meaning to the
-    structure of a web page. These elements include:
+    To write HTML, you can use any text editor. However, there are specialized
+    HTML editors that provide features like syntax highlighting and
+    auto-completion to make coding easier. Some popular HTML editors are:
   </p>
   <ul>
+    <li>Visual Studio Code</li>
+    <li>Sublime Text</li>
+    <li>Atom</li>
+  </ul>
+  <p>
+    Modern web browsers also have developer tools that allow you to inspect and
+    edit HTML and CSS in real-time. To access these tools, right-click on a
+    webpage and select "Inspect" or press `F12`.
+  </p>
+
+  <h3>Understanding HTML Attributes</h3>
+  <p>
+    HTML attributes provide additional information about HTML elements.
+    Attributes are always included in the opening tag and usually come in
+    name/value pairs like <code>name="value"</code>.
+  </p>
+  <p>Here's an example:</p>
+  <pre>
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+  </pre>
+  <p>
+    In this example, the <code>href</code> attribute specifies the URL of the
+    page the link goes to.
+  </p>
+
+  <h3>Commonly Used HTML Tags</h3>
+  <p>Here are some commonly used HTML tags:</p>
+  <ul>
+    <li><code>&lt;a&gt;</code>: Defines a hyperlink</li>
+    <li><code>&lt;img&gt;</code>: Embeds an image</li>
     <li>
-      <code>&lt;header&gt;</code>: Represents a container for introductory
-      content or a set of navigational links.
+      <code>&lt;div&gt;</code>: Defines a division or section in a document
     </li>
-    <li><code>&lt;nav&gt;</code>: Defines a set of navigation links.</li>
-    <li>
-      <code>&lt;section&gt;</code>: Represents a standalone section of content.
-    </li>
-    <li>
-      <code>&lt;article&gt;</code>: Represents a self-contained piece of content
-      that could be distributed independently.
-    </li>
-    <li>
-      <code>&lt;aside&gt;</code>: Contains content that is tangentially related
-      to the content around it.
-    </li>
-    <li>
-      <code>&lt;footer&gt;</code>: Represents the footer of a document or
-      section.
-    </li>
+    <li><code>&lt;span&gt;</code>: Defines a section in a document (inline)</li>
+  </ul>
+
+  <h3>Inline vs Block Elements</h3>
+  <p>
+    HTML elements are either inline or block-level elements. Inline elements do
+    not start on a new line and only take up as much width as necessary.
+    Block-level elements always start on a new line and take up the full width
+    available.
+  </p>
+  <p>Examples of inline elements:</p>
+  <ul>
+    <li><code>&lt;a&gt;</code></li>
+    <li><code>&lt;span&gt;</code></li>
+    <li><code>&lt;img&gt;</code></li>
+  </ul>
+  <p>Examples of block-level elements:</p>
+  <ul>
+    <li><code>&lt;div&gt;</code></li>
+    <li><code>&lt;p&gt;</code></li>
+    <li><code>&lt;h1&gt; - &lt;h6&gt;</code></li>
+  </ul>
+
+  <h3>Basic Styling with CSS</h3>
+  <p>
+    CSS (Cascading Style Sheets) is used to style and layout web pages. Even
+    though we'll cover CSS in more detail later, here's a brief introduction on
+    how to apply basic styles.
+  </p>
+  <p>Example of linking a CSS file:</p>
+  <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+  </pre>
+  <p>Example of inline CSS:</p>
+  <pre>
+&lt;p style="color: blue;"&gt;This is a blue paragraph.&lt;/p&gt;
+  </pre>
+
+  <h3>Self-Closing Tags</h3>
+  <p>
+    Some HTML tags are self-closing and do not have a closing tag. Examples
+    include:
+  </p>
+  <ul>
+    <li><code>&lt;br&gt;</code>: Inserts a line break</li>
+    <li><code>&lt;img&gt;</code>: Embeds an image</li>
+    <li><code>&lt;input&gt;</code>: Defines an input field</li>
   </ul>
 
   <h3>Example of Using Semantic Elements</h3>
@@ -155,8 +185,7 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
     <li>An aside with related content</li>
     <li>A footer with copyright information</li>
   </ul>
-
-  <!-- <button id="show-example-btn">Show Example</button>
+  <button id="show-example-btn">Show Example</button>
   <pre id="example-code" style="display: none">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -190,7 +219,7 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
     &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-  </pre> -->
+  </pre>
 
   <h3>Additional Exercises</h3>
   <p>Here are a few more exercises to reinforce your understanding:</p>
@@ -206,11 +235,11 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
   </ul>
 </article>
 
-<!-- <script>
+<script>
   document
     .getElementById("show-example-btn")
     .addEventListener("click", function () {
-      let exampleCode = document.getElementById("example-code");
+      var exampleCode = document.getElementById("example-code");
       if (exampleCode.style.display === "none") {
         exampleCode.style.display = "block";
         this.textContent = "Hide Example";
@@ -219,4 +248,4 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
         this.textContent = "Show Example";
       }
     });
-</script> -->
+</script>
