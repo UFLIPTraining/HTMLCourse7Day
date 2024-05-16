@@ -209,7 +209,7 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
   document
     .getElementById("show-example-btn")
     .addEventListener("click", function () {
-      var exampleCode = document.getElementById("example-code");
+      let exampleCode = document.getElementById("example-code");
       if (exampleCode.style.display === "none") {
         exampleCode.style.display = "block";
         this.textContent = "Hide Example";

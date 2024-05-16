@@ -127,7 +127,7 @@ document.getElementById('myForm').onsubmit = function() {
 
 <script>
 document.getElementById('show-form-example-btn').addEventListener('click', function() {
-  var exampleCode = document.getElementById('form-example-code');
+  let exampleCode = document.getElementById('form-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
@@ -138,7 +138,7 @@ document.getElementById('show-form-example-btn').addEventListener('click', funct
 });
 
 document.getElementById('show-html-example-btn').addEventListener('click', function() {
-  var exampleCode = document.getElementById('html-example-code');
+  let exampleCode = document.getElementById('html-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
