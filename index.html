@@ -15,9 +15,9 @@ title: Section 1 - HTML Basics and Document Structure
     </p>
     <p>
       This course is designed to introduce you to the basics and then gradually
-      explore more advanced aspects of HTML. Each day will focus on different
-      topics, ensuring a comprehensive understanding of web development using
-      HTML.
+      explore more advanced aspects of HTML. Each section will focus on
+      different topics, ensuring a comprehensive understanding of web
+      development using HTML.
     </p>
   </article>
 
@@ -51,6 +51,76 @@ title: Section 1 - HTML Basics and Document Structure
     information about the document that isn't displayed directly on the web
     page. This includes links to stylesheets, page metadata, and scripts.
   </p>
+
+  <h3>Using HTML5 Semantic Elements</h3>
+  <p>
+    HTML5 introduced several semantic elements that provide meaning to the
+    structure of a web page. These elements include:
+  </p>
+  <ul>
+    <li>
+      <code>&lt;header&gt;</code>: Represents a container for introductory
+      content or a set of navigational links.
+    </li>
+    <li><code>&lt;nav&gt;</code>: Defines a set of navigation links.</li>
+    <li>
+      <code>&lt;section&gt;</code>: Represents a standalone section of content.
+    </li>
+    <li>
+      <code>&lt;article&gt;</code>: Represents a self-contained piece of content
+      that could be distributed independently.
+    </li>
+    <li>
+      <code>&lt;aside&gt;</code>: Contains content that is tangentially related
+      to the content around it.
+    </li>
+    <li>
+      <code>&lt;footer&gt;</code>: Represents the footer of a document or
+      section.
+    </li>
+  </ul>
+
+  <h3>Example of Using Semantic Elements</h3>
+  <p>
+    Here's an example of how these elements can be used together in an HTML
+    document:
+  </p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Page Title Here&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Article Title&lt;/h3&gt;
+            &lt;p&gt;This is the main content of the article.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Content&lt;/h3&gt;
+        &lt;p&gt;This is some related content.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Website&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
 
   <h3>Adding Comments to HTML</h3>
   <p>
