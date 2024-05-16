@@ -47,15 +47,28 @@ nav_order: 2
     <h3>Lists</h3>
     <p>Lists are used to group related items together:</p>
     <p>Unordered List:</p>
-    <pre>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <button id="show-unordered-list-example-btn">Show Example</button>
+    <pre id="unordered-list-example-code" style="display: none;">
 &lt;ul&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
   &lt;li&gt;Item 3&lt;/li&gt;
 &lt;/ul&gt;
     </pre>
+
     <p>Ordered List:</p>
-    <pre>
+    <ol>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+    <button id="show-ordered-list-example-btn">Show Example</button>
+    <pre id="ordered-list-example-code" style="display: none;">
 &lt;ol&gt;
   &lt;li&gt;First Item&lt;/li&gt;
   &lt;li&gt;Second Item&lt;/li&gt;
@@ -67,7 +80,37 @@ nav_order: 2
   <section>
     <h3>Tables</h3>
     <p>Tables are used to display tabular data:</p>
-    <pre>
+    <table border="1">
+      <caption>
+        Basic Table Layout
+      </caption>
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+          <td>Row 2, Cell 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Table Footer</td>
+        </tr>
+      </tfoot>
+    </table>
+    <button id="show-table-example-btn">Show Example</button>
+    <pre id="table-example-code" style="display: none;">
 &lt;table border="1"&gt;
   &lt;caption&gt;Basic Table Layout&lt;/caption&gt;
   &lt;thead&gt;
@@ -160,8 +203,41 @@ nav_order: 2
 </article>
 
 <script>
+document.getElementById('show-unordered-list-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('unordered-list-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-ordered-list-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('ordered-list-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-table-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('table-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
 document.getElementById('show-image-example-btn').addEventListener('click', function() {
-  let exampleCode = document.getElementById('image-example-code');
+  const exampleCode = document.getElementById('image-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
@@ -172,7 +248,7 @@ document.getElementById('show-image-example-btn').addEventListener('click', func
 });
 
 document.getElementById('show-video-example-btn').addEventListener('click', function() {
-  let exampleCode = document.getElementById('video-example-code');
+  const exampleCode = document.getElementById('video-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
@@ -183,7 +259,7 @@ document.getElementById('show-video-example-btn').addEventListener('click', func
 });
 
 document.getElementById('show-audio-example-btn').addEventListener('click', function() {
-  let exampleCode = document.getElementById('audio-example-code');
+  const exampleCode = document.getElementById('audio-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
