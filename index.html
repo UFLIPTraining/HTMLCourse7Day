@@ -46,7 +46,7 @@ title: Section 1 - HTML Basics and Document Structure
   </p>
   <p>Here's an example:</p>
   <pre>
-&lt;a href="https://uflip.com/"&gt;Visit Example&lt;/a&gt;
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
   </pre>
   <p>
     In this example, the <code>href</code> attribute specifies the URL of the
@@ -59,7 +59,11 @@ title: Section 1 - HTML Basics and Document Structure
     <li><code>&lt;a&gt;</code>: Defines a hyperlink</li>
     <li><code>&lt;img&gt;</code>: Embeds an image</li>
     <li>
-      <code>&lt;div&gt;</code>: Defines a division or section in a document
+      <code>&lt;div&gt;</code>: Defines a division or section in a document. You
+      will use <code>&lt;div&gt;</code> a lot, but if you can substitute it with
+      more specific semantic tags (like <code>&lt;header&gt;</code>,
+      <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>, etc.), it can
+      make your code easier to understand and maintain.
     </li>
     <li><code>&lt;span&gt;</code>: Defines a section in a document (inline)</li>
   </ul>
@@ -79,7 +83,13 @@ title: Section 1 - HTML Basics and Document Structure
   </ul>
   <p>Examples of block-level elements:</p>
   <ul>
-    <li><code>&lt;div&gt;</code></li>
+    <li>
+      <code>&lt;div&gt;</code>: You will use <code>&lt;div&gt;</code> a lot, but
+      if you can substitute it with more specific semantic tags (like
+      <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>,
+      <code>&lt;footer&gt;</code>, etc.), it can make your code easier to
+      understand and maintain.
+    </li>
     <li><code>&lt;p&gt;</code></li>
     <li><code>&lt;h1&gt; - &lt;h6&gt;</code></li>
   </ul>
@@ -185,18 +195,6 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
     <li>An aside with related content</li>
     <li>A footer with copyright information</li>
   </ul>
-  <h3>Additional Exercises</h3>
-  <p>Here are a few more exercises to reinforce your understanding:</p>
-  <ul>
-    <li>
-      Create a page with multiple headings (<code>&lt;h1&gt;</code> to
-      <code>&lt;h6&gt;</code>).
-    </li>
-    <li>
-      Look up some more tags! Learn ahead of the game and see what you can do
-      with every bit you've learned so far!
-    </li>
-  </ul>
   <button id="show-example-btn">Show Example</button>
   <pre id="example-code" style="display: none">
 &lt;!DOCTYPE html&gt;
@@ -232,13 +230,26 @@ To display a less than sign, we write &amp;lt; which appears as &lt;
 &lt;/body&gt;
 &lt;/html&gt;
   </pre>
+
+  <h3>Additional Exercises</h3>
+  <p>Here are a few more exercises to reinforce your understanding:</p>
+  <ul>
+    <li>
+      Create a page with multiple headings (<code>&lt;h1&gt;</code> to
+      <code>&lt;h6&gt;</code>).
+    </li>
+    <li>
+      Look up some more tags! Learn ahead of the game and see what you can do
+      with every bit you've learned so far!
+    </li>
+  </ul>
 </article>
 
 <script>
   document
     .getElementById("show-example-btn")
     .addEventListener("click", function () {
-      var exampleCode = document.getElementById("example-code");
+      let exampleCode = document.getElementById("example-code");
       if (exampleCode.style.display === "none") {
         exampleCode.style.display = "block";
         this.textContent = "Hide Example";
