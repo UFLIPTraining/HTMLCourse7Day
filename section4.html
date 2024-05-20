@@ -1,63 +1,157 @@
 ---
 layout: default
-title: Section 4 - Organizing Content with Lists and Tables
+title: Section 4 - Semantic HTML and Advanced Layout Techniques
 nav_order: 4
 ---
 
 <article>
-  <h2>Welcome to Section 4: Organizing Content with Lists and Tables</h2>
+  <h2>Welcome to Section 5: Semantic HTML and Advanced Layout Techniques</h2>
   <p>
-    Today, we will learn how to effectively organize content using lists and
-    tables, essential for presenting information clearly on web pages.
+    Today, we will explore the importance of using semantic HTML to structure
+    our web content effectively and improve our site's accessibility and search
+    engine rankings. Additionally, we will look into advanced layout techniques.
   </p>
 
   <section>
-    <h3>Example of Lists</h3>
-    <p>Unordered List:</p>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-    <p>Ordered List:</p>
-    <ol>
-      <li>First Item</li>
-      <li>Second Item</li>
-      <li>Third Item</li>
-    </ol>
+    <h3>Semantic HTML</h3>
+    <article>
+      <header>
+        <h4>Why Use Semantic HTML?</h4>
+      </header>
+      <p>
+        Semantic HTML helps clearly define the structure of web content, making
+        it easier for search engines and assistive technologies to read and
+        understand the information on web pages.
+      </p>
+      <footer>
+        <small>End of discussion on Semantic HTML.</small>
+      </footer>
+    </article>
   </section>
 
   <section>
-    <h3>Example of a Table</h3>
-    <table border="1">
-      <caption>
-        Basic Table Layout
-      </caption>
-      <thead>
-        <tr>
-          <th>Column 1</th>
-          <th>Column 2</th>
-          <th>Column 3</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Row 1, Cell 1</td>
-          <td>Row 1, Cell 2</td>
-          <td>Row 1, Cell 3</td>
-        </tr>
-        <tr>
-          <td>Row 2, Cell 1</td>
-          <td>Row 2, Cell 2</td>
-          <td>Row 2, Cell 3</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">Table Footer</td>
-        </tr>
-      </tfoot>
-    </table>
+    <h3>Embedding Multimedia</h3>
+    <p>
+      Embedding multimedia like images, videos, and audio not only enhances the user
+      experience but also keeps users engaged longer on your site.
+    </p>
+    <figure>
+      <img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" />
+      <figcaption>Figure 1: This is an example of an embedded image.</figcaption>
+      <button id="show-image-example-btn">Show Example</button>
+      <pre id="image-example-code" style="display: none;">
+&lt;figure&gt;
+  &lt;img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" /&gt;
+  &lt;figcaption&gt;Figure 1: This is an example of an embedded image.&lt;/figcaption&gt;
+&lt;/figure&gt;
+      </pre>
+    </figure>
+    <figure>
+      <video controls width="300">
+        <source src="src/img/MMWDEX2.mp4" type="video/mp4" />
+      </video>
+      <figcaption>Figure 2: This is an example of an embedded video.</figcaption>
+      <button id="show-video-example-btn">Show Example</button>
+      <pre id="video-example-code" style="display: none;">
+&lt;figure&gt;
+  &lt;video controls width="300"&gt;
+    &lt;source src="src/img/MMWDEX2.mp4" type="video/mp4" /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;Figure 2: This is an example of an embedded video.&lt;/figcaption&gt;
+&lt;/figure&gt;
+      </pre>
+    </figure>
+    <figure>
+      <audio controls>
+        <source src="src/img/MMWDEX3.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <figcaption>Figure 3: This is an example of embedded audio.</figcaption>
+      <button id="show-audio-example-btn">Show Example</button>
+      <pre id="audio-example-code" style="display: none;">
+&lt;figure&gt;
+  &lt;audio controls&gt;
+    &lt;source src="src/img/MMWDEX3.mp3" type="audio/mpeg" /&gt;
+    Your browser does not support the audio element.
+  &lt;/audio&gt;
+  &lt;figcaption&gt;Figure 3: This is an example of embedded audio.&lt;/figcaption&gt;
+&lt;/figure&gt;
+      </pre>
+    </figure>
+  </section>
+
+  <section>
+    <h3>Embedding Maps</h3>
+    <p>
+      Embedding maps is another advanced technique that adds interactive elements to your site.
+    </p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
+      width="450"
+      height="262.5"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <button id="show-map-example-btn">Show Example</button>
+    <pre id="map-example-code" style="display: none;">
+&lt;iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
+  width="450"
+  height="262.5"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+&lt;/iframe&gt;
+    </pre>
   </section>
 </article>
+
+<script>
+document.getElementById('show-image-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('image-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-video-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('video-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-audio-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('audio-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-map-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('map-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+</script>
 </html>
