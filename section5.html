@@ -1,157 +1,78 @@
 ---
 layout: default
-title: Section 5 - Semantic HTML and Advanced Layout Techniques
+title: Section 5 - HTML5 Features, Accessibility, and SEO
 nav_order: 5
 ---
 
-<article>
-  <h2>Welcome to Section 5: Semantic HTML and Advanced Layout Techniques</h2>
-  <p>
-    Today, we will explore the importance of using semantic HTML to structure
-    our web content effectively and improve our site's accessibility and search
-    engine rankings. Additionally, we will look into advanced layout techniques.
-  </p>
 
-  <section>
-    <h3>Semantic HTML</h3>
-    <article>
-      <header>
-        <h4>Why Use Semantic HTML?</h4>
-      </header>
+  <article>
+    <h2>Welcome to Section 6: Exploring HTML5, Accessibility, and SEO</h2>
+    <p>
+      Today, we'll focus on enhancing our web pages with HTML5's new features,
+      improving accessibility using ARIA roles, and optimizing for search
+      engines.
+    </p>
+
+    <section>
+      <h3>New HTML5 Features</h3>
       <p>
-        Semantic HTML helps clearly define the structure of web content, making
-        it easier for search engines and assistive technologies to read and
-        understand the information on web pages.
+        HTML5 introduces a range of elements and APIs that enhance the
+        capabilities of web pages, such as:
       </p>
-      <footer>
-        <small>End of discussion on Semantic HTML.</small>
-      </footer>
-    </article>
-  </section>
+      <ul>
+        <li>
+          <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+          <code>&lt;aside&gt;</code>, and <code>&lt;header&gt;</code> tags for
+          better document structure.
+        </li>
+        <li>
+          <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for
+          associating images with captions.
+        </li>
+        <li>
+          <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags for
+          embedded media.
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>Embedding Multimedia</h3>
-    <p>
-      Embedding multimedia like images, videos, and audio not only enhances the user
-      experience but also keeps users engaged longer on your site.
-    </p>
-    <figure>
-      <img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" />
-      <figcaption>Figure 1: This is an example of an embedded image.</figcaption>
-      <button id="show-image-example-btn">Show Example</button>
-      <pre id="image-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" /&gt;
-  &lt;figcaption&gt;Figure 1: This is an example of an embedded image.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-    <figure>
-      <video controls width="300">
-        <source src="src/img/MMWDEX2.mp4" type="video/mp4" />
-      </video>
-      <figcaption>Figure 2: This is an example of an embedded video.</figcaption>
-      <button id="show-video-example-btn">Show Example</button>
-      <pre id="video-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;video controls width="300"&gt;
-    &lt;source src="src/img/MMWDEX2.mp4" type="video/mp4" /&gt;
-  &lt;/video&gt;
-  &lt;figcaption&gt;Figure 2: This is an example of an embedded video.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-    <figure>
-      <audio controls>
-        <source src="src/img/MMWDEX3.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <figcaption>Figure 3: This is an example of embedded audio.</figcaption>
-      <button id="show-audio-example-btn">Show Example</button>
-      <pre id="audio-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;audio controls&gt;
-    &lt;source src="src/img/MMWDEX3.mp3" type="audio/mpeg" /&gt;
-    Your browser does not support the audio element.
-  &lt;/audio&gt;
-  &lt;figcaption&gt;Figure 3: This is an example of embedded audio.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-  </section>
+    <section>
+      <h3>Accessibility with ARIA Roles</h3>
+      <p>
+        Accessible Rich Internet Applications (ARIA) roles help improve the
+        accessibility of web elements by providing extra context to screen
+        readers:
+      </p>
+      <div role="complementary">
+        More details on ARIA roles:
+        <ul>
+          <li><code>role="navigation"</code> for navigation links.</li>
+          <li><code>role="search"</code> for search form areas.</li>
+          <li>
+            <code>role="form"</code> for marking up forms distinctly from other
+            content.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <section>
-    <h3>Embedding Maps</h3>
-    <p>
-      Embedding maps is another advanced technique that adds interactive elements to your site.
-    </p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
-      width="450"
-      height="262.5"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <button id="show-map-example-btn">Show Example</button>
-    <pre id="map-example-code" style="display: none;">
-&lt;iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
-  width="450"
-  height="262.5"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-&lt;/iframe&gt;
-    </pre>
-  </section>
-</article>
-
-<script>
-document.getElementById('show-image-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('image-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-video-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('video-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-audio-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('audio-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-map-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('map-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-</script>
+    <section>
+      <h3>SEO Best Practices</h3>
+      <p>
+        Optimizing our pages for search engines can significantly improve the
+        visibility and reach of our content. Here are some basic SEO techniques:
+      </p>
+      <ul>
+        <li>
+          Using relevant keywords in the <code>&lt;title&gt;</code> and
+          <code>&lt;meta name="description"&gt;</code> tags.
+        </li>
+        <li>
+          Ensuring all images have alt text with the
+          <code>&lt;img alt="description"&gt;</code> attribute.
+        </li>
+        <li>Creating clean, descriptive URLs.</li>
+      </ul>
+    </section>
+  </article>
 </html>
