@@ -57,3 +57,65 @@ Welcome to the HTML course! This course will introduce you to the basics of HTML
 - Common ARIA Roles
 - Example of ARIA Roles in HTML
 - **Exercise**: Create a Comprehensive Web Page Incorporating All Sections
+
+### Example of a blog site
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog about web development">
+    <meta name="keywords" content="HTML, CSS, JavaScript, web development, blog">
+    <title>My Web Development Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>My Web Development Blog</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section>
+            <h2>Latest Blog Post</h2>
+            <article>
+                <h3>Understanding HTML</h3>
+                <p>HTML is the foundation of web development. In this post, we will explore the basics of HTML.</p>
+                <figure>
+                    <img src="images/html-basics.jpg" alt="HTML Basics" width="300" height="200">
+                    <figcaption>Figure 1: HTML Basics</figcaption>
+                </figure>
+                <p>HTML stands for HyperText Markup Language. It is used to create web pages...</p>
+            </article>
+        </section>
+        <aside>
+            <h3>Related Content</h3>
+            <ul>
+                <li><a href="post2.html">CSS Fundamentals</a></li>
+                <li><a href="post3.html">JavaScript Basics</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h2>Leave a Comment</h2>
+            <form action="submit_comment.php" method="post" id="commentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2024 My Web Development Blog</p>
+    </footer>
+</body>
+</html>
