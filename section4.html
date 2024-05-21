@@ -226,5 +226,16 @@ document.getElementById('show-map-example-btn').addEventListener('click', functi
     this.textContent = 'Show Example';
   }
 });
+
+document.getElementById('show-exercise-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('exercise-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
 </script>
 </html>
