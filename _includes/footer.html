@@ -1,16 +1,18 @@
 <footer>
   <nav>
-    {% assign pages_sorted = site.pages | sort: 'nav_order' %} {% for page in
-    pages_sorted %} {% if page.url == page.url %} {% assign previous =
-    forloop.index | minus: 2 %} {% assign next = forloop.index %} {% break %} {%
-    endif %} {% endfor %} {% if previous >= 0 %}
-    <a href="{{ pages_sorted[previous].url }}"
-      >Previous: {{ pages_sorted[previous].title }}</a
+    {% assign pages_sorted = site.pages | sort: 'nav_order' %} {% assign
+    current_index = nil %} {% for page in pages_sorted %} {% if page.url ==
+    page.url %} {% assign current_index = forloop.index0 %} {% break %} {% endif
+    %} {% endfor %} {% if current_index %} {% assign previous_index =
+    current_index | minus: 1 %} {% assign next_index = current_index | plus: 1
+    %} {% if previous_index >= 0 %}
+    <a href="{{ pages_sorted[previous_index].url }}"
+      >Previous: {{ pages_sorted[previous_index].title }}</a
     >
-    {% endif %} {% if next < pages_sorted.size %}
-    <a href="{{ pages_sorted[next].url }}"
-      >Next: {{ pages_sorted[next].title }}</a
+    {% endif %} {% if next_index < pages_sorted.size %}
+    <a href="{{ pages_sorted[next_index].url }}"
+      >Next: {{ pages_sorted[next_index].title }}</a
     >
-    {% endif %}
+    {% endif %} {% endif %}
   </nav>
 </footer>
