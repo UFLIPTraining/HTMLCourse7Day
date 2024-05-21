@@ -47,17 +47,13 @@ Welcome to the HTML course! This course will introduce you to the basics of HTML
 - Embedding Videos
 - Embedding Audio
 - Embedding Maps
-- **Exercise**: Create a Web Page with Embedded Multimedia
-
-### Section 6: SEO and ARIA Roles
-
 - Search Engine Optimization (SEO) and Metadata
-  - Title Tag
-  - Meta Description
-  - Meta Keywords
-  - Viewport
-  - Example of Metadata in HTML
+- Title Tag
+- Meta Description
+- Meta Keywords
+- Viewport
+- Example of Metadata in HTML
 - ARIA Roles
-  - Common ARIA Roles
-  - Example of ARIA Roles in HTML
+- Common ARIA Roles
+- Example of ARIA Roles in HTML
 - **Exercise**: Create a Comprehensive Web Page Incorporating All Sections
