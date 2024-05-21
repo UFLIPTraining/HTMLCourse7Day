@@ -87,47 +87,70 @@ document.getElementById('myForm').onsubmit = function() {
   </section>
 
   <section>
-    <h3>Try it yourself!</h3>
-    <p>Create an HTML document with a form of your choice and also create some basic validation. Use the document structure to get started to show off what you've learned!</p>
-    <button id="show-html-example-btn">Show Example</button>
-    <pre id="html-example-code" style="display: none;">
+    <h3>Exercise: Create a Structured Web Page</h3>
+    <p>Create an HTML document that includes the following elements:</p>
+    <ul>
+      <li>A form with various input fields including text, email, number, tel, and textarea.</li>
+      <li>Basic form validation using HTML attributes and JavaScript.</li>
+    </ul>
+    <p>Use everything from Section 1 and Section 2, and now integrate the form elements from Section 3.</p>
+    <button id="show-exercise-example-btn">Show Example</button>
+    <pre id="exercise-example-code" style="display: none;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;My First Page&lt;/title&gt;
+    &lt;title&gt;My Structured Web Page&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;Welcome to My First Web Page&lt;/h1&gt;
-    &lt;p&gt;"Always do your best. What you plant now, you will harvest later." - Og Mandino&lt;/p&gt;
-    &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Article Title&lt;/h3&gt;
+            &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Content&lt;/h3&gt;
+        &lt;p&gt;This is some related content.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Form Example&lt;/h2&gt;
+        &lt;form action="submit.php" method="post" id="myForm"&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;label for="age"&gt;Age:&lt;/label&gt;
+            &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;label for="phone"&gt;Phone:&lt;/label&gt;
+            &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;label for="comment"&gt;Comment:&lt;/label&gt;
+            &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
+            &lt;input type="submit" value="Submit" /&gt;
+        &lt;/form&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
+    &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-
-&lt;form action="submit.php" method="post" id="myForm"&gt;
-  &lt;label for="name"&gt;Name:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;label for="email"&gt;Email:&lt;/label&gt;
-  &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;label for="age"&gt;Age:&lt;/label&gt;
-  &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;label for="phone"&gt;Phone:&lt;/label&gt;
-  &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;label for="comment"&gt;Comment:&lt;/label&gt;
-  &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;input type="submit" value="Submit" /&gt;
-&lt;/form&gt;
     </pre>
   </section>
 </article>
 
 <script>
 document.getElementById('show-form-example-btn').addEventListener('click', function() {
-  let exampleCode = document.getElementById('form-example-code');
+  const exampleCode = document.getElementById('form-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
@@ -137,8 +160,8 @@ document.getElementById('show-form-example-btn').addEventListener('click', funct
   }
 });
 
-document.getElementById('show-html-example-btn').addEventListener('click', function() {
-  let exampleCode = document.getElementById('html-example-code');
+document.getElementById('show-exercise-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('exercise-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
@@ -147,9 +170,7 @@ document.getElementById('show-html-example-btn').addEventListener('click', funct
     this.textContent = 'Show Example';
   }
 });
-</script>
 
-<script>
 document.getElementById("myForm").onsubmit = function () {
   let name = document.getElementById("name").value;
   if (name.length < 4) {
