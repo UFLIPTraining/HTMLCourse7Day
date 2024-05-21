@@ -93,14 +93,13 @@ nav_order: 2
   </section>
 
   <section>
-    <h3>Exercise: Create a Structured Web Page</h3>
-    <p>Create an HTML document that includes the following elements:</p>
+    <h3>Exercise: Using Semantic HTML</h3>
+    <p>Create an HTML document that includes the following elements using semantic HTML tags:</p>
     <ul>
-      <li>Use semantic HTML tags to structure the content.</li>
-      <li>Include a header with a title and navigation links.</li>
-      <li>Include a main section with an article and related content.</li>
-      <li>Include a form for user input, with validation.</li>
-      <li>Embed multimedia elements such as images, videos, audio, and maps.</li>
+      <li>A <code>&lt;header&gt;</code> with a title and navigation links.</li>
+      <li>A <code>&lt;main&gt;</code> section containing an <code>&lt;article&gt;</code> with a heading and a paragraph.</li>
+      <li>An <code>&lt;aside&gt;</code> with related content.</li>
+      <li>A <code>&lt;footer&gt;</code> with copyright information.</li>
     </ul>
     <button id="show-exercise-example-btn">Show Example</button>
     <pre id="exercise-example-code" style="display: none;">
@@ -120,65 +119,21 @@ nav_order: 2
             &lt;/ul&gt;
         &lt;/nav&gt;
     &lt;/header&gt;
-    &lt;section&gt;
-        &lt;h2&gt;Main Content&lt;/h2&gt;
-        &lt;article&gt;
-            &lt;h3&gt;Article Title&lt;/h3&gt;
-            &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
-        &lt;/article&gt;
-    &lt;/section&gt;
-    &lt;aside&gt;
-        &lt;h3&gt;Related Content&lt;/h3&gt;
-        &lt;p&gt;This is some related content.&lt;/p&gt;
-    &lt;/aside&gt;
-    &lt;section&gt;
-        &lt;h2&gt;Form Example&lt;/h2&gt;
-        &lt;form action="submit.php" method="post" id="myForm"&gt;
-            &lt;label for="name"&gt;Name:&lt;/label&gt;
-            &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;label for="email"&gt;Email:&lt;/label&gt;
-            &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;label for="age"&gt;Age:&lt;/label&gt;
-            &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;label for="phone"&gt;Phone:&lt;/label&gt;
-            &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;label for="comment"&gt;Comment:&lt;/label&gt;
-            &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;input type="submit" value="Submit" /&gt;
-        &lt;/form&gt;
-    &lt;/section&gt;
-    &lt;section&gt;
-        &lt;h2&gt;Multimedia Example&lt;/h2&gt;
-        &lt;figure&gt;
-            &lt;img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" /&gt;
-            &lt;figcaption&gt;Figure 1: This is an example of an embedded image.&lt;/figcaption&gt;
-        &lt;/figure&gt;
-        &lt;figure&gt;
-            &lt;video controls width="300"&gt;
-                &lt;source src="src/img/MMWDEX2.mp4" type="video/mp4" /&gt;
-            &lt;/video&gt;
-            &lt;figcaption&gt;Figure 2: This is an example of an embedded video.&lt;/figcaption&gt;
-        &lt;/figure&gt;
-        &lt;figure&gt;
-            &lt;audio controls&gt;
-                &lt;source src="src/img/MMWDEX3.mp3" type="audio/mpeg" /&gt;
-                Your browser does not support the audio element.
-            &lt;/audio&gt;
-            &lt;figcaption&gt;Figure 3: This is an example of embedded audio.&lt;/figcaption&gt;
-        &lt;/figure&gt;
-        &lt;iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
-            width="450"
-            height="262.5"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"&gt;
-        &lt;/iframe&gt;
-    &lt;/section&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Main Content&lt;/h2&gt;
+            &lt;article&gt;
+                &lt;h3&gt;Article Title&lt;/h3&gt;
+                &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+        &lt;aside&gt;
+            &lt;h3&gt;Related Content&lt;/h3&gt;
+            &lt;p&gt;This is some related content.&lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
     &lt;footer&gt;
-        &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
-    &lt;/footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
     </pre>
