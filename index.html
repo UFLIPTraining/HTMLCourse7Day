@@ -1,45 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting to Know HTML!</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to Our HTML Course</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="day1.html">Day 1</a>
-        <a href="day2.html">Day 2</a>
-        <a href="day3.html">Day 3</a>
-        <a href="day4.html">Day 4</a>
-        <a href="day5.html">Day 5</a>
-        <a href="day6.html">Day 6</a>
-        <a href="day7.html">Day 7</a>
-      </nav>
-    </header>
+---
+layout: default
+title: Section 1 - HTML Basics and Document Structure
+---
 
-    <article>
-      <h2>Welcome to HTML!</h2>
-      <p>
-        HTML, or HyperText Markup Language, is the standard markup language used
-        to create web pages. It serves as the backbone of web design and
-        development, enabling the structure and presentation of content on the
-        internet.
-      </p>
-      <p>
-        This course is designed to introduce you to the basics and then
-        gradually explore more advanced aspects of HTML. Each day will focus on
-        different topics, ensuring a comprehensive understanding of web
-        development using HTML.
-      </p>
-    </article>
+<article>
+  <h2>Welcome to Section 1: Learning the HTML Basics and Document Structure</h2>
 
-    <footer>
-      <a href="day1.html">Day 1</a>
-      <a href="myprofile.html">My Profile</a>
-      <p>Copyright © 2024 by My Blog. All rights reserved.</p>
-    </footer>
-  </body>
-</html>
+  <article>
+    <p>
+      HTML, or HyperText Markup Language, is the standard markup language used
+      to create web pages. It serves as the backbone of web design and
+      development, enabling the structure and presentation of content on the
+      internet.
+    </p>
+    <p>
+      This course is designed to introduce you to the basics and then gradually
+      explore more advanced aspects of HTML. Each section will focus on
+      different topics, ensuring a comprehensive understanding of web
+      development using HTML.
+    </p>
+  </article>
+
+  <h3>HTML Editors and Tools</h3>
+  <p>
+    To write HTML, you can use any text editor. However, there are specialized
+    HTML editors that provide features like syntax highlighting and
+    auto-completion to make coding easier. Some popular HTML editors are:
+  </p>
+  <ul>
+    <li>Visual Studio Code</li>
+    <li>Sublime Text</li>
+    <li>Atom</li>
+  </ul>
+  <p>
+    Modern web browsers also have developer tools that allow you to inspect and
+    edit HTML and CSS in real-time. To access these tools, right-click on a
+    webpage and select "Inspect" or press `F12`.
+  </p>
+
+  <h3>Understanding HTML Attributes</h3>
+  <p>
+    HTML attributes provide additional information about HTML elements.
+    Attributes are always included in the opening tag and usually come in
+    name/value pairs like <code>name="value"</code>.
+  </p>
+  <p>Here's an example:</p>
+  <pre>
+    &lt;a href="https://uflip.com/"&gt;Visit Example&lt;/a&gt;
+  </pre>
+  <p>
+    In this example, the <code>href</code> attribute specifies the URL of the
+    page the link goes to.
+  </p>
+
+  <h3>Commonly Used HTML Tags</h3>
+  <p>Here are some commonly used HTML tags:</p>
+  <ul>
+    <li><code>&lt;a&gt;</code>: Defines a hyperlink</li>
+    <li><code>&lt;img&gt;</code>: Embeds an image</li>
+    <li>
+      <code>&lt;div&gt;</code>: Defines a division or section in a document. You
+      will use <code>&lt;div&gt;</code> a lot, but if you can substitute it with
+      more specific semantic tags (like <code>&lt;header&gt;</code>,
+      <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>, etc.), it can
+      make your code easier to understand and maintain.
+    </li>
+    <li><code>&lt;span&gt;</code>: Defines a section in a document (inline)</li>
+  </ul>
+
+  <h3>Inline vs Block Elements</h3>
+  <p>
+    HTML elements are either inline or block-level elements. Inline elements do
+    not start on a new line and only take up as much width as necessary.
+    Block-level elements always start on a new line and take up the full width
+    available.
+  </p>
+  <p>Examples of inline elements:</p>
+  <ul>
+    <li><code>&lt;a&gt;</code></li>
+    <li><code>&lt;span&gt;</code></li>
+    <li><code>&lt;img&gt;</code></li>
+  </ul>
+  <p>Examples of block-level elements:</p>
+  <ul>
+    <li>
+      <code>&lt;div&gt;</code>: You will use <code>&lt;div&gt;</code> a lot, but
+      if you can substitute it with more specific semantic tags (like
+      <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>,
+      <code>&lt;footer&gt;</code>, etc.), it can make your code easier to
+      understand and maintain.
+    </li>
+    <li><code>&lt;p&gt;</code></li>
+    <li><code>&lt;h1&gt; - &lt;h6&gt;</code></li>
+  </ul>
+
+  <h3>Basic Styling with CSS</h3>
+  <p>
+    CSS (Cascading Style Sheets) is used to style and layout web pages. Even
+    though we'll cover CSS in more detail later, here's a brief introduction on
+    how to apply basic styles.
+  </p>
+  <p>Example of linking a CSS file:</p>
+  <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+  </pre>
+  <p>Example of inline CSS:</p>
+  <pre>
+&lt;p style="color: blue;"&gt;This is a blue paragraph.&lt;/p&gt;
+  </pre>
+
+  <h3>Self-Closing Tags</h3>
+  <p>
+    Some HTML tags are self-closing and do not have a closing tag. Examples
+    include:
+  </p>
+  <ul>
+    <li><code>&lt;br&gt;</code>: Inserts a line break</li>
+    <li><code>&lt;img&gt;</code>: Embeds an image</li>
+    <li><code>&lt;input&gt;</code>: Defines an input field</li>
+  </ul>
+
+  <h3>Example of Using Semantic Elements</h3>
+  <p>
+    Here's an example of how these elements can be used together in an HTML
+    document:
+  </p>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Page Title Here&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Article Title&lt;/h3&gt;
+            &lt;p&gt;This is the main content of the article.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Content&lt;/h3&gt;
+        &lt;p&gt;This is some related content.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Website&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <h3>Adding Comments to HTML</h3>
+  <p>
+    Comments in HTML are added as follows and do not appear in the rendered
+    output:
+  </p>
+  <pre>
+&lt;!-- This is a comment in HTML --&gt;
+  </pre>
+
+  <h3>Linking CSS and JavaScript</h3>
+  <p>
+    To make our web pages stylish and interactive, we link CSS and JavaScript
+    files externally:
+  </p>
+  <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+  </pre>
+
+  <h3>Using HTML Entities</h3>
+  <p>Sometimes we need to use special characters in our text:</p>
+  <pre>
+To display a less than sign, we write &amp;lt; which appears as &lt;
+  </pre>
+
+  <h3>Exercise: Create a Structured Web Page</h3>
+  <p>Create an HTML document that includes the following elements:</p>
+  <ul>
+    <li>A header with a heading and a navigation menu</li>
+    <li>A main section with an article containing a heading and a paragraph</li>
+    <li>An aside with related content</li>
+    <li>A footer with copyright information</li>
+  </ul>
+  <button id="show-example-btn">Show Example</button>
+  <pre id="example-code" style="display: none">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Structured Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Article Title&lt;/h3&gt;
+            &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Content&lt;/h3&gt;
+        &lt;p&gt;This is some related content.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+
+  <h3>Additional Exercises</h3>
+  <p>Here are a few more exercises to reinforce your understanding:</p>
+  <ul>
+    <li>
+      Create a page with multiple headings (<code>&lt;h1&gt;</code> to
+      <code>&lt;h6&gt;</code>).
+    </li>
+    <li>
+      Look up some more tags! Learn ahead of the game and see what you can do
+      with every bit you've learned so far!
+    </li>
+  </ul>
+</article>
+
+<script>
+  document
+    .getElementById("show-example-btn")
+    .addEventListener("click", function () {
+      let exampleCode = document.getElementById("example-code");
+      if (exampleCode.style.display === "none") {
+        exampleCode.style.display = "block";
+        this.textContent = "Hide Example";
+      } else {
+        exampleCode.style.display = "none";
+        this.textContent = "Show Example";
+      }
+    });
+</script>
