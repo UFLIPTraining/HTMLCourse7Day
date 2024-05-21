@@ -1,6 +1,6 @@
 title: HTML Course!
 description: Bookmark this to keep an eye on my project updates!
-theme: Moonwalk
+theme: dark-poole
 collections:
   pages:
     output: true
