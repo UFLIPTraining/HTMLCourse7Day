@@ -150,6 +150,95 @@ nav_order: 2
       <li>Ensure proper semantic structure for both lists and tables to aid screen readers.</li>
     </ul>
   </section>
+
+  <section>
+    <h3>Exercise: Create a Structured Web Page</h3>
+    <p>Create an HTML document that includes the following elements:</p>
+    <ul>
+      <li>Text formatting with various HTML tags.</li>
+      <li>Both unordered and ordered lists.</li>
+      <li>A table with a header, body, and footer.</li>
+    </ul>
+    <p>Use everything from Section 1 and now everything from Section 2.</p>
+    <button id="show-exercise-example-btn">Show Example</button>
+    <pre id="exercise-example-code" style="display: none;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Structured Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Article Title&lt;/h3&gt;
+            &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    &lt;aside&gt;
+        &lt;h3&gt;Related Content&lt;/h3&gt;
+        &lt;p&gt;This is some related content.&lt;/p&gt;
+    &lt;/aside&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Lists and Tables&lt;/h2&gt;
+        &lt;h3&gt;Unordered List&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h3&gt;Ordered List&lt;/h3&gt;
+        &lt;ol&gt;
+            &lt;li&gt;First Item&lt;/li&gt;
+            &lt;li&gt;Second Item&lt;/li&gt;
+            &lt;li&gt;Third Item&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;h3&gt;Table&lt;/h3&gt;
+        &lt;table border="1"&gt;
+            &lt;caption&gt;Basic Table Layout&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Column 1&lt;/th&gt;
+                    &lt;th&gt;Column 2&lt;/th&gt;
+                    &lt;th&gt;Column 3&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+                    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+                    &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+                    &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+                    &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="3"&gt;Table Footer&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+  </section>
 </article>
 
 <script>
@@ -177,6 +266,17 @@ document.getElementById('show-ordered-list-example-btn').addEventListener('click
 
 document.getElementById('show-table-example-btn').addEventListener('click', function() {
   const exampleCode = document.getElementById('table-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-exercise-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('exercise-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
