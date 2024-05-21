@@ -1,4 +1,4 @@
-<footer>
+<!-- <footer>
   <nav>
     {% assign pages_sorted = site.pages | sort: 'nav_order' %} {% assign
     current_index = nil %} {% for page in pages_sorted %} {% if page.url ==
@@ -14,5 +14,17 @@
       >Next: {{ pages_sorted[next_index].title }}</a
     >
     {% endif %} {% endif %}
+  </nav>
+</footer> -->
+
+<!-- _includes/header.html -->
+<footer>
+  <nav>
+    <a href="{{ site.baseurl }}/">Section 1</a>
+    <a href="{{ site.baseurl }}/section2.html">Section 2</a>
+    <a href="{{ site.baseurl }}/section3.html">Section 3</a>
+    <a href="{{ site.baseurl }}/section4.html">Section 4</a>
+    <a href="{{ site.baseurl }}/section5.html">Section 5</a>
+    <a href="{{ site.baseurl }}/myprofile.html">My Profile</a>
   </nav>
 </footer>
