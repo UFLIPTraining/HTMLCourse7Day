@@ -1,0 +1,14 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+}
