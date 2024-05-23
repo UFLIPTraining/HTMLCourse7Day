@@ -13,21 +13,24 @@ nav_order: 2
   </p>
 
   <section>
-    <h3>Semantic HTML</h3>
-    <article>
-      <header>
-        <h4>Why Use Semantic HTML?</h4>
-      </header>
-      <p>
-        Semantic HTML helps clearly define the structure of web content, making
-        it easier for search engines and assistive technologies to read and
-        understand the information on web pages.
-      </p>
-      <p>Here are some examples of semantic HTML elements and their uses:</p>
-      <ul>
-        <li>
-          <code>&lt;header&gt;</code>: Represents the introductory content or a set of navigational links.
-          <pre>
+    <h3>What is Semantic HTML?</h3>
+    <p>
+      Semantic HTML refers to the use of HTML5 elements that clearly describe their meaning in a human- and machine-readable way. These elements provide better structure and context to the content within web pages, which is beneficial for both search engines and accessibility tools like screen readers.
+    </p>
+  </section>
+
+  <section>
+    <h3>Why Use Semantic HTML?</h3>
+    <p>
+      Semantic HTML helps clearly define the structure of web content, making
+      it easier for search engines and assistive technologies to read and
+      understand the information on web pages.
+    </p>
+    <p>Here are some examples of semantic HTML elements and their uses:</p>
+    <ul>
+      <li>
+        <code>&lt;header&gt;</code>: Represents the introductory content or a set of navigational links.
+        <pre>
 &lt;header&gt;
   &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
   &lt;nav&gt;
@@ -38,11 +41,11 @@ nav_order: 2
     &lt;/ul&gt;
   &lt;/nav&gt;
 &lt;/header&gt;
-          </pre>
-        </li>
-        <li>
-          <code>&lt;nav&gt;</code>: Defines a set of navigation links.
-          <pre>
+        </pre>
+      </li>
+      <li>
+        <code>&lt;nav&gt;</code>: Defines a set of navigation links.
+        <pre>
 &lt;nav&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -50,46 +53,45 @@ nav_order: 2
     &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
-          </pre>
-        </li>
-        <li>
-          <code>&lt;article&gt;</code>: Represents a self-contained composition that could be distributed independently.
-          <pre>
+        </pre>
+      </li>
+      <li>
+        <code>&lt;article&gt;</code>: Represents a self-contained composition that could be distributed independently.
+        <pre>
 &lt;article&gt;
   &lt;h2&gt;Article Title&lt;/h2&gt;
   &lt;p&gt;This is the main content of the article.&lt;/p&gt;
 &lt;/article&gt;
-          </pre>
-        </li>
-        <li>
-          <code>&lt;section&gt;</code>: Defines a section in a document.
-          <pre>
+        </pre>
+      </li>
+      <li>
+        <code>&lt;section&gt;</code>: Defines a section in a document.
+        <pre>
 &lt;section&gt;
   &lt;h2&gt;Main Section&lt;/h2&gt;
   &lt;p&gt;This is a section of the webpage.&lt;/p&gt;
 &lt;/section&gt;
-          </pre>
-        </li>
-        <li>
-          <code>&lt;aside&gt;</code>: Contains content that is tangentially related to the content around it.
-          <pre>
+        </pre>
+      </li>
+      <li>
+        <code>&lt;aside&gt;</code>: Contains content that is tangentially related to the content around it.
+        <pre>
 &lt;aside&gt;
   &lt;h3&gt;Related Content&lt;/h3&gt;
   &lt;p&gt;This is some related content.&lt;/p&gt;
 &lt;/aside&gt;
-          </pre>
-        </li>
-        <li>
-          <code>&lt;footer&gt;</code>: Represents the footer of a document or section.
-          <pre>
+        </pre>
+      </li>
+      <li>
+        <code>&lt;footer&gt;</code>: Represents the footer of a document or section.
+        <pre>
 &lt;footer&gt;
   &lt;p&gt;© 2024 My Website&lt;/p&gt;
 &lt;/footer&gt;
-          </pre>
-        </li>
-      </ul>
-      <p>Using these semantic elements improves the readability and accessibility of your HTML documents. They provide meaningful information about the structure and purpose of the content, making it easier for search engines to index your site and for screen readers to navigate it.</p>
-    </article>
+        </pre>
+      </li>
+    </ul>
+    <p>Using these semantic elements improves the readability and accessibility of your HTML documents. They provide meaningful information about the structure and purpose of the content, making it easier for search engines to index your site and for screen readers to navigate it.</p>
   </section>
 
   <section>
@@ -98,9 +100,12 @@ nav_order: 2
     <ul>
       <li>A <code>&lt;header&gt;</code> with a title and navigation links.</li>
       <li>A <code>&lt;main&gt;</code> section containing an <code>&lt;article&gt;</code> with a heading and a paragraph.</li>
+      <li>A <code>&lt;section&gt;</code> within the <code>&lt;main&gt;</code> section to further organize content.</li>
       <li>An <code>&lt;aside&gt;</code> with related content.</li>
       <li>A <code>&lt;footer&gt;</code> with copyright information.</li>
     </ul>
+
+    </pre>
     <button id="show-exercise-example-btn">Show Example</button>
     <pre id="exercise-example-code" style="display: none;">
 &lt;!DOCTYPE html&gt;
