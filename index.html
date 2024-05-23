@@ -46,7 +46,9 @@ title: Section 1
   <p>
     HTML attributes provide additional information about HTML elements.
     Attributes are always included in the opening tag and usually come in
-    name/value pairs like <code>name="value"</code>.
+    name/value pairs like <code>name="value"</code>. The opening tag is the
+    first part of an HTML element, such as <code>&lt;a href="..."&gt;</code> for
+    a link or <code>&lt;img src="..."&gt;</code> for an image.
   </p>
   <p>Here's an example:</p>
   <pre>
@@ -60,8 +62,15 @@ title: Section 1
   <h3>Commonly Used HTML Tags</h3>
   <p>Here are some commonly used HTML tags:</p>
   <ul>
-    <li><code>&lt;a&gt;</code>: Defines a hyperlink</li>
-    <li><code>&lt;img&gt;</code>: Embeds an image</li>
+    <li>
+      <code>&lt;a&gt;</code>: Defines a hyperlink. The
+      <code>href</code> attribute specifies the URL of the page the link goes
+      to.
+    </li>
+    <li>
+      <code>&lt;img&gt;</code>: Embeds an image. The <code>src</code> attribute
+      specifies the path to the image file.
+    </li>
     <li>
       <code>&lt;div&gt;</code>: Defines a division or section in a document. You
       will use <code>&lt;div&gt;</code> a lot, but if you can substitute it with
@@ -88,14 +97,15 @@ title: Section 1
   <p>Examples of block-level elements:</p>
   <ul>
     <li>
-      <code>&lt;div&gt;</code>: You will use <code>&lt;div&gt;</code> a lot, but
-      if you can substitute it with more specific semantic tags (like
-      <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>,
-      <code>&lt;footer&gt;</code>, etc.), it can make your code easier to
-      understand and maintain.
+      <code>&lt;div&gt;</code>: Often used to group other elements together to
+      style them with CSS or manipulate them with JavaScript.
     </li>
-    <li><code>&lt;p&gt;</code></li>
-    <li><code>&lt;h1&gt; - &lt;h6&gt;</code></li>
+    <li><code>&lt;p&gt;</code>: Defines a paragraph of text.</li>
+    <li>
+      <code>&lt;h1&gt; - &lt;h6&gt;</code>: Define HTML headings, with
+      <code>&lt;h1&gt;</code> as the highest (or most important) level and
+      <code>&lt;h6&gt;</code> as the lowest.
+    </li>
   </ul>
 
   <h3>Basic Styling with CSS</h3>
@@ -140,6 +150,7 @@ title: Section 1
 &lt;body&gt;
     &lt;header&gt;
         &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;!-- Navigation section -->
         &lt;nav&gt;
             &lt;ul&gt;
                 &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -148,17 +159,21 @@ title: Section 1
             &lt;/ul&gt;
         &lt;/nav&gt;
     &lt;/header&gt;
+    &lt;!-- Main content section -->
     &lt;section&gt;
         &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;!-- Article within the main content -->
         &lt;article&gt;
             &lt;h3&gt;Article Title&lt;/h3&gt;
             &lt;p&gt;This is the main content of the article.&lt;/p&gt;
         &lt;/article&gt;
     &lt;/section&gt;
+    &lt;!-- Sidebar section -->
     &lt;aside&gt;
         &lt;h3&gt;Related Content&lt;/h3&gt;
         &lt;p&gt;This is some related content.&lt;/p&gt;
     &lt;/aside&gt;
+    &lt;!-- Footer section -->
     &lt;footer&gt;
         &lt;p&gt;© 2024 My Website&lt;/p&gt;
     &lt;/footer&gt;
