@@ -1,104 +1,83 @@
 ---
 layout: default
-title: Section 4 - Semantic HTML and Advanced Layout Techniques
+title: Section 4
 nav_order: 4
 ---
 
-<article>
-  <h2>Welcome to Section 4: Embedding Multimedia</h2>
+<article id="section4">
+  <h2>Welcome to Section 4: HTML Forms and User Input</h2>
   <p>
-    Today, we will explore the importance of using semantic HTML to structure
-    our web content effectively and improve our site's accessibility and search
-    engine rankings. Additionally, we will look into advanced layout techniques.
+    This section we'll learn how to create interactive forms that allow users to submit information. Forms are crucial for capturing user input in various web applications.
   </p>
 
   <section>
-    <h3>Embedding Multimedia</h3>
-    <p>
-      Embedding multimedia like images, videos, and audio not only enhances the user
-      experience but also keeps users engaged longer on your site.
-    </p>
-    <figure>
-      <img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" />
-      <figcaption>Figure 1: This is an example of an embedded image.</figcaption>
-      <button id="show-image-example-btn">Show Example</button>
-      <pre id="image-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" /&gt;
-  &lt;figcaption&gt;Figure 1: This is an example of an embedded image.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-    <figure>
-      <video controls width="300">
-        <source src="src/img/MMWDEX2.mp4" type="video/mp4" />
-      </video>
-      <figcaption>Figure 2: This is an example of an embedded video.</figcaption>
-      <button id="show-video-example-btn">Show Example</button>
-      <pre id="video-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;video controls width="300"&gt;
-    &lt;source src="src/img/MMWDEX2.mp4" type="video/mp4" /&gt;
-  &lt;/video&gt;
-  &lt;figcaption&gt;Figure 2: This is an example of an embedded video.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-    <figure>
-      <audio controls>
-        <source src="src/img/MMWDEX3.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <figcaption>Figure 3: This is an example of embedded audio.</figcaption>
-      <button id="show-audio-example-btn">Show Example</button>
-      <pre id="audio-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;audio controls&gt;
-    &lt;source src="src/img/MMWDEX3.mp3" type="audio/mpeg" /&gt;
-    Your browser does not support the audio element.
-  &lt;/audio&gt;
-  &lt;figcaption&gt;Figure 3: This is an example of embedded audio.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-  </section>
+    <h3>Example Form with Basic Validation</h3>
+    <form action="submit.php" method="post" id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
 
-  <section>
-    <h3>Embedding Maps</h3>
-    <p>
-      Embedding maps is another advanced technique that adds interactive elements to your site.
-    </p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
-      width="450"
-      height="262.5"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <button id="show-map-example-btn">Show Example</button>
-    <pre id="map-example-code" style="display: none;">
-&lt;iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
-  width="450"
-  height="262.5"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"&gt;
-&lt;/iframe&gt;
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="16" max="100" required /><br /><br />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /><br /><br />
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <button id="show-form-example-btn">Show Example</button>
+    <pre id="form-example-code" style="display: none;">
+&lt;form action="submit.php" method="post" id="myForm"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="age"&gt;Age:&lt;/label&gt;
+  &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="phone"&gt;Phone:&lt;/label&gt;
+  &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;label for="comment"&gt;Comment:&lt;/label&gt;
+  &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
+
+  &lt;input type="submit" value="Submit" /&gt;
+&lt;/form&gt;
     </pre>
   </section>
 
   <section>
-    <h3>Exercise: Create a Structured Web Page</h3>
+    <h3>JavaScript Interactions</h3>
+    <p>Add dynamic validations and interactions using JavaScript:</p>
+    <pre>
+&lt;script&gt;
+document.getElementById('myForm').onsubmit = function() {
+    let name = document.getElementById('name').value;
+    if (name.length < 4) {
+        alert('Name must be at least 4 characters long.');
+        return false;
+    }
+    return true;
+};
+&lt;/script&gt;
+    </pre>
+  </section>
+
+  <section>
+    <h3>Exercise: Create a Form with Validation</h3>
     <p>Create an HTML document that includes the following elements:</p>
     <ul>
-      <li>Semantic HTML tags for structuring the content.</li>
-      <li>Multimedia elements including images, videos, audio, and maps.</li>
-      <li>Use everything from Section 1, Section 2, and Section 3, and now integrate the multimedia elements from Section 4.</li>
+      <li>A form with various input fields including text, email, number, tel, and textarea.</li>
+      <li>Basic form validation using HTML attributes and JavaScript.</li>
     </ul>
+    <p>Use everything from Section 1 and Section 2, and now integrate the form elements from Section 4.</p>
     <button id="show-exercise-example-btn">Show Example</button>
     <pre id="exercise-example-code" style="display: none;">
 &lt;!DOCTYPE html&gt;
@@ -144,35 +123,6 @@ nav_order: 4
             &lt;input type="submit" value="Submit" /&gt;
         &lt;/form&gt;
     &lt;/section&gt;
-    &lt;section&gt;
-        &lt;h2&gt;Multimedia Example&lt;/h2&gt;
-        &lt;figure&gt;
-            &lt;img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" /&gt;
-            &lt;figcaption&gt;Figure 1: This is an example of an embedded image.&lt;/figcaption&gt;
-        &lt;/figure&gt;
-        &lt;figure&gt;
-            &lt;video controls width="300"&gt;
-                &lt;source src="src/img/MMWDEX2.mp4" type="video/mp4" /&gt;
-            &lt;/video&gt;
-            &lt;figcaption&gt;Figure 2: This is an example of an embedded video.&lt;/figcaption&gt;
-        &lt;/figure&gt;
-        &lt;figure&gt;
-            &lt;audio controls&gt;
-                &lt;source src="src/img/MMWDEX3.mp3" type="audio/mpeg" /&gt;
-                Your browser does not support the audio element.
-            &lt;/audio&gt;
-            &lt;figcaption&gt;Figure 3: This is an example of embedded audio.&lt;/figcaption&gt;
-        &lt;/figure&gt;
-        &lt;iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
-            width="450"
-            height="262.5"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"&gt;
-        &lt;/iframe&gt;
-    &lt;/section&gt;
     &lt;footer&gt;
         &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
     &lt;/footer&gt;
@@ -183,41 +133,8 @@ nav_order: 4
 </article>
 
 <script>
-document.getElementById('show-image-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('image-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-video-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('video-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-audio-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('audio-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-map-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('map-example-code');
+document.getElementById('show-form-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('form-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
@@ -237,5 +154,14 @@ document.getElementById('show-exercise-example-btn').addEventListener('click', f
     this.textContent = 'Show Example';
   }
 });
+
+document.getElementById("myForm").onsubmit = function () {
+  let name = document.getElementById("name").value;
+  if (name.length < 4) {
+    alert("Name must be at least 4 characters long.");
+    return false;
+  }
+  return true;
+};
 </script>
 </html>

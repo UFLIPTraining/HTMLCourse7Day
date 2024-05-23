@@ -1,105 +1,171 @@
 ---
 layout: default
-title: Section 3 - HTML Forms and User Input
+title: Section 3
 nav_order: 3
 ---
 
-<article>
-  <h2>Welcome to Section 3: HTML Forms and User Input</h2>
+<article id="section3">
+  <h2>Welcome to Section 3: Text Formatting, Lists, and Tables</h2>
   <p>
-    Today, we'll learn how to create interactive forms that allow users to
-    submit information. Forms are crucial for capturing user input in
-    various web applications.
+    This section we'll learn how to enhance the readability and appearance of
+    our blog posts using various HTML tags for text formatting. We'll also
+    explore how to effectively organize content using lists and tables.
   </p>
 
   <section>
-    <h3>Example Form with Basic Validation</h3>
-    <form action="submit.php" method="post" id="myForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required /><br /><br />
+    <h3>Text Formatting Examples</h3>
+    <p>
+      <strong>Bold Text:</strong> Use the <strong>&lt;strong&gt;</strong> tag to emphasize text.
+    </p>
+    <p>
+      <em>Italic Text:</em> Use the <em>&lt;em&gt;</em> tag to italicize text.
+    </p>
+    <p>
+      <u>Underlined Text:</u> Although not commonly recommended, you can underline text for special emphasis.
+    </p>
+    <p>
+      <mark>Highlighted Text:</mark> Use the <mark>&lt;mark&gt;</mark> tag to highlight text.
+    </p>
+    <p>
+      <del>Strikethrough Text:</del> Use the <del>&lt;del&gt;</del> tag to show deletion.
+    </p>
+    <p>
+      <ins>Inserted Text:</ins> Use the <ins>&lt;ins&gt;</ins> tag to show additions to the document.
+    </p>
+    <p>
+      <sub>Subscript</sub> and <sup>Superscript</sup> formatting.
+    </p>
+    <p>
+      <blockquote>Blockquote:</blockquote> Use the <code>&lt;blockquote&gt;</code> tag to indicate a block of quoted text.
+    </p>
+    <p>
+      <code>Inline Code:</code> Use the <code>&lt;code&gt;</code> tag to display inline code.
+    </p>
+  </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required /><br /><br />
+  <section>
+    <h3>Lists</h3>
+    <p>Lists are used to group related items together:</p>
+    <p>Unordered List:</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <button id="show-unordered-list-example-btn">Show Example</button>
+    <pre id="unordered-list-example-code" style="display: none;">
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+    </pre>
 
-      <label for="age">Age:</label>
-      <input
-        type="number"
-        id="age"
-        name="age"
-        min="16"
-        max="100"
-        required
-      /><br /><br />
-
-      <label for="phone">Phone:</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-        title="Please add your area code."
-        required
-      /><br /><br />
-
-      <label for="comment">Comment:</label>
-      <textarea id="comment" name="comment" rows="4" required></textarea><br /><br />
-
-      <input type="submit" value="Submit" />
-    </form>
-    <button id="show-form-example-btn">Show Example</button>
-    <pre id="form-example-code" style="display: none;">
-&lt;form action="submit.php" method="post" id="myForm"&gt;
-  &lt;label for="name"&gt;Name:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;label for="email"&gt;Email:&lt;/label&gt;
-  &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;label for="age"&gt;Age:&lt;/label&gt;
-  &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;label for="phone"&gt;Phone:&lt;/label&gt;
-  &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;label for="comment"&gt;Comment:&lt;/label&gt;
-  &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
-
-  &lt;input type="submit" value="Submit" /&gt;
-&lt;/form&gt;
+    <p>Ordered List:</p>
+    <ol>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+    <button id="show-ordered-list-example-btn">Show Example</button>
+    <pre id="ordered-list-example-code" style="display: none;">
+&lt;ol&gt;
+  &lt;li&gt;First Item&lt;/li&gt;
+  &lt;li&gt;Second Item&lt;/li&gt;
+  &lt;li&gt;Third Item&lt;/li&gt;
+&lt;/ol&gt;
     </pre>
   </section>
 
   <section>
-    <h3>JavaScript Interactions</h3>
-    <p>Add dynamic validations and interactions using JavaScript:</p>
-    <pre>
-&lt;script&gt;
-document.getElementById('myForm').onsubmit = function() {
-    let name = document.getElementById('name').value;
-    if (name.length < 4) {
-        alert('Name must be at least 4 characters long.');
-        return false;
-    }
-    return true;
-};
-&lt;/script&gt;
+    <h3>Tables</h3>
+    <p>Tables are used to display tabular data:</p>
+    <table border="1">
+      <caption>
+        Basic Table Layout
+      </caption>
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 2</td>
+          <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2, Cell 1</td>
+          <td>Row 2, Cell 2</td>
+          <td>Row 2, Cell 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Table Footer</td>
+        </tr>
+      </tfoot>
+    </table>
+    <button id="show-table-example-btn">Show Example</button>
+    <pre id="table-example-code" style="display: none;">
+&lt;table border="1"&gt;
+  &lt;caption&gt;Basic Table Layout&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Column 1&lt;/th&gt;
+      &lt;th&gt;Column 2&lt;/th&gt;
+      &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+      &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+      &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+      &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+      &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="3"&gt;Table Footer&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
     </pre>
   </section>
 
   <section>
-    <h3>Exercise: Create a Structured Web Page</h3>
+    <h3>Accessibility Tips for Lists and Tables</h3>
+    <p>Here are some tips to make lists and tables more accessible:</p>
+    <ul>
+      <li>Use descriptive headings and captions for tables.</li>
+      <li>Provide context and descriptions for list items.</li>
+      <li>Ensure proper semantic structure for both lists and tables to aid screen readers.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Exercise: Create a Formatted Web Page</h3>
     <p>Create an HTML document that includes the following elements:</p>
     <ul>
-      <li>A form with various input fields including text, email, number, tel, and textarea.</li>
-      <li>Basic form validation using HTML attributes and JavaScript.</li>
+      <li>Text formatted with various HTML tags, including bold, italic, and underlined text.</li>
+      <li>Both unordered and ordered lists.</li>
+      <li>A table with a header, body, and footer.</li>
+      <li>Use a header with navigation links, a main section, and a footer from Sections 1 and 2.</li>
     </ul>
-    <p>Use everything from Section 1 and Section 2, and now integrate the form elements from Section 3.</p>
     <button id="show-exercise-example-btn">Show Example</button>
     <pre id="exercise-example-code" style="display: none;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;My Structured Web Page&lt;/title&gt;
+    &lt;title&gt;My Formatted Web Page&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;header&gt;
@@ -116,7 +182,9 @@ document.getElementById('myForm').onsubmit = function() {
         &lt;h2&gt;Main Content&lt;/h2&gt;
         &lt;article&gt;
             &lt;h3&gt;Article Title&lt;/h3&gt;
-            &lt;p&gt;This is a paragraph in the main content of the article.&lt;/p&gt;
+            &lt;p&gt;&lt;strong&gt;This is bold text.&lt;/strong&gt; &lt;em&gt;This is italic text.&lt;/em&gt; &lt;u&gt;This is underlined text.&lt;/u&gt;&lt;/p&gt;
+            &lt;blockquote&gt;This is a blockquote.&lt;/blockquote&gt;
+            &lt;p&gt;Inline code example: &lt;code&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/code&gt;&lt;/p&gt;
         &lt;/article&gt;
     &lt;/section&gt;
     &lt;aside&gt;
@@ -124,20 +192,47 @@ document.getElementById('myForm').onsubmit = function() {
         &lt;p&gt;This is some related content.&lt;/p&gt;
     &lt;/aside&gt;
     &lt;section&gt;
-        &lt;h2&gt;Form Example&lt;/h2&gt;
-        &lt;form action="submit.php" method="post" id="myForm"&gt;
-            &lt;label for="name"&gt;Name:&lt;/label&gt;
-            &lt;input type="text" id="name" name="name" required /&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;label for="email"&gt;Email:&lt;/label&gt;
-            &lt;input type="email" id="email" name="email" required /&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;label for="age"&gt;Age:&lt;/label&gt;
-            &lt;input type="number" id="age" name="age" min="16" max="100" required /&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;label for="phone"&gt;Phone:&lt;/label&gt;
-            &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required /&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;label for="comment"&gt;Comment:&lt;/label&gt;
-            &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
-            &lt;input type="submit" value="Submit" /&gt;
-        &lt;/form&gt;
+        &lt;h2&gt;Lists and Tables&lt;/h2&gt;
+        &lt;h3&gt;Unordered List&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Item 1&lt;/li&gt;
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h3&gt;Ordered List&lt;/h3&gt;
+        &lt;ol&gt;
+            &lt;li&gt;First Item&lt;/li&gt;
+            &lt;li&gt;Second Item&lt;/li&gt;
+            &lt;li&gt;Third Item&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;h3&gt;Table&lt;/h3&gt;
+        &lt;table border="1"&gt;
+            &lt;caption&gt;Basic Table Layout&lt;/caption&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Column 1&lt;/th&gt;
+                    &lt;th&gt;Column 2&lt;/th&gt;
+                    &lt;th&gt;Column 3&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+                    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+                    &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+                    &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+                    &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="3"&gt;Table Footer&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
     &lt;/section&gt;
     &lt;footer&gt;
         &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
@@ -149,8 +244,30 @@ document.getElementById('myForm').onsubmit = function() {
 </article>
 
 <script>
-document.getElementById('show-form-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('form-example-code');
+document.getElementById('show-unordered-list-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('unordered-list-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-ordered-list-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('ordered-list-example-code');
+  if (exampleCode.style.display === 'none') {
+    exampleCode.style.display = 'block';
+    this.textContent = 'Hide Example';
+  } else {
+    exampleCode.style.display = 'none';
+    this.textContent = 'Show Example';
+  }
+});
+
+document.getElementById('show-table-example-btn').addEventListener('click', function() {
+  const exampleCode = document.getElementById('table-example-code');
   if (exampleCode.style.display === 'none') {
     exampleCode.style.display = 'block';
     this.textContent = 'Hide Example';
@@ -170,14 +287,5 @@ document.getElementById('show-exercise-example-btn').addEventListener('click', f
     this.textContent = 'Show Example';
   }
 });
-
-document.getElementById("myForm").onsubmit = function () {
-  let name = document.getElementById("name").value;
-  if (name.length < 4) {
-    alert("Name must be at least 4 characters long.");
-    return false;
-  }
-  return true;
-};
 </script>
 </html>
