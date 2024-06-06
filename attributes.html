@@ -1,1139 +1,1159 @@
----
-layout: default
-title: Attributes
----
-
-<article id="attributes">
-  <h2>HTML Attribute Reference</h2>
-  <p>
-    The table below lists all HTML attributes and what elements they can be used
-    within:
-  </p>
-  <table>
-    <thead>
-      <tr>
-        <th>Attribute</th>
-        <th>Belongs to</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>accept</td>
-        <td>&lt;input&gt;</td>
-        <td>
-          Specifies the types of files that the server accepts (only for
-          type="file")
-        </td>
-      </tr>
-      <tr>
-        <td>accept-charset</td>
-        <td>&lt;form&gt;</td>
-        <td>
-          Specifies the character encodings that are to be used for the form
-          submission
-        </td>
-      </tr>
-      <tr>
-        <td>accesskey</td>
-        <td>Global Attributes</td>
-        <td>Specifies a shortcut key to activate/focus an element</td>
-      </tr>
-      <tr>
-        <td>action</td>
-        <td>&lt;form&gt;</td>
-        <td>Specifies where to send the form-data when a form is submitted</td>
-      </tr>
-      <tr>
-        <td>align</td>
-        <td>Not supported in HTML 5.</td>
-        <td>
-          Specifies the alignment according to surrounding elements. Use CSS
-          instead
-        </td>
-      </tr>
-      <tr>
-        <td>alt</td>
-        <td>&lt;area&gt;, &lt;img&gt;, &lt;input&gt;</td>
-        <td>
-          Specifies an alternate text when the original element fails to display
-        </td>
-      </tr>
-      <tr>
-        <td>async</td>
-        <td>&lt;script&gt;</td>
-        <td>
-          Specifies that the script is executed asynchronously (only for
-          external scripts)
-        </td>
-      </tr>
-      <tr>
-        <td>autocomplete</td>
-        <td>&lt;form&gt;, &lt;input&gt;</td>
-        <td>
-          Specifies whether the &lt;form&gt; or the &lt;input&gt; element should
-          have autocomplete enabled
-        </td>
-      </tr>
-      <tr>
-        <td>autofocus</td>
-        <td>&lt;button&gt;, &lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</td>
-        <td>
-          Specifies that the element should automatically get focus when the
-          page loads
-        </td>
-      </tr>
-      <tr>
-        <td>autoplay</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Specifies that the audio/video will start playing as soon as it is
-          ready
-        </td>
-      </tr>
-      <tr>
-        <td>bgcolor</td>
-        <td>Not supported in HTML 5.</td>
-        <td>Specifies the background color of an element. Use CSS instead</td>
-      </tr>
-      <tr>
-        <td>border</td>
-        <td>Not supported in HTML 5.</td>
-        <td>
-          Specifies the width of the border of an element. Use CSS instead
-        </td>
-      </tr>
-      <tr>
-        <td>charset</td>
-        <td>&lt;meta&gt;, &lt;script&gt;</td>
-        <td>Specifies the character encoding</td>
-      </tr>
-      <tr>
-        <td>checked</td>
-        <td>&lt;input&gt;</td>
-        <td>
-          Specifies that an &lt;input&gt; element should be pre-selected when
-          the page loads (for type="checkbox" or type="radio")
-        </td>
-      </tr>
-      <tr>
-        <td>cite</td>
-        <td>&lt;blockquote&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;q&gt;</td>
-        <td>Specifies a URL which explains the quote/deleted/inserted text</td>
-      </tr>
-      <tr>
-        <td>class</td>
-        <td>Global Attributes</td>
-        <td>
-          Specifies one or more classnames for an element (refers to a class in
-          a style sheet)
-        </td>
-      </tr>
-      <tr>
-        <td>color</td>
-        <td>Not supported in HTML 5.</td>
-        <td>Specifies the text color of an element. Use CSS instead</td>
-      </tr>
-      <tr>
-        <td>cols</td>
-        <td>&lt;textarea&gt;</td>
-        <td>Specifies the visible width of a text area</td>
-      </tr>
-      <tr>
-        <td>colspan</td>
-        <td>&lt;td&gt;, &lt;th&gt;</td>
-        <td>Specifies the number of columns a table cell should span</td>
-      </tr>
-      <tr>
-        <td>content</td>
-        <td>&lt;meta&gt;</td>
-        <td>
-          Gives the value associated with the http-equiv or name attribute
-        </td>
-      </tr>
-      <tr>
-        <td>contenteditable</td>
-        <td>Global Attributes</td>
-        <td>Specifies whether the content of an element is editable or not</td>
-      </tr>
-      <tr>
-        <td>controls</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Specifies that audio/video controls should be displayed (such as a
-          play/pause button etc)
-        </td>
-      </tr>
-      <tr>
-        <td>coords</td>
-        <td>&lt;area&gt;</td>
-        <td>Specifies the coordinates of the area</td>
-      </tr>
-      <tr>
-        <td>data</td>
-        <td>&lt;object&gt;</td>
-        <td>Specifies the URL of the resource to be used by the object</td>
-      </tr>
-      <tr>
-        <td>data-*</td>
-        <td>Global Attributes</td>
-        <td>Used to store custom data private to the page or application</td>
-      </tr>
-      <tr>
-        <td>datetime</td>
-        <td>&lt;del&gt;, &lt;ins&gt;, &lt;time&gt;</td>
-        <td>Specifies the date and time</td>
-      </tr>
-      <tr>
-        <td>default</td>
-        <td>&lt;track&gt;</td>
-        <td>
-          Specifies that the track is to be enabled if the user's preferences do
-          not indicate that another track would be more appropriate
-        </td>
-      </tr>
-      <tr>
-        <td>defer</td>
-        <td>&lt;script&gt;</td>
-        <td>
-          Specifies that the script is executed when the page has finished
-          parsing (only for external scripts)
-        </td>
-      </tr>
-      <tr>
-        <td>dir</td>
-        <td>Global Attributes</td>
-        <td>Specifies the text direction for the content in an element</td>
-      </tr>
-      <tr>
-        <td>dirname</td>
-        <td>&lt;input&gt;, &lt;textarea&gt;</td>
-        <td>Specifies that the text direction will be submitted</td>
-      </tr>
-      <tr>
-        <td>disabled</td>
-        <td>
-          &lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;optgroup&gt;,
-          &lt;option&gt;, &lt;select&gt;, &lt;textarea&gt;
-        </td>
-        <td>
-          Specifies that the specified element/group of elements should be
-          disabled
-        </td>
-      </tr>
-      <tr>
-        <td>download</td>
-        <td>&lt;a&gt;, &lt;area&gt;</td>
-        <td>
-          Specifies that the target will be downloaded when a user clicks on the
-          hyperlink
-        </td>
-      </tr>
-      <tr>
-        <td>draggable</td>
-        <td>Global Attributes</td>
-        <td>Specifies whether an element is draggable or not</td>
-      </tr>
-      <tr>
-        <td>enctype</td>
-        <td>&lt;form&gt;</td>
-        <td>
-          Specifies how the form-data should be encoded when submitting it to
-          the server (only for method="post")
-        </td>
-      </tr>
-      <tr>
-        <td>enterkeyhint</td>
-        <td>Global Attributes</td>
-        <td>Specifies the text of the enter-key on a virtual keyboard</td>
-      </tr>
-      <tr>
-        <td>for</td>
-        <td>&lt;label&gt;, &lt;output&gt;</td>
-        <td>Specifies which form element(s) a label/calculation is bound to</td>
-      </tr>
-      <tr>
-        <td>form</td>
-        <td>
-          &lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;label&gt;,
-          &lt;meter&gt;, &lt;object&gt;, &lt;output&gt;, &lt;select&gt;,
-          &lt;textarea&gt;
-        </td>
-        <td>Specifies the name of the form the element belongs to</td>
-      </tr>
-      <tr>
-        <td>formaction</td>
-        <td>&lt;button&gt;, &lt;input&gt;</td>
-        <td>
-          Specifies where to send the form-data when a form is submitted. Only
-          for type="submit"
-        </td>
-      </tr>
-      <tr>
-        <td>headers</td>
-        <td>&lt;td&gt;, &lt;th&gt;</td>
-        <td>Specifies one or more headers cells a cell is related to</td>
-      </tr>
-      <tr>
-        <td>height</td>
-        <td>
-          &lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;,
-          &lt;input&gt;, &lt;object&gt;, &lt;video&gt;
-        </td>
-        <td>Specifies the height of the element</td>
-      </tr>
-      <tr>
-        <td>hidden</td>
-        <td>Global Attributes</td>
-        <td>Specifies that an element is not yet, or is no longer, relevant</td>
-      </tr>
-      <tr>
-        <td>high</td>
-        <td>&lt;meter&gt;</td>
-        <td>Specifies the range that is considered to be a high value</td>
-      </tr>
-      <tr>
-        <td>href</td>
-        <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;link&gt;</td>
-        <td>Specifies the URL of the page the link goes to</td>
-      </tr>
-      <tr>
-        <td>hreflang</td>
-        <td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</td>
-        <td>Specifies the language of the linked document</td>
-      </tr>
-      <tr>
-        <td>http-equiv</td>
-        <td>&lt;meta&gt;</td>
-        <td>
-          Provides an HTTP header for the information/value of the content
-          attribute
-        </td>
-      </tr>
-      <tr>
-        <td>id</td>
-        <td>Global Attributes</td>
-        <td>Specifies a unique id for an element</td>
-      </tr>
-      <tr>
-        <td>inert</td>
-        <td>Global Attributes</td>
-        <td>Specifies that the browser should ignore this section</td>
-      </tr>
-      <tr>
-        <td>inputmode</td>
-        <td>Global Attributes</td>
-        <td>Specifies the mode of a virtual keyboard</td>
-      </tr>
-      <tr>
-        <td>ismap</td>
-        <td>&lt;img&gt;</td>
-        <td>Specifies an image as a server-side image map</td>
-      </tr>
-      <tr>
-        <td>kind</td>
-        <td>&lt;track&gt;</td>
-        <td>Specifies the kind of text track</td>
-      </tr>
-      <tr>
-        <td>label</td>
-        <td>&lt;track&gt;, &lt;option&gt;, &lt;optgroup&gt;</td>
-        <td>Specifies the title of the text track</td>
-      </tr>
-      <tr>
-        <td>lang</td>
-        <td>Global Attributes</td>
-        <td>Specifies the language of the element's content</td>
-      </tr>
-      <tr>
-        <td>list</td>
-        <td>&lt;input&gt;</td>
-        <td>
-          Refers to a &lt;datalist&gt; element that contains pre-defined options
-          for an &lt;input&gt; element
-        </td>
-      </tr>
-      <tr>
-        <td>loop</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Specifies that the audio/video will start over again, every time it is
-          finished
-        </td>
-      </tr>
-      <tr>
-        <td>low</td>
-        <td>&lt;meter&gt;</td>
-        <td>Specifies the range that is considered to be a low value</td>
-      </tr>
-      <tr>
-        <td>max</td>
-        <td>&lt;input&gt;, &lt;meter&gt;, &lt;progress&gt;</td>
-        <td>Specifies the maximum value</td>
-      </tr>
-      <tr>
-        <td>maxlength</td>
-        <td>&lt;input&gt;, &lt;textarea&gt;</td>
-        <td>
-          Specifies the maximum number of characters allowed in an element
-        </td>
-      </tr>
-      <tr>
-        <td>media</td>
-        <td>
-          &lt;a&gt;, &lt;area&gt;, &lt;link&gt;, &lt;source&gt;, &lt;style&gt;
-        </td>
-        <td>
-          Specifies what media/device the linked document is optimized for
-        </td>
-      </tr>
-      <tr>
-        <td>method</td>
-        <td>&lt;form&gt;</td>
-        <td>Specifies the HTTP method to use when sending form-data</td>
-      </tr>
-      <tr>
-        <td>min</td>
-        <td>&lt;input&gt;, &lt;meter&gt;</td>
-        <td>Specifies a minimum value</td>
-      </tr>
-      <tr>
-        <td>multiple</td>
-        <td>&lt;input&gt;, &lt;select&gt;</td>
-        <td>Specifies that a user can enter more than one value</td>
-      </tr>
-      <tr>
-        <td>muted</td>
-        <td>&lt;video&gt;, &lt;audio&gt;</td>
-        <td>Specifies that the audio output of the video should be muted</td>
-      </tr>
-      <tr>
-        <td>name</td>
-        <td>
-          &lt;button&gt;, &lt;fieldset&gt;, &lt;form&gt;, &lt;iframe&gt;,
-          &lt;input&gt;, &lt;map&gt;, &lt;meta&gt;, &lt;object&gt;,
-          &lt;output&gt;, &lt;param&gt;, &lt;select&gt;, &lt;textarea&gt;
-        </td>
-        <td>Specifies the name of the element</td>
-      </tr>
-      <tr>
-        <td>novalidate</td>
-        <td>&lt;form&gt;</td>
-        <td>Specifies that the form should not be validated when submitted</td>
-      </tr>
-      <tr>
-        <td>onabort</td>
-        <td>
-          &lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;, &lt;object&gt;,
-          &lt;video&gt;
-        </td>
-        <td>Script to be run on abort</td>
-      </tr>
-      <tr>
-        <td>onafterprint</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run after the document is printed</td>
-      </tr>
-      <tr>
-        <td>onbeforeprint</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run before the document is printed</td>
-      </tr>
-      <tr>
-        <td>onbeforeunload</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run when the document is about to be unloaded</td>
-      </tr>
-      <tr>
-        <td>onblur</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the element loses focus</td>
-      </tr>
-      <tr>
-        <td>oncanplay</td>
-        <td>&lt;audio&gt;, &lt;embed&gt;, &lt;object&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when a file is ready to start playing (when it has
-          buffered enough to begin)
-        </td>
-      </tr>
-      <tr>
-        <td>oncanplaythrough</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when a file can be played all the way to the end
-          without pausing for buffering
-        </td>
-      </tr>
-      <tr>
-        <td>onchange</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the value of the element is changed</td>
-      </tr>
-      <tr>
-        <td>onclick</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the element is being clicked</td>
-      </tr>
-      <tr>
-        <td>oncontextmenu</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when a context menu is triggered</td>
-      </tr>
-      <tr>
-        <td>oncopy</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run when the content of the element is being copied
-        </td>
-      </tr>
-      <tr>
-        <td>oncuechange</td>
-        <td>&lt;track&gt;</td>
-        <td>
-          Script to be run when the cue changes in a &lt;track&gt; element
-        </td>
-      </tr>
-      <tr>
-        <td>oncut</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the content of the element is being cut</td>
-      </tr>
-      <tr>
-        <td>ondblclick</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the element is being double-clicked</td>
-      </tr>
-      <tr>
-        <td>ondrag</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the element is being dragged</td>
-      </tr>
-      <tr>
-        <td>ondragend</td>
-        <td>All visible elements.</td>
-        <td>Script to be run at the end of a drag operation</td>
-      </tr>
-      <tr>
-        <td>ondragenter</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run when an element has been dragged to a valid drop
-          target
-        </td>
-      </tr>
-      <tr>
-        <td>ondragleave</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when an element leaves a valid drop target</td>
-      </tr>
-      <tr>
-        <td>ondragover</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run when an element is being dragged over a valid drop
-          target
-        </td>
-      </tr>
-      <tr>
-        <td>ondragstart</td>
-        <td>All visible elements.</td>
-        <td>Script to be run at the start of a drag operation</td>
-      </tr>
-      <tr>
-        <td>ondrop</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when dragged element is being dropped</td>
-      </tr>
-      <tr>
-        <td>ondurationchange</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>Script to be run when the length of the media changes</td>
-      </tr>
-      <tr>
-        <td>onemptied</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when something bad happens and the file is suddenly
-          unavailable (like unexpectedly disconnects)
-        </td>
-      </tr>
-      <tr>
-        <td>onended</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when the media has reach the end (a useful event for
-          messages like "thanks for listening")
-        </td>
-      </tr>
-      <tr>
-        <td>onerror</td>
-        <td>
-          &lt;audio&gt;, &lt;body&gt;, &lt;embed&gt;, &lt;img&gt;,
-          &lt;object&gt;, &lt;script&gt;, &lt;style&gt;, &lt;video&gt;
-        </td>
-        <td>Script to be run when an error occurs</td>
-      </tr>
-      <tr>
-        <td>onfocus</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the element gets focus</td>
-      </tr>
-      <tr>
-        <td>onhashchange</td>
-        <td>&lt;body&gt;</td>
-        <td>
-          Script to be run when there has been changes to the anchor part of the
-          a URL
-        </td>
-      </tr>
-      <tr>
-        <td>oninput</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the element gets user input</td>
-      </tr>
-      <tr>
-        <td>oninvalid</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the element is invalid</td>
-      </tr>
-      <tr>
-        <td>onkeydown</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when a user is pressing a key</td>
-      </tr>
-      <tr>
-        <td>onkeypress</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when a user presses a key</td>
-      </tr>
-      <tr>
-        <td>onkeyup</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when a user releases a key</td>
-      </tr>
-      <tr>
-        <td>onload</td>
-        <td>
-          &lt;body&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;,
-          &lt;link&gt;, &lt;script&gt;, &lt;style&gt;
-        </td>
-        <td>Script to be run when the element is finished loading</td>
-      </tr>
-      <tr>
-        <td>onloadeddata</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>Script to be run when media data is loaded</td>
-      </tr>
-      <tr>
-        <td>onloadedmetadata</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when meta data (like dimensions and duration) are
-          loaded
-        </td>
-      </tr>
-      <tr>
-        <td>onloadstart</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run just as the file begins to load before anything is
-          actually loaded
-        </td>
-      </tr>
-      <tr>
-        <td>onmousedown</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run when a mouse button is pressed down on an element
-        </td>
-      </tr>
-      <tr>
-        <td>onmousemove</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run as long as the mouse pointer is moving over an
-          element
-        </td>
-      </tr>
-      <tr>
-        <td>onmouseout</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when a mouse pointer moves out of an element</td>
-      </tr>
-      <tr>
-        <td>onmouseover</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when a mouse pointer moves over an element</td>
-      </tr>
-      <tr>
-        <td>onmouseup</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run when a mouse button is released over an element
-        </td>
-      </tr>
-      <tr>
-        <td>onmousewheel</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run when a mouse wheel is being scrolled over an element
-        </td>
-      </tr>
-      <tr>
-        <td>onoffline</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run when the browser starts to work offline</td>
-      </tr>
-      <tr>
-        <td>ononline</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run when the browser starts to work online</td>
-      </tr>
-      <tr>
-        <td>onpagehide</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run when a user navigates away from a page</td>
-      </tr>
-      <tr>
-        <td>onpageshow</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run when a user navigates to a page</td>
-      </tr>
-      <tr>
-        <td>onpaste</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run when the user pastes some content in an element
-        </td>
-      </tr>
-      <tr>
-        <td>onpause</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when the media is paused either by the user or
-          programmatically
-        </td>
-      </tr>
-      <tr>
-        <td>onplay</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>Script to be run when the media has started playing</td>
-      </tr>
-      <tr>
-        <td>onplaying</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>Script to be run when the media has started playing</td>
-      </tr>
-      <tr>
-        <td>onpopstate</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run when the window's history changes.</td>
-      </tr>
-      <tr>
-        <td>onprogress</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when the browser is in the process of getting the
-          media data
-        </td>
-      </tr>
-      <tr>
-        <td>onratechange</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run each time the playback rate changes (like when a user
-          switches to a slow motion or fast forward mode).
-        </td>
-      </tr>
-      <tr>
-        <td>onreset</td>
-        <td>&lt;form&gt;</td>
-        <td>Script to be run when a reset button in a form is clicked.</td>
-      </tr>
-      <tr>
-        <td>onresize</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run when the browser window is being resized.</td>
-      </tr>
-      <tr>
-        <td>onscroll</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when an element's scrollbar is being scrolled</td>
-      </tr>
-      <tr>
-        <td>onsearch</td>
-        <td>&lt;input&gt;</td>
-        <td>
-          Script to be run when the user writes something in a search field (for
-          &lt;input type="search"&gt;)
-        </td>
-      </tr>
-      <tr>
-        <td>onseeked</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when the seeking attribute is set to false indicating
-          that seeking has ended
-        </td>
-      </tr>
-      <tr>
-        <td>onseeking</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when the seeking attribute is set to true indicating
-          that seeking is active
-        </td>
-      </tr>
-      <tr>
-        <td>onselect</td>
-        <td>All visible elements.</td>
-        <td>Script to be run when the element gets selected</td>
-      </tr>
-      <tr>
-        <td>onstalled</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when the browser is unable to fetch the media data
-          for whatever reason
-        </td>
-      </tr>
-      <tr>
-        <td>onstorage</td>
-        <td>&lt;body&gt;</td>
-        <td>Script to be run when a Web Storage area is updated</td>
-      </tr>
-      <tr>
-        <td>onsubmit</td>
-        <td>&lt;form&gt;</td>
-        <td>Script to be run when a form is submitted</td>
-      </tr>
-      <tr>
-        <td>onsuspend</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when fetching the media data is stopped before it is
-          completely loaded for whatever reason
-        </td>
-      </tr>
-      <tr>
-        <td>ontimeupdate</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when the playing position has changed (like when the
-          user fast forwards to a different point in the media)
-        </td>
-      </tr>
-      <tr>
-        <td>ontoggle</td>
-        <td>&lt;details&gt;</td>
-        <td>
-          Script to be run when the user opens or closes the &lt;details&gt;
-          element
-        </td>
-      </tr>
-      <tr>
-        <td>onunload</td>
-        <td>&lt;body&gt;</td>
-        <td>
-          Script to be run when a page has unloaded (or the browser window has
-          been closed)
-        </td>
-      </tr>
-      <tr>
-        <td>onvolumechange</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run each time the volume of a video/audio has been
-          changed
-        </td>
-      </tr>
-      <tr>
-        <td>onwaiting</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Script to be run when the media has paused but is expected to resume
-          (like when the media pauses to buffer more data)
-        </td>
-      </tr>
-      <tr>
-        <td>onwheel</td>
-        <td>All visible elements.</td>
-        <td>
-          Script to be run when the mouse wheel rolls up or down over an element
-        </td>
-      </tr>
-      <tr>
-        <td>open</td>
-        <td>&lt;details&gt;</td>
-        <td>Specifies that the details should be visible (open) to the user</td>
-      </tr>
-      <tr>
-        <td>optimum</td>
-        <td>&lt;meter&gt;</td>
-        <td>Specifies what value is the optimal value for the gauge</td>
-      </tr>
-      <tr>
-        <td>pattern</td>
-        <td>&lt;input&gt;</td>
-        <td>
-          Specifies a regular expression that an &lt;input&gt; element's value
-          is checked against
-        </td>
-      </tr>
-      <tr>
-        <td>placeholder</td>
-        <td>&lt;input&gt;, &lt;textarea&gt;</td>
-        <td>
-          Specifies a short hint that describes the expected value of the
-          element
-        </td>
-      </tr>
-      <tr>
-        <td>popover</td>
-        <td>Global Attributes</td>
-        <td>Specifies a popover element</td>
-      </tr>
-      <tr>
-        <td>popovertarget</td>
-        <td>&lt;button&gt;, &lt;input&gt;</td>
-        <td>Specifies which popover element to invoke</td>
-      </tr>
-      <tr>
-        <td>popovertargetaction</td>
-        <td>&lt;button&gt;, &lt;input&gt;</td>
-        <td>
-          Specifies what happens to the popover element when the button is
-          clicked
-        </td>
-      </tr>
-      <tr>
-        <td>poster</td>
-        <td>&lt;video&gt;</td>
-        <td>
-          Specifies an image to be shown while the video is downloading, or
-          until the user hits the play button
-        </td>
-      </tr>
-      <tr>
-        <td>preload</td>
-        <td>&lt;audio&gt;, &lt;video&gt;</td>
-        <td>
-          Specifies if and how the author thinks the audio/video should be
-          loaded when the page loads
-        </td>
-      </tr>
-      <tr>
-        <td>readonly</td>
-        <td>&lt;input&gt;, &lt;textarea&gt;</td>
-        <td>Specifies that the element is read-only</td>
-      </tr>
-      <tr>
-        <td>rel</td>
-        <td>&lt;a&gt;, &lt;area&gt;, &lt;form&gt;, &lt;link&gt;</td>
-        <td>
-          Specifies the relationship between the current document and the linked
-          document
-        </td>
-      </tr>
-      <tr>
-        <td>required</td>
-        <td>&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</td>
-        <td>
-          Specifies that the element must be filled out before submitting the
-          form
-        </td>
-      </tr>
-      <tr>
-        <td>reversed</td>
-        <td>&lt;ol&gt;</td>
-        <td>Specifies that the list order should be descending (9,8,7...)</td>
-      </tr>
-      <tr>
-        <td>rows</td>
-        <td>&lt;textarea&gt;</td>
-        <td>Specifies the visible number of lines in a text area</td>
-      </tr>
-      <tr>
-        <td>rowspan</td>
-        <td>&lt;td&gt;, &lt;th&gt;</td>
-        <td>Specifies the number of rows a table cell should span</td>
-      </tr>
-      <tr>
-        <td>sandbox</td>
-        <td>&lt;iframe&gt;</td>
-        <td>
-          Enables an extra set of restrictions for the content in an
-          &lt;iframe&gt;
-        </td>
-      </tr>
-      <tr>
-        <td>scope</td>
-        <td>&lt;th&gt;</td>
-        <td>
-          Specifies whether a header cell is a header for a column, row, or
-          group of columns or rows
-        </td>
-      </tr>
-      <tr>
-        <td>selected</td>
-        <td>&lt;option&gt;</td>
-        <td>
-          Specifies that an option should be pre-selected when the page loads
-        </td>
-      </tr>
-      <tr>
-        <td>shape</td>
-        <td>&lt;area&gt;</td>
-        <td>Specifies the shape of the area</td>
-      </tr>
-      <tr>
-        <td>size</td>
-        <td>&lt;input&gt;, &lt;select&gt;</td>
-        <td>
-          Specifies the width, in characters (for &lt;input&gt;) or specifies
-          the number of visible options (for &lt;select&gt;)
-        </td>
-      </tr>
-      <tr>
-        <td>sizes</td>
-        <td>&lt;img&gt;, &lt;link&gt;, &lt;source&gt;</td>
-        <td>Specifies the size of the linked resource</td>
-      </tr>
-      <tr>
-        <td>span</td>
-        <td>&lt;col&gt;, &lt;colgroup&gt;</td>
-        <td>Specifies the number of columns to span</td>
-      </tr>
-      <tr>
-        <td>spellcheck</td>
-        <td>Global Attributes</td>
-        <td>
-          Specifies whether the element is to have its spelling and grammar
-          checked or not
-        </td>
-      </tr>
-      <tr>
-        <td>src</td>
-        <td>
-          &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;,
-          &lt;input&gt;, &lt;script&gt;, &lt;source&gt;, &lt;track&gt;,
-          &lt;video&gt;
-        </td>
-        <td>Specifies the URL of the media file</td>
-      </tr>
-      <tr>
-        <td>srcdoc</td>
-        <td>&lt;iframe&gt;</td>
-        <td>
-          Specifies the HTML content of the page to show in the &lt;iframe&gt;
-        </td>
-      </tr>
-      <tr>
-        <td>srclang</td>
-        <td>&lt;track&gt;</td>
-        <td>
-          Specifies the language of the track text data (required if
-          kind="subtitles")
-        </td>
-      </tr>
-      <tr>
-        <td>srcset</td>
-        <td>&lt;img&gt;, &lt;source&gt;</td>
-        <td>Specifies the URL of the image to use in different situations</td>
-      </tr>
-      <tr>
-        <td>start</td>
-        <td>&lt;ol&gt;</td>
-        <td>Specifies the start value of an ordered list</td>
-      </tr>
-      <tr>
-        <td>step</td>
-        <td>&lt;input&gt;</td>
-        <td>Specifies the legal number intervals for an input field</td>
-      </tr>
-      <tr>
-        <td>style</td>
-        <td>Global Attributes</td>
-        <td>Specifies an inline CSS style for an element</td>
-      </tr>
-      <tr>
-        <td>tabindex</td>
-        <td>Global Attributes</td>
-        <td>Specifies the tabbing order of an element</td>
-      </tr>
-      <tr>
-        <td>target</td>
-        <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;form&gt;</td>
-        <td>
-          Specifies the target for where to open the linked document or where to
-          submit the form
-        </td>
-      </tr>
-      <tr>
-        <td>title</td>
-        <td>Global Attributes</td>
-        <td>Specifies extra information about an element</td>
-      </tr>
-      <tr>
-        <td>translate</td>
-        <td>Global Attributes</td>
-        <td>
-          Specifies whether the content of an element should be translated or
-          not
-        </td>
-      </tr>
-      <tr>
-        <td>type</td>
-        <td>
-          &lt;a&gt;, &lt;button&gt;, &lt;embed&gt;, &lt;input&gt;, &lt;link&gt;,
-          &lt;menu&gt;, &lt;object&gt;, &lt;script&gt;, &lt;source&gt;,
-          &lt;style&gt;
-        </td>
-        <td>Specifies the type of element</td>
-      </tr>
-      <tr>
-        <td>usemap</td>
-        <td>&lt;img&gt;, &lt;object&gt;</td>
-        <td>Specifies an image as a client-side image map</td>
-      </tr>
-      <tr>
-        <td>value</td>
-        <td>
-          &lt;button&gt;, &lt;input&gt;, &lt;li&gt;, &lt;option&gt;,
-          &lt;meter&gt;, &lt;progress&gt;, &lt;param&gt;
-        </td>
-        <td>Specifies the value of the element</td>
-      </tr>
-      <tr>
-        <td>width</td>
-        <td>
-          &lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;,
-          &lt;input&gt;, &lt;object&gt;, &lt;video&gt;
-        </td>
-        <td>Specifies the width of the element</td>
-      </tr>
-      <tr>
-        <td>wrap</td>
-        <td>&lt;textarea&gt;</td>
-        <td>
-          Specifies how the text in a text area is to be wrapped when submitted
-          in a form
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-
-<header>
-  <h1>{{ site.title }}</h1>
-  <nav>
-    <a href="{{ site.baseurl }}/">Section 1</a>
-    <a href="{{ site.baseurl }}/section2.html">Section 2</a>
-    <a href="{{ site.baseurl }}/section3.html">Section 3</a>
-    <a href="{{ site.baseurl }}/section4.html">Section 4</a>
-    <a href="{{ site.baseurl }}/section5.html">Section 5</a>
-    <a href="{{ site.baseurl }}/myprofile.html">My Profile</a>
-    <a href="{{ site.baseurl }}/glossary.html">Glossary</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attributes</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="icon" href="src/img/favicon.png" type="image/png">
+  <script src="src/js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Attributes</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="src/img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="html-elements.html">HTML Elements</a></li>
+      <li><a href="attributes.html" class="active">Attributes</a></li>
+      <li><a href="audio-video-dom.html">Audio/Video DOM</a></li>
+      <li><a href="http-messages.html">HTTP Messages</a></li>
+      <li><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
   </nav>
-</header>
+  <main id="main-content">
+    <section>
+      <h2>HTML Attribute Reference</h2>
+      <p>
+        The table below lists all HTML attributes and what elements they can be used
+        within:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Belongs to</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>accept</td>
+            <td>&lt;input&gt;</td>
+            <td>
+              Specifies the types of files that the server accepts (only for
+              type="file")
+            </td>
+          </tr>
+          <tr>
+            <td>accept-charset</td>
+            <td>&lt;form&gt;</td>
+            <td>
+              Specifies the character encodings that are to be used for the form
+              submission
+            </td>
+          </tr>
+          <tr>
+            <td>accesskey</td>
+            <td>Global Attributes</td>
+            <td>Specifies a shortcut key to activate/focus an element</td>
+          </tr>
+          <tr>
+            <td>action</td>
+            <td>&lt;form&gt;</td>
+            <td>Specifies where to send the form-data when a form is submitted</td>
+          </tr>
+          <tr>
+            <td>align</td>
+            <td>Not supported in HTML 5.</td>
+            <td>
+              Specifies the alignment according to surrounding elements. Use CSS
+              instead
+            </td>
+          </tr>
+          <tr>
+            <td>alt</td>
+            <td>&lt;area&gt;, &lt;img&gt;, &lt;input&gt;</td>
+            <td>
+              Specifies an alternate text when the original element fails to display
+            </td>
+          </tr>
+          <tr>
+            <td>async</td>
+            <td>&lt;script&gt;</td>
+            <td>
+              Specifies that the script is executed asynchronously (only for
+              external scripts)
+            </td>
+          </tr>
+          <tr>
+            <td>autocomplete</td>
+            <td>&lt;form&gt;, &lt;input&gt;</td>
+            <td>
+              Specifies whether the &lt;form&gt; or the &lt;input&gt; element should
+              have autocomplete enabled
+            </td>
+          </tr>
+          <tr>
+            <td>autofocus</td>
+            <td>&lt;button&gt;, &lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</td>
+            <td>
+              Specifies that the element should automatically get focus when the
+              page loads
+            </td>
+          </tr>
+          <tr>
+            <td>autoplay</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Specifies that the audio/video will start playing as soon as it is
+              ready
+            </td>
+          </tr>
+          <tr>
+            <td>bgcolor</td>
+            <td>Not supported in HTML 5.</td>
+            <td>Specifies the background color of an element. Use CSS instead</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>Not supported in HTML 5.</td>
+            <td>
+              Specifies the width of the border of an element. Use CSS instead
+            </td>
+          </tr>
+          <tr>
+            <td>charset</td>
+            <td>&lt;meta&gt;, &lt;script&gt;</td>
+            <td>Specifies the character encoding</td>
+          </tr>
+          <tr>
+            <td>checked</td>
+            <td>&lt;input&gt;</td>
+            <td>
+              Specifies that an &lt;input&gt; element should be pre-selected when
+              the page loads (for type="checkbox" or type="radio")
+            </td>
+          </tr>
+          <tr>
+            <td>cite</td>
+            <td>&lt;blockquote&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;q&gt;</td>
+            <td>Specifies a URL which explains the quote/deleted/inserted text</td>
+          </tr>
+          <tr>
+            <td>class</td>
+            <td>Global Attributes</td>
+            <td>
+              Specifies one or more classnames for an element (refers to a class in
+              a style sheet)
+            </td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>Not supported in HTML 5.</td>
+            <td>Specifies the text color of an element. Use CSS instead</td>
+          </tr>
+          <tr>
+            <td>cols</td>
+            <td>&lt;textarea&gt;</td>
+            <td>Specifies the visible width of a text area</td>
+          </tr>
+          <tr>
+            <td>colspan</td>
+            <td>&lt;td&gt;, &lt;th&gt;</td>
+            <td>Specifies the number of columns a table cell should span</td>
+          </tr>
+          <tr>
+            <td>content</td>
+            <td>&lt;meta&gt;</td>
+            <td>
+              Gives the value associated with the http-equiv or name attribute
+            </td>
+          </tr>
+          <tr>
+            <td>contenteditable</td>
+            <td>Global Attributes</td>
+            <td>Specifies whether the content of an element is editable or not</td>
+          </tr>
+          <tr>
+            <td>controls</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Specifies that audio/video controls should be displayed (such as a
+              play/pause button etc)
+            </td>
+          </tr>
+          <tr>
+            <td>coords</td>
+            <td>&lt;area&gt;</td>
+            <td>Specifies the coordinates of the area</td>
+          </tr>
+          <tr>
+            <td>data</td>
+            <td>&lt;object&gt;</td>
+            <td>Specifies the URL of the resource to be used by the object</td>
+          </tr>
+          <tr>
+            <td>data-*</td>
+            <td>Global Attributes</td>
+            <td>Used to store custom data private to the page or application</td>
+          </tr>
+          <tr>
+            <td>datetime</td>
+            <td>&lt;del&gt;, &lt;ins&gt;, &lt;time&gt;</td>
+            <td>Specifies the date and time</td>
+          </tr>
+          <tr>
+            <td>default</td>
+            <td>&lt;track&gt;</td>
+            <td>
+              Specifies that the track is to be enabled if the user's preferences do
+              not indicate that another track would be more appropriate
+            </td>
+          </tr>
+          <tr>
+            <td>defer</td>
+            <td>&lt;script&gt;</td>
+            <td>
+              Specifies that the script is executed when the page has finished
+              parsing (only for external scripts)
+            </td>
+          </tr>
+          <tr>
+            <td>dir</td>
+            <td>Global Attributes</td>
+            <td>Specifies the text direction for the content in an element</td>
+          </tr>
+          <tr>
+            <td>dirname</td>
+            <td>&lt;input&gt;, &lt;textarea&gt;</td>
+            <td>Specifies that the text direction will be submitted</td>
+          </tr>
+          <tr>
+            <td>disabled</td>
+            <td>
+              &lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;optgroup&gt;,
+              &lt;option&gt;, &lt;select&gt;, &lt;textarea&gt;
+            </td>
+            <td>
+              Specifies that the specified element/group of elements should be
+              disabled
+            </td>
+          </tr>
+          <tr>
+            <td>download</td>
+            <td>&lt;a&gt;, &lt;area&gt;</td>
+            <td>
+              Specifies that the target will be downloaded when a user clicks on the
+              hyperlink
+            </td>
+          </tr>
+          <tr>
+            <td>draggable</td>
+            <td>Global Attributes</td>
+            <td>Specifies whether an element is draggable or not</td>
+          </tr>
+          <tr>
+            <td>enctype</td>
+            <td>&lt;form&gt;</td>
+            <td>
+              Specifies how the form-data should be encoded when submitting it to
+              the server (only for method="post")
+            </td>
+          </tr>
+          <tr>
+            <td>enterkeyhint</td>
+            <td>Global Attributes</td>
+            <td>Specifies the text of the enter-key on a virtual keyboard</td>
+          </tr>
+          <tr>
+            <td>for</td>
+            <td>&lt;label&gt;, &lt;output&gt;</td>
+            <td>Specifies which form element(s) a label/calculation is bound to</td>
+          </tr>
+          <tr>
+            <td>form</td>
+            <td>
+              &lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;label&gt;,
+              &lt;meter&gt;, &lt;object&gt;, &lt;output&gt;, &lt;select&gt;,
+              &lt;textarea&gt;
+            </td>
+            <td>Specifies the name of the form the element belongs to</td>
+          </tr>
+          <tr>
+            <td>formaction</td>
+            <td>&lt;button&gt;, &lt;input&gt;</td>
+            <td>
+              Specifies where to send the form-data when a form is submitted. Only
+              for type="submit"
+            </td>
+          </tr>
+          <tr>
+            <td>headers</td>
+            <td>&lt;td&gt;, &lt;th&gt;</td>
+            <td>Specifies one or more headers cells a cell is related to</td>
+          </tr>
+          <tr>
+            <td>height</td>
+            <td>
+              &lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;,
+              &lt;input&gt;, &lt;object&gt;, &lt;video&gt;
+            </td>
+            <td>Specifies the height of the element</td>
+          </tr>
+          <tr>
+            <td>hidden</td>
+            <td>Global Attributes</td>
+            <td>Specifies that an element is not yet, or is no longer, relevant</td>
+          </tr>
+          <tr>
+            <td>high</td>
+            <td>&lt;meter&gt;</td>
+            <td>Specifies the range that is considered to be a high value</td>
+          </tr>
+          <tr>
+            <td>href</td>
+            <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;link&gt;</td>
+            <td>Specifies the URL of the page the link goes to</td>
+          </tr>
+          <tr>
+            <td>hreflang</td>
+            <td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</td>
+            <td>Specifies the language of the linked document</td>
+          </tr>
+          <tr>
+            <td>http-equiv</td>
+            <td>&lt;meta&gt;</td>
+            <td>
+              Provides an HTTP header for the information/value of the content
+              attribute
+            </td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>Global Attributes</td>
+            <td>Specifies a unique id for an element</td>
+          </tr>
+          <tr>
+            <td>inert</td>
+            <td>Global Attributes</td>
+            <td>Specifies that the browser should ignore this section</td>
+          </tr>
+          <tr>
+            <td>inputmode</td>
+            <td>Global Attributes</td>
+            <td>Specifies the mode of a virtual keyboard</td>
+          </tr>
+          <tr>
+            <td>ismap</td>
+            <td>&lt;img&gt;</td>
+            <td>Specifies an image as a server-side image map</td>
+          </tr>
+          <tr>
+            <td>kind</td>
+            <td>&lt;track&gt;</td>
+            <td>Specifies the kind of text track</td>
+          </tr>
+          <tr>
+            <td>label</td>
+            <td>&lt;track&gt;, &lt;option&gt;, &lt;optgroup&gt;</td>
+            <td>Specifies the title of the text track</td>
+          </tr>
+          <tr>
+            <td>lang</td>
+            <td>Global Attributes</td>
+            <td>Specifies the language of the element's content</td>
+          </tr>
+          <tr>
+            <td>list</td>
+            <td>&lt;input&gt;</td>
+            <td>
+              Refers to a &lt;datalist&gt; element that contains pre-defined options
+              for an &lt;input&gt; element
+            </td>
+          </tr>
+          <tr>
+            <td>loop</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Specifies that the audio/video will start over again, every time it is
+              finished
+            </td>
+          </tr>
+          <tr>
+            <td>low</td>
+            <td>&lt;meter&gt;</td>
+            <td>Specifies the range that is considered to be a low value</td>
+          </tr>
+          <tr>
+            <td>max</td>
+            <td>&lt;input&gt;, &lt;meter&gt;, &lt;progress&gt;</td>
+            <td>Specifies the maximum value</td>
+          </tr>
+          <tr>
+            <td>maxlength</td>
+            <td>&lt;input&gt;, &lt;textarea&gt;</td>
+            <td>
+              Specifies the maximum number of characters allowed in an element
+            </td>
+          </tr>
+          <tr>
+            <td>media</td>
+            <td>
+              &lt;a&gt;, &lt;area&gt;, &lt;link&gt;, &lt;source&gt;, &lt;style&gt;
+            </td>
+            <td>
+              Specifies what media/device the linked document is optimized for
+            </td>
+          </tr>
+          <tr>
+            <td>method</td>
+            <td>&lt;form&gt;</td>
+            <td>Specifies the HTTP method to use when sending form-data</td>
+          </tr>
+          <tr>
+            <td>min</td>
+            <td>&lt;input&gt;, &lt;meter&gt;</td>
+            <td>Specifies a minimum value</td>
+          </tr>
+          <tr>
+            <td>multiple</td>
+            <td>&lt;input&gt;, &lt;select&gt;</td>
+            <td>Specifies that a user can enter more than one value</td>
+          </tr>
+          <tr>
+            <td>muted</td>
+            <td>&lt;video&gt;, &lt;audio&gt;</td>
+            <td>Specifies that the audio output of the video should be muted</td>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td>
+              &lt;button&gt;, &lt;fieldset&gt;, &lt;form&gt;, &lt;iframe&gt;,
+              &lt;input&gt;, &lt;map&gt;, &lt;meta&gt;, &lt;object&gt;,
+              &lt;output&gt;, &lt;param&gt;, &lt;select&gt;, &lt;textarea&gt;
+            </td>
+            <td>Specifies the name of the element</td>
+          </tr>
+          <tr>
+            <td>novalidate</td>
+            <td>&lt;form&gt;</td>
+            <td>Specifies that the form should not be validated when submitted</td>
+          </tr>
+          <tr>
+            <td>onabort</td>
+            <td>
+              &lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;, &lt;object&gt;,
+              &lt;video&gt;
+            </td>
+            <td>Script to be run on abort</td>
+          </tr>
+          <tr>
+            <td>onafterprint</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run after the document is printed</td>
+          </tr>
+          <tr>
+            <td>onbeforeprint</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run before the document is printed</td>
+          </tr>
+          <tr>
+            <td>onbeforeunload</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run when the document is about to be unloaded</td>
+          </tr>
+          <tr>
+            <td>onblur</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the element loses focus</td>
+          </tr>
+          <tr>
+            <td>oncanplay</td>
+            <td>&lt;audio&gt;, &lt;embed&gt;, &lt;object&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when a file is ready to start playing (when it has
+              buffered enough to begin)
+            </td>
+          </tr>
+          <tr>
+            <td>oncanplaythrough</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when a file can be played all the way to the end
+              without pausing for buffering
+            </td>
+          </tr>
+          <tr>
+            <td>onchange</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the value of the element is changed</td>
+          </tr>
+          <tr>
+            <td>onclick</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the element is being clicked</td>
+          </tr>
+          <tr>
+            <td>oncontextmenu</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when a context menu is triggered</td>
+          </tr>
+          <tr>
+            <td>oncopy</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run when the content of the element is being copied
+            </td>
+          </tr>
+          <tr>
+            <td>oncuechange</td>
+            <td>&lt;track&gt;</td>
+            <td>
+              Script to be run when the cue changes in a &lt;track&gt; element
+            </td>
+          </tr>
+          <tr>
+            <td>oncut</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the content of the element is being cut</td>
+          </tr>
+          <tr>
+            <td>ondblclick</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the element is being double-clicked</td>
+          </tr>
+          <tr>
+            <td>ondrag</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the element is being dragged</td>
+          </tr>
+          <tr>
+            <td>ondragend</td>
+            <td>All visible elements.</td>
+            <td>Script to be run at the end of a drag operation</td>
+          </tr>
+          <tr>
+            <td>ondragenter</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run when an element has been dragged to a valid drop
+              target
+            </td>
+          </tr>
+          <tr>
+            <td>ondragleave</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when an element leaves a valid drop target</td>
+          </tr>
+          <tr>
+            <td>ondragover</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run when an element is being dragged over a valid drop
+              target
+            </td>
+          </tr>
+          <tr>
+            <td>ondragstart</td>
+            <td>All visible elements.</td>
+            <td>Script to be run at the start of a drag operation</td>
+          </tr>
+          <tr>
+            <td>ondrop</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when dragged element is being dropped</td>
+          </tr>
+          <tr>
+            <td>ondurationchange</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>Script to be run when the length of the media changes</td>
+          </tr>
+          <tr>
+            <td>onemptied</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when something bad happens and the file is suddenly
+              unavailable (like unexpectedly disconnects)
+            </td>
+          </tr>
+          <tr>
+            <td>onended</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when the media has reach the end (a useful event for
+              messages like "thanks for listening")
+            </td>
+          </tr>
+          <tr>
+            <td>onerror</td>
+            <td>
+              &lt;audio&gt;, &lt;body&gt;, &lt;embed&gt;, &lt;img&gt;,
+              &lt;object&gt;, &lt;script&gt;, &lt;style&gt;, &lt;video&gt;
+            </td>
+            <td>Script to be run when an error occurs</td>
+          </tr>
+          <tr>
+            <td>onfocus</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the element gets focus</td>
+          </tr>
+          <tr>
+            <td>onhashchange</td>
+            <td>&lt;body&gt;</td>
+            <td>
+              Script to be run when there has been changes to the anchor part of the
+              a URL
+            </td>
+          </tr>
+          <tr>
+            <td>oninput</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the element gets user input</td>
+          </tr>
+          <tr>
+            <td>oninvalid</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the element is invalid</td>
+          </tr>
+          <tr>
+            <td>onkeydown</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when a user is pressing a key</td>
+          </tr>
+          <tr>
+            <td>onkeypress</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when a user presses a key</td>
+          </tr>
+          <tr>
+            <td>onkeyup</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when a user releases a key</td>
+          </tr>
+          <tr>
+            <td>onload</td>
+            <td>
+              &lt;body&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;,
+              &lt;link&gt;, &lt;script&gt;, &lt;style&gt;
+            </td>
+            <td>Script to be run when the element is finished loading</td>
+          </tr>
+          <tr>
+            <td>onloadeddata</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>Script to be run when media data is loaded</td>
+          </tr>
+          <tr>
+            <td>onloadedmetadata</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when meta data (like dimensions and duration) are
+              loaded
+            </td>
+          </tr>
+          <tr>
+            <td>onloadstart</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run just as the file begins to load before anything is
+              actually loaded
+            </td>
+          </tr>
+          <tr>
+            <td>onmousedown</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run when a mouse button is pressed down on an element
+            </td>
+          </tr>
+          <tr>
+            <td>onmousemove</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run as long as the mouse pointer is moving over an
+              element
+            </td>
+          </tr>
+          <tr>
+            <td>onmouseout</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when a mouse pointer moves out of an element</td>
+          </tr>
+          <tr>
+            <td>onmouseover</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when a mouse pointer moves over an element</td>
+          </tr>
+          <tr>
+            <td>onmouseup</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run when a mouse button is released over an element
+            </td>
+          </tr>
+          <tr>
+            <td>onmousewheel</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run when a mouse wheel is being scrolled over an element
+            </td>
+          </tr>
+          <tr>
+            <td>onoffline</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run when the browser starts to work offline</td>
+          </tr>
+          <tr>
+            <td>ononline</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run when the browser starts to work online</td>
+          </tr>
+          <tr>
+            <td>onpagehide</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run when a user navigates away from a page</td>
+          </tr>
+          <tr>
+            <td>onpageshow</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run when a user navigates to a page</td>
+          </tr>
+          <tr>
+            <td>onpaste</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run when the user pastes some content in an element
+            </td>
+          </tr>
+          <tr>
+            <td>onpause</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when the media is paused either by the user or
+              programmatically
+            </td>
+          </tr>
+          <tr>
+            <td>onplay</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>Script to be run when the media has started playing</td>
+          </tr>
+          <tr>
+            <td>onplaying</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>Script to be run when the media has started playing</td>
+          </tr>
+          <tr>
+            <td>onpopstate</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run when the window's history changes.</td>
+          </tr>
+          <tr>
+            <td>onprogress</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when the browser is in the process of getting the
+              media data
+            </td>
+          </tr>
+          <tr>
+            <td>onratechange</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run each time the playback rate changes (like when a user
+              switches to a slow motion or fast forward mode).
+            </td>
+          </tr>
+          <tr>
+            <td>onreset</td>
+            <td>&lt;form&gt;</td>
+            <td>Script to be run when a reset button in a form is clicked.</td>
+          </tr>
+          <tr>
+            <td>onresize</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run when the browser window is being resized.</td>
+          </tr>
+          <tr>
+            <td>onscroll</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when an element's scrollbar is being scrolled</td>
+          </tr>
+          <tr>
+            <td>onsearch</td>
+            <td>&lt;input&gt;</td>
+            <td>
+              Script to be run when the user writes something in a search field (for
+              &lt;input type="search"&gt;)
+            </td>
+          </tr>
+          <tr>
+            <td>onseeked</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when the seeking attribute is set to false indicating
+              that seeking has ended
+            </td>
+          </tr>
+          <tr>
+            <td>onseeking</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when the seeking attribute is set to true indicating
+              that seeking is active
+            </td>
+          </tr>
+          <tr>
+            <td>onselect</td>
+            <td>All visible elements.</td>
+            <td>Script to be run when the element gets selected</td>
+          </tr>
+          <tr>
+            <td>onstalled</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when the browser is unable to fetch the media data
+              for whatever reason
+            </td>
+          </tr>
+          <tr>
+            <td>onstorage</td>
+            <td>&lt;body&gt;</td>
+            <td>Script to be run when a Web Storage area is updated</td>
+          </tr>
+          <tr>
+            <td>onsubmit</td>
+            <td>&lt;form&gt;</td>
+            <td>Script to be run when a form is submitted</td>
+          </tr>
+          <tr>
+            <td>onsuspend</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when fetching the media data is stopped before it is
+              completely loaded for whatever reason
+            </td>
+          </tr>
+          <tr>
+            <td>ontimeupdate</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when the playing position has changed (like when the
+              user fast forwards to a different point in the media)
+            </td>
+          </tr>
+          <tr>
+            <td>ontoggle</td>
+            <td>&lt;details&gt;</td>
+            <td>
+              Script to be run when the user opens or closes the &lt;details&gt;
+              element
+            </td>
+          </tr>
+          <tr>
+            <td>onunload</td>
+            <td>&lt;body&gt;</td>
+            <td>
+              Script to be run when a page has unloaded (or the browser window has
+              been closed)
+            </td>
+          </tr>
+          <tr>
+            <td>onvolumechange</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run each time the volume of a video/audio has been
+              changed
+            </td>
+          </tr>
+          <tr>
+            <td>onwaiting</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Script to be run when the media has paused but is expected to resume
+              (like when the media pauses to buffer more data)
+            </td>
+          </tr>
+          <tr>
+            <td>onwheel</td>
+            <td>All visible elements.</td>
+            <td>
+              Script to be run when the mouse wheel rolls up or down over an element
+            </td>
+          </tr>
+          <tr>
+            <td>open</td>
+            <td>&lt;details&gt;</td>
+            <td>Specifies that the details should be visible (open) to the user</td>
+          </tr>
+          <tr>
+            <td>optimum</td>
+            <td>&lt;meter&gt;</td>
+            <td>Specifies what value is the optimal value for the gauge</td>
+          </tr>
+          <tr>
+            <td>pattern</td>
+            <td>&lt;input&gt;</td>
+            <td>
+              Specifies a regular expression that an &lt;input&gt; element's value
+              is checked against
+            </td>
+          </tr>
+          <tr>
+            <td>placeholder</td>
+            <td>&lt;input&gt;, &lt;textarea&gt;</td>
+            <td>
+              Specifies a short hint that describes the expected value of the
+              element
+            </td>
+          </tr>
+          <tr>
+            <td>popover</td>
+            <td>Global Attributes</td>
+            <td>Specifies a popover element</td>
+          </tr>
+          <tr>
+            <td>popovertarget</td>
+            <td>&lt;button&gt;, &lt;input&gt;</td>
+            <td>Specifies which popover element to invoke</td>
+          </tr>
+          <tr>
+            <td>popovertargetaction</td>
+            <td>&lt;button&gt;, &lt;input&gt;</td>
+            <td>
+              Specifies what happens to the popover element when the button is
+              clicked
+            </td>
+          </tr>
+          <tr>
+            <td>poster</td>
+            <td>&lt;video&gt;</td>
+            <td>
+              Specifies an image to be shown while the video is downloading, or
+              until the user hits the play button
+            </td>
+          </tr>
+          <tr>
+            <td>preload</td>
+            <td>&lt;audio&gt;, &lt;video&gt;</td>
+            <td>
+              Specifies if and how the author thinks the audio/video should be
+              loaded when the page loads
+            </td>
+          </tr>
+          <tr>
+            <td>readonly</td>
+            <td>&lt;input&gt;, &lt;textarea&gt;</td>
+            <td>Specifies that the element is read-only</td>
+          </tr>
+          <tr>
+            <td>rel</td>
+            <td>&lt;a&gt;, &lt;area&gt;, &lt;form&gt;, &lt;link&gt;</td>
+            <td>
+              Specifies the relationship between the current document and the linked
+              document
+            </td>
+          </tr>
+          <tr>
+            <td>required</td>
+            <td>&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;</td>
+            <td>
+              Specifies that the element must be filled out before submitting the
+              form
+            </td>
+          </tr>
+          <tr>
+            <td>reversed</td>
+            <td>&lt;ol&gt;</td>
+            <td>Specifies that the list order should be descending (9,8,7...)</td>
+          </tr>
+          <tr>
+            <td>rows</td>
+            <td>&lt;textarea&gt;</td>
+            <td>Specifies the visible number of lines in a text area</td>
+          </tr>
+          <tr>
+            <td>rowspan</td>
+            <td>&lt;td&gt;, &lt;th&gt;</td>
+            <td>Specifies the number of rows a table cell should span</td>
+          </tr>
+          <tr>
+            <td>sandbox</td>
+            <td>&lt;iframe&gt;</td>
+            <td>
+              Enables an extra set of restrictions for the content in an
+              &lt;iframe&gt;
+            </td>
+          </tr>
+          <tr>
+            <td>scope</td>
+            <td>&lt;th&gt;</td>
+            <td>
+              Specifies whether a header cell is a header for a column, row, or
+              group of columns or rows
+            </td>
+          </tr>
+          <tr>
+            <td>selected</td>
+            <td>&lt;option&gt;</td>
+            <td>
+              Specifies that an option should be pre-selected when the page loads
+            </td>
+          </tr>
+          <tr>
+            <td>shape</td>
+            <td>&lt;area&gt;</td>
+            <td>Specifies the shape of the area</td>
+          </tr>
+          <tr>
+            <td>size</td>
+            <td>&lt;input&gt;, &lt;select&gt;</td>
+            <td>
+              Specifies the width, in characters (for &lt;input&gt;) or specifies
+              the number of visible options (for &lt;select&gt;)
+            </td>
+          </tr>
+          <tr>
+            <td>sizes</td>
+            <td>&lt;img&gt;, &lt;link&gt;, &lt;source&gt;</td>
+            <td>Specifies the size of the linked resource</td>
+          </tr>
+          <tr>
+            <td>span</td>
+            <td>&lt;col&gt;, &lt;colgroup&gt;</td>
+            <td>Specifies the number of columns to span</td>
+          </tr>
+          <tr>
+            <td>spellcheck</td>
+            <td>Global Attributes</td>
+            <td>
+              Specifies whether the element is to have its spelling and grammar
+              checked or not
+            </td>
+          </tr>
+          <tr>
+            <td>src</td>
+            <td>
+              &lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;,
+              &lt;input&gt;, &lt;script&gt;, &lt;source&gt;, &lt;track&gt;,
+              &lt;video&gt;
+            </td>
+            <td>Specifies the URL of the media file</td>
+          </tr>
+          <tr>
+            <td>srcdoc</td>
+            <td>&lt;iframe&gt;</td>
+            <td>
+              Specifies the HTML content of the page to show in the &lt;iframe&gt;
+            </td>
+          </tr>
+          <tr>
+            <td>srclang</td>
+            <td>&lt;track&gt;</td>
+            <td>
+              Specifies the language of the track text data (required if
+              kind="subtitles")
+            </td>
+          </tr>
+          <tr>
+            <td>srcset</td>
+            <td>&lt;img&gt;, &lt;source&gt;</td>
+            <td>Specifies the URL of the image to use in different situations</td>
+          </tr>
+          <tr>
+            <td>start</td>
+            <td>&lt;ol&gt;</td>
+            <td>Specifies the start value of an ordered list</td>
+          </tr>
+          <tr>
+            <td>step</td>
+            <td>&lt;input&gt;</td>
+            <td>Specifies the legal number intervals for an input field</td>
+          </tr>
+          <tr>
+            <td>style</td>
+            <td>Global Attributes</td>
+            <td>Specifies an inline CSS style for an element</td>
+          </tr>
+          <tr>
+            <td>tabindex</td>
+            <td>Global Attributes</td>
+            <td>Specifies the tabbing order of an element</td>
+          </tr>
+          <tr>
+            <td>target</td>
+            <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;form&gt;</td>
+            <td>
+              Specifies the target for where to open the linked document or where to
+              submit the form
+            </td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>Global Attributes</td>
+            <td>Specifies extra information about an element</td>
+          </tr>
+          <tr>
+            <td>translate</td>
+            <td>Global Attributes</td>
+            <td>
+              Specifies whether the content of an element should be translated or
+              not
+            </td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>
+              &lt;a&gt;, &lt;button&gt;, &lt;embed&gt;, &lt;input&gt;, &lt;link&gt;,
+              &lt;menu&gt;, &lt;object&gt;, &lt;script&gt;, &lt;source&gt;,
+              &lt;style&gt;
+            </td>
+            <td>Specifies the type of element</td>
+          </tr>
+          <tr>
+            <td>usemap</td>
+            <td>&lt;img&gt;, &lt;object&gt;</td>
+            <td>Specifies an image as a client-side image map</td>
+          </tr>
+          <tr>
+            <td>value</td>
+            <td>
+              &lt;button&gt;, &lt;input&gt;, &lt;li&gt;, &lt;option&gt;,
+              &lt;meter&gt;, &lt;progress&gt;, &lt;param&gt;
+            </td>
+            <td>Specifies the value of the element</td>
+          </tr>
+          <tr>
+            <td>width</td>
+            <td>
+              &lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;,
+              &lt;input&gt;, &lt;object&gt;, &lt;video&gt;
+            </td>
+            <td>Specifies the width of the element</td>
+          </tr>
+          <tr>
+            <td>wrap</td>
+            <td>&lt;textarea&gt;</td>
+            <td>
+              Specifies how the text in a text area is to be wrapped when submitted
+              in a form
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

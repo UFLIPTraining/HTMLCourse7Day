@@ -1,165 +1,194 @@
----
-layout: default
-title: Section 5
-nav_order: 5
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP HTML Course</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="icon" href="src/img/favicon.png" type="image/png">
+  <script src="src/js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>UFLIP HTML Course</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="src/img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="section1.html">Section 1</a></li>
+      <li><a href="section2.html">Section 2</a></li>
+      <li><a href="section3.html">Section 3</a></li>
+      <li><a href="section4.html">Section 4</a></li>
+      <li><a href="section5.html" class="active">Section 5</a></li>
+      <li><a href="myprofile.html">My Profile</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Welcome to Section 5: Embedding Multimedia</h2>
+      <p>
+        In this section, we'll explore the importance of using semantic HTML to structure our web content effectively and improve our site's accessibility and search engine rankings. Additionally, we will look into advanced layout techniques.
+      </p>
+    </section>
 
-<article id="section5">
-  <h2>Welcome to Section 5: Embedding Multimedia</h2>
-  <p>
-    This section we'll explore the importance of using semantic HTML to structure
-    our web content effectively and improve our site's accessibility and search
-    engine rankings. Additionally, we will look into advanced layout techniques.
-  </p>
+    <section>
+      <h2>Embedding Multimedia</h2>
+      <p>
+        Embedding multimedia like images, videos, and audio not only enhances the user experience but also keeps users engaged longer on your site.
+      </p>
+      <figure>
+        <img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175">
+        <figcaption>Figure 1: This is an example of an embedded image.</figcaption>
+        <button id="show-image-example-btn" class="show-example-btn">Show Example</button>
+        <pre id="image-example-code" style="display: none;">
+      &lt;figure&gt;
+        &lt;img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" /&gt;
+        &lt;figcaption&gt;Figure 1: This is an example of an embedded image.&lt;/figcaption&gt;
+      &lt;/figure&gt;
+        </pre>
+      </figure>
+      <figure>
+        <video controls width="300">
+          <source src="src/img/MMWDEX2.mp4" type="video/mp4">
+        </video>
+        <figcaption>Figure 2: This is an example of an embedded video.</figcaption>
+        <button id="show-video-example-btn" class="show-example-btn">Show Example</button>
+        <pre id="video-example-code" style="display: none;">
+      &lt;figure&gt;
+        &lt;video controls width="300"&gt;
+          &lt;source src="src/img/MMWDEX2.mp4" type="video/mp4" /&gt;
+        &lt;/video&gt;
+        &lt;figcaption&gt;Figure 2: This is an example of an embedded video.&lt;/figcaption&gt;
+      &lt;/figure&gt;
+        </pre>
+      </figure>
+      <figure>
+        <audio controls>
+          <source src="src/img/MMWDEX3.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Figure 3: This is an example of embedded audio.</figcaption>
+        <button id="show-audio-example-btn" class="show-example-btn">Show Example</button>
+        <pre id="audio-example-code" style="display: none;">
+      &lt;figure&gt;
+        &lt;audio controls&gt;
+          &lt;source src="src/img/MMWDEX3.mp3" type="audio/mpeg" /&gt;
+          Your browser does not support the audio element.
+        &lt;/audio&gt;
+        &lt;figcaption&gt;Figure 3: This is an example of embedded audio.&lt;/figcaption&gt;
+      &lt;/figure&gt;
+        </pre>
+      </figure>
+    </section>
 
-  <section>
-    <h3>Embedding Multimedia</h3>
-    <p>
-      Embedding multimedia like images, videos, and audio not only enhances the user
-      experience but also keeps users engaged longer on your site.
-    </p>
-    <figure>
-      <img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" />
-      <figcaption>Figure 1: This is an example of an embedded image.</figcaption>
-      <button id="show-image-example-btn">Show Example</button>
-      <pre id="image-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;img src="src/img/MMWDEX.jpg" alt="Multimedia Example" width="300" height="175" /&gt;
-  &lt;figcaption&gt;Figure 1: This is an example of an embedded image.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-    <figure>
-      <video controls width="300">
-        <source src="src/img/MMWDEX2.mp4" type="video/mp4" />
-      </video>
-      <figcaption>Figure 2: This is an example of an embedded video.</figcaption>
-      <button id="show-video-example-btn">Show Example</button>
-      <pre id="video-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;video controls width="300"&gt;
-    &lt;source src="src/img/MMWDEX2.mp4" type="video/mp4" /&gt;
-  &lt;/video&gt;
-  &lt;figcaption&gt;Figure 2: This is an example of an embedded video.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-    <figure>
-      <audio controls>
-        <source src="src/img/MMWDEX3.mp3" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-      <figcaption>Figure 3: This is an example of embedded audio.</figcaption>
-      <button id="show-audio-example-btn">Show Example</button>
-      <pre id="audio-example-code" style="display: none;">
-&lt;figure&gt;
-  &lt;audio controls&gt;
-    &lt;source src="src/img/MMWDEX3.mp3" type="audio/mpeg" /&gt;
-    Your browser does not support the audio element.
-  &lt;/audio&gt;
-  &lt;figcaption&gt;Figure 3: This is an example of embedded audio.&lt;/figcaption&gt;
-&lt;/figure&gt;
-      </pre>
-    </figure>
-  </section>
-
-  <section>
-    <h3>Embedding Maps</h3>
-    <p>
-      Embedding maps is another advanced technique that adds interactive elements to your site.
-    </p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
+    <section>
+      <h2>Embedding Maps</h2>
+      <p>
+        Embedding maps is another advanced technique that adds interactive elements to your site.
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
+        width="450"
+        height="262.5"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <button id="show-map-example-btn" class="show-example-btn">Show Example</button>
+      <pre id="map-example-code" style="display: none;">
+    &lt;iframe
+      src="Google Map Embedded Link"
       width="450"
       height="262.5"
       style="border:0;"
       allowfullscreen=""
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <button id="show-map-example-btn">Show Example</button>
-    <pre id="map-example-code" style="display: none;">
-&lt;iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
-  width="450"
-  height="262.5"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"&gt;
-&lt;/iframe&gt;
-    </pre>
-  </section>
+      referrerpolicy="no-referrer-when-downgrade"&gt;
+    &lt;/iframe&gt;
+      </pre>
+    </section>
+    
 
-  <section>
-    <h3>SEO and Metadata</h3>
-    <p>
-      Search Engine Optimization (SEO) involves optimizing your web content to make it more accessible and attractive to search engines. Metadata plays a crucial role in SEO.
-    </p>
-    <h4>Metadata Elements:</h4>
-    <ul>
-      <li><strong>Title Tag:</strong> Defines the title of the webpage, shown on search engine results and browser tabs. Example: 
-        <pre>
+    <section>
+      <h2>SEO and Metadata</h2>
+      <p>
+        Search Engine Optimization (SEO) involves optimizing your web content to make it more accessible and attractive to search engines. Metadata plays a crucial role in SEO.
+      </p>
+      <h4>Metadata Elements:</h4>
+      <ul>
+        <li><strong>Title Tag:</strong> Defines the title of the webpage, shown on search engine results and browser tabs. Example: 
+          <pre>
 &lt;title&gt;My Web Page Title&lt;/title&gt;
-        </pre>
-      </li>
-      <li><strong>Meta Description:</strong> Provides a brief summary of the page content. Example:
-        <pre>
+          </pre>
+        </li>
+        <li><strong>Meta Description:</strong> Provides a brief summary of the page content. Example:
+          <pre>
 &lt;meta name="description" content="This is a description of my web page."&gt;
-        </pre>
-      </li>
-      <li><strong>Meta Keywords:</strong> A list of keywords relevant to the page content (less commonly used today). Example:
-        <pre>
+          </pre>
+        </li>
+        <li><strong>Meta Keywords:</strong> A list of keywords relevant to the page content (less commonly used today). Example:
+          <pre>
 &lt;meta name="keywords" content="HTML, CSS, web development"&gt;
-        </pre>
-      </li>
-      <li><strong>Viewport:</strong> Controls the layout on mobile browsers. Example:
-        <pre>
+          </pre>
+        </li>
+        <li><strong>Viewport:</strong> Controls the layout on mobile browsers. Example:
+          <pre>
 &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-        </pre>
-      </li>
-    </ul>
-    <h4>Example of Metadata in HTML:</h4>
-    <pre>
+          </pre>
+        </li>
+      </ul>
+      <h4>Example of Metadata in HTML:</h4>
+      <pre>
 &lt;head&gt;
   &lt;title&gt;My Web Page&lt;/title&gt;
   &lt;meta name="description" content="This is a description of my web page."&gt;
   &lt;meta name="keywords" content="HTML, CSS, web development"&gt;
   &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 &lt;/head&gt;
-    </pre>
-  </section>
+      </pre>
+    </section>
 
-  <section>
-    <h3>ARIA Roles</h3>
-    <p>
-      ARIA (Accessible Rich Internet Applications) roles define ways to make web content and web applications more accessible to people with disabilities.
-    </p>
-    <h4>Common ARIA Roles:</h4>
-    <ul>
-      <li><strong>Role="banner":</strong> Defines the header of a webpage.
-        <pre>
+    <section>
+      <h2>ARIA Roles</h2>
+      <p>
+        ARIA (Accessible Rich Internet Applications) roles define ways to make web content and web applications more accessible to people with disabilities.
+      </p>
+      <h4>Common ARIA Roles:</h4>
+      <ul>
+        <li><strong>Role="banner":</strong> Defines the header of a webpage.
+          <pre>
 &lt;header role="banner"&gt;...&lt;/header&gt;
-        </pre>
-      </li>
-      <li><strong>Role="navigation":</strong> Defines a navigation section.
-        <pre>
+          </pre>
+        </li>
+        <li><strong>Role="navigation":</strong> Defines a navigation section.
+          <pre>
 &lt;nav role="navigation"&gt;...&lt;/nav&gt;
-        </pre>
-      </li>
-      <li><strong>Role="main":</strong> Defines the main content of a document.
-        <pre>
+          </pre>
+        </li>
+        <li><strong>Role="main":</strong> Defines the main content of a document.
+          <pre>
 &lt;main role="main"&gt;...&lt;/main&gt;
-        </pre>
-      </li>
-      <li><strong>Role="contentinfo":</strong> Defines the footer of a document.
-        <pre>
+          </pre>
+        </li>
+        <li><strong>Role="contentinfo":</strong> Defines the footer of a document.
+          <pre>
 &lt;footer role="contentinfo"&gt;...&lt;/footer&gt;
-        </pre>
-      </li>
-    </ul>
-    <h4>Example of ARIA Roles in HTML:</h4>
-    <pre>
+          </pre>
+        </li>
+      </ul>
+      <h4>Example of ARIA Roles in HTML:</h4>
+      <pre>
 &lt;header role="banner"&gt;
   &lt;h1&gt;My Website&lt;/h1&gt;
   &lt;nav role="navigation"&gt;
@@ -178,25 +207,25 @@ nav_order: 5
   &lt;/article&gt;
 &lt;/main&gt;
 &lt;footer role="contentinfo"&gt;
-  &lt;p&gt;© 2024 My Website&lt;/p&gt;
+  &lt;p&gt;© 2024 My Website&lt;/footer&gt;
 &lt;/footer&gt;
-    </pre>
-  </section>
+      </pre>
+    </section>
 
-  <section>
-    <h3>Exercise: Create a Comprehensive Web Page</h3>
-    <p>Create an HTML document that includes the following elements:</p>
-    <ul>
-      <li>HTML Basics and Document Structure from Section 1</li>
-      <li>Semantic HTML and Advanced Layout Techniques from Section 2</li>
-      <li>Text Formatting, Lists, and Tables from Section 3</li>
-      <li>HTML Forms and User Input from Section 4</li>
-      <li>Embedding Multimedia from Section 5</li>
-      <li>SEO and ARIA Roles</li>
-    </ul>
-    <p>Here is an example to guide you:</p>
-    <button id="show-exercise-example-btn">Show Example</button>
-    <pre id="exercise-example-code" style="display: none;">
+    <section>
+      <h2>Exercise: Create a Comprehensive Web Page</h2>
+      <p>Create an HTML document that includes the following elements:</p>
+      <ul>
+        <li>HTML Basics and Document Structure from Section 1</li>
+        <li>Semantic HTML and Advanced Layout Techniques from Section 2</li>
+        <li>Text Formatting, Lists, and Tables from Section 3</li>
+        <li>HTML Forms and User Input from Section 4</li>
+        <li>Embedding Multimedia from Section 5</li>
+        <li>SEO and ARIA Roles</li>
+      </ul>
+      <p>Here is an example to guide you:</p>
+      <button id="show-exercise-example-btn" class="show-example-btn">Show Example</button>
+      <pre id="exercise-example-code" style="display: none;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -263,8 +292,8 @@ nav_order: 5
             &lt;figcaption&gt;Figure 3: This is an example of embedded audio.&lt;/figcaption&gt;
         &lt;/figure&gt;
         &lt;iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.005951724286!2d-97.49673232362908!3d35.38030837268583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21459b179460d%3A0xe119c6f62c01f5d3!2s8600%20S%20I-35%20Service%20Rd%20%23300%2C%20Oklahoma%20City%2C%20OK%2073149!5e0!3m2!1sen!2sus!4v1715884413658!5m2!1sen!2sus"
-            width="450"
+        src="Google Map Embedded Link"
+        width="450"
             height="262.5"
             style="border:0;"
             allowfullscreen=""
@@ -277,64 +306,23 @@ nav_order: 5
     &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-    </pre>
-  </section>
-</article>
+      </pre>
+    </section>
+  </main>
 
-<script>
-document.getElementById('show-image-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('image-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
+  <script>
+document.querySelectorAll('.show-example-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    const exampleCode = this.nextElementSibling;
+    if (exampleCode.style.display === 'none' || exampleCode.style.display === '') {
+      exampleCode.style.display = 'block';
+      this.textContent = 'Hide Example';
+    } else {
+      exampleCode.style.display = 'none';
+      this.textContent = 'Show Example';
+    }
+  });
 });
-
-document.getElementById('show-video-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('video-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-audio-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('audio-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-map-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('map-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-
-document.getElementById('show-exercise-example-btn').addEventListener('click', function() {
-  const exampleCode = document.getElementById('exercise-example-code');
-  if (exampleCode.style.display === 'none') {
-    exampleCode.style.display = 'block';
-    this.textContent = 'Hide Example';
-  } else {
-    exampleCode.style.display = 'none';
-    this.textContent = 'Show Example';
-  }
-});
-</script>
+  </script>
+</body>
 </html>

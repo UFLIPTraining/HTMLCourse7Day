@@ -1,338 +1,304 @@
----
-layout: default
-title: Audio/Video DOM
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio/Video DOM</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="icon" href="src/img/favicon.png" type="image/png">
+  <script src="src/js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Audio/Video DOM</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="src/img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="html-elements.html">HTML Elements</a></li>
+      <li><a href="attributes.html">Attributes</a></li>
+      <li><a href="audio-video-dom.html" class="active">Audio/Video DOM</a></li>
+      <li><a href="http-messages.html">HTTP Messages</a></li>
+      <li><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>HTML Audio and Video DOM Reference</h2>
+      <p>
+        The HTML5 DOM has methods, properties, and events for the &lt;audio&gt; and &lt;video&gt; elements.
+      </p>
 
-<article id="audio-video-dom">
-  <h2>HTML Audio and Video DOM Reference</h2>
-  <p>
-    The HTML5 DOM has methods, properties, and events for the &lt;audio&gt; and
-    &lt;video&gt; elements.
-  </p>
+      <h3>HTML Audio/Video Methods</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>addTextTrack()</td>
+            <td>Adds a new text track to the audio/video</td>
+          </tr>
+          <tr>
+            <td>canPlayType()</td>
+            <td>Checks if the browser can play the specified audio/video type</td>
+          </tr>
+          <tr>
+            <td>load()</td>
+            <td>Re-loads the audio/video element</td>
+          </tr>
+          <tr>
+            <td>play()</td>
+            <td>Starts playing the audio/video</td>
+          </tr>
+          <tr>
+            <td>pause()</td>
+            <td>Pauses the currently playing audio/video</td>
+          </tr>
+        </tbody>
+      </table>
 
-  <h3>HTML Audio/Video Methods</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Method</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>addTextTrack()</td>
-        <td>Adds a new text track to the audio/video</td>
-      </tr>
-      <tr>
-        <td>canPlayType()</td>
-        <td>Checks if the browser can play the specified audio/video type</td>
-      </tr>
-      <tr>
-        <td>load()</td>
-        <td>Re-loads the audio/video element</td>
-      </tr>
-      <tr>
-        <td>play()</td>
-        <td>Starts playing the audio/video</td>
-      </tr>
-      <tr>
-        <td>pause()</td>
-        <td>Pauses the currently playing audio/video</td>
-      </tr>
-    </tbody>
-  </table>
+      <h3>HTML Audio/Video Properties</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>audioTracks</td>
+            <td>Returns an AudioTrackList object representing available audio tracks</td>
+          </tr>
+          <tr>
+            <td>autoplay</td>
+            <td>Sets or returns whether the audio/video should start playing as soon as it is loaded</td>
+          </tr>
+          <tr>
+            <td>buffered</td>
+            <td>Returns a TimeRanges object representing the buffered parts of the audio/video</td>
+          </tr>
+          <tr>
+            <td>controller</td>
+            <td>Returns the MediaController object representing the current media controller of the audio/video</td>
+          </tr>
+          <tr>
+            <td>controls</td>
+            <td>Sets or returns whether the audio/video should display controls (like play/pause etc.)</td>
+          </tr>
+          <tr>
+            <td>crossOrigin</td>
+            <td>Sets or returns the CORS settings of the audio/video</td>
+          </tr>
+          <tr>
+            <td>currentSrc</td>
+            <td>Returns the URL of the current audio/video</td>
+          </tr>
+          <tr>
+            <td>currentTime</td>
+            <td>Sets or returns the current playback position in the audio/video (in seconds)</td>
+          </tr>
+          <tr>
+            <td>defaultMuted</td>
+            <td>Sets or returns whether the audio/video should be muted by default</td>
+          </tr>
+          <tr>
+            <td>defaultPlaybackRate</td>
+            <td>Sets or returns the default speed of the audio/video playback</td>
+          </tr>
+          <tr>
+            <td>duration</td>
+            <td>Returns the length of the current audio/video (in seconds)</td>
+          </tr>
+          <tr>
+            <td>ended</td>
+            <td>Returns whether the playback of the audio/video has ended or not</td>
+          </tr>
+          <tr>
+            <td>error</td>
+            <td>Returns a MediaError object representing the error state of the audio/video</td>
+          </tr>
+          <tr>
+            <td>loop</td>
+            <td>Sets or returns whether the audio/video should start over again when finished</td>
+          </tr>
+          <tr>
+            <td>mediaGroup</td>
+            <td>Sets or returns the group the audio/video belongs to (used to link multiple audio/video elements)</td>
+          </tr>
+          <tr>
+            <td>muted</td>
+            <td>Sets or returns whether the audio/video is muted or not</td>
+          </tr>
+          <tr>
+            <td>networkState</td>
+            <td>Returns the current network state of the audio/video</td>
+          </tr>
+          <tr>
+            <td>paused</td>
+            <td>Returns whether the audio/video is paused or not</td>
+          </tr>
+          <tr>
+            <td>playbackRate</td>
+            <td>Sets or returns the speed of the audio/video playback</td>
+          </tr>
+          <tr>
+            <td>played</td>
+            <td>Returns a TimeRanges object representing the played parts of the audio/video</td>
+          </tr>
+          <tr>
+            <td>preload</td>
+            <td>Sets or returns whether the audio/video should be loaded when the page loads</td>
+          </tr>
+          <tr>
+            <td>readyState</td>
+            <td>Returns the current ready state of the audio/video</td>
+          </tr>
+          <tr>
+            <td>seekable</td>
+            <td>Returns a TimeRanges object representing the seekable parts of the audio/video</td>
+          </tr>
+          <tr>
+            <td>seeking</td>
+            <td>Returns whether the user is currently seeking in the audio/video</td>
+          </tr>
+          <tr>
+            <td>src</td>
+            <td>Sets or returns the current source of the audio/video element</td>
+          </tr>
+          <tr>
+            <td>startDate</td>
+            <td>Returns a Date object representing the current time offset</td>
+          </tr>
+          <tr>
+            <td>textTracks</td>
+            <td>Returns a TextTrackList object representing the available text tracks</td>
+          </tr>
+          <tr>
+            <td>videoTracks</td>
+            <td>Deprecated. Do not use it.</td>
+          </tr>
+          <tr>
+            <td>volume</td>
+            <td>Sets or returns the volume of the audio/video</td>
+          </tr>
+        </tbody>
+      </table>
 
-  <h3>HTML Audio/Video Properties</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Property</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>audioTracks</td>
-        <td>
-          Returns an AudioTrackList object representing available audio tracks
-        </td>
-      </tr>
-      <tr>
-        <td>autoplay</td>
-        <td>
-          Sets or returns whether the audio/video should start playing as soon
-          as it is loaded
-        </td>
-      </tr>
-      <tr>
-        <td>buffered</td>
-        <td>
-          Returns a TimeRanges object representing the buffered parts of the
-          audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>controller</td>
-        <td>
-          Returns the MediaController object representing the current media
-          controller of the audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>controls</td>
-        <td>
-          Sets or returns whether the audio/video should display controls (like
-          play/pause etc.)
-        </td>
-      </tr>
-      <tr>
-        <td>crossOrigin</td>
-        <td>Sets or returns the CORS settings of the audio/video</td>
-      </tr>
-      <tr>
-        <td>currentSrc</td>
-        <td>Returns the URL of the current audio/video</td>
-      </tr>
-      <tr>
-        <td>currentTime</td>
-        <td>
-          Sets or returns the current playback position in the audio/video (in
-          seconds)
-        </td>
-      </tr>
-      <tr>
-        <td>defaultMuted</td>
-        <td>
-          Sets or returns whether the audio/video should be muted by default
-        </td>
-      </tr>
-      <tr>
-        <td>defaultPlaybackRate</td>
-        <td>Sets or returns the default speed of the audio/video playback</td>
-      </tr>
-      <tr>
-        <td>duration</td>
-        <td>Returns the length of the current audio/video (in seconds)</td>
-      </tr>
-      <tr>
-        <td>ended</td>
-        <td>
-          Returns whether the playback of the audio/video has ended or not
-        </td>
-      </tr>
-      <tr>
-        <td>error</td>
-        <td>
-          Returns a MediaError object representing the error state of the
-          audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>loop</td>
-        <td>
-          Sets or returns whether the audio/video should start over again when
-          finished
-        </td>
-      </tr>
-      <tr>
-        <td>mediaGroup</td>
-        <td>
-          Sets or returns the group the audio/video belongs to (used to link
-          multiple audio/video elements)
-        </td>
-      </tr>
-      <tr>
-        <td>muted</td>
-        <td>Sets or returns whether the audio/video is muted or not</td>
-      </tr>
-      <tr>
-        <td>networkState</td>
-        <td>Returns the current network state of the audio/video</td>
-      </tr>
-      <tr>
-        <td>paused</td>
-        <td>Returns whether the audio/video is paused or not</td>
-      </tr>
-      <tr>
-        <td>playbackRate</td>
-        <td>Sets or returns the speed of the audio/video playback</td>
-      </tr>
-      <tr>
-        <td>played</td>
-        <td>
-          Returns a TimeRanges object representing the played parts of the
-          audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>preload</td>
-        <td>
-          Sets or returns whether the audio/video should be loaded when the page
-          loads
-        </td>
-      </tr>
-      <tr>
-        <td>readyState</td>
-        <td>Returns the current ready state of the audio/video</td>
-      </tr>
-      <tr>
-        <td>seekable</td>
-        <td>
-          Returns a TimeRanges object representing the seekable parts of the
-          audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>seeking</td>
-        <td>
-          Returns whether the user is currently seeking in the audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>src</td>
-        <td>Sets or returns the current source of the audio/video element</td>
-      </tr>
-      <tr>
-        <td>startDate</td>
-        <td>Returns a Date object representing the current time offset</td>
-      </tr>
-      <tr>
-        <td>textTracks</td>
-        <td>
-          Returns a TextTrackList object representing the available text tracks
-        </td>
-      </tr>
-      <tr>
-        <td>videoTracks</td>
-        <td>Deprecated. Do not use it.</td>
-      </tr>
-      <tr>
-        <td>volume</td>
-        <td>Sets or returns the volume of the audio/video</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h3>HTML Audio/Video Events</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Event</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>abort</td>
-        <td>Fires when the loading of an audio/video is aborted</td>
-      </tr>
-      <tr>
-        <td>canplay</td>
-        <td>Fires when the browser can start playing the audio/video</td>
-      </tr>
-      <tr>
-        <td>canplaythrough</td>
-        <td>
-          Fires when the browser can play through the audio/video without
-          stopping for buffering
-        </td>
-      </tr>
-      <tr>
-        <td>durationchange</td>
-        <td>Fires when the duration of the audio/video is changed</td>
-      </tr>
-      <tr>
-        <td>emptied</td>
-        <td>Fires when the current playlist is empty</td>
-      </tr>
-      <tr>
-        <td>ended</td>
-        <td>Fires when the current playlist is ended</td>
-      </tr>
-      <tr>
-        <td>error</td>
-        <td>
-          Fires when an error occurred during the loading of an audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>loadeddata</td>
-        <td>
-          Fires when the browser has loaded the current frame of the audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>loadedmetadata</td>
-        <td>Fires when the browser has loaded meta data for the audio/video</td>
-      </tr>
-      <tr>
-        <td>loadstart</td>
-        <td>Fires when the browser starts looking for the audio/video</td>
-      </tr>
-      <tr>
-        <td>pause</td>
-        <td>Fires when the audio/video has been paused</td>
-      </tr>
-      <tr>
-        <td>play</td>
-        <td>
-          Fires when the audio/video has been started or is no longer paused
-        </td>
-      </tr>
-      <tr>
-        <td>playing</td>
-        <td>
-          Fires when the audio/video is playing after having been paused or
-          stopped for buffering
-        </td>
-      </tr>
-      <tr>
-        <td>progress</td>
-        <td>Fires when the browser is downloading the audio/video</td>
-      </tr>
-      <tr>
-        <td>ratechange</td>
-        <td>Fires when the playing speed of the audio/video is changed</td>
-      </tr>
-      <tr>
-        <td>seeked</td>
-        <td>
-          Fires when the user is finished moving/skipping to a new position in
-          the audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>seeking</td>
-        <td>
-          Fires when the user starts moving/skipping to a new position in the
-          audio/video
-        </td>
-      </tr>
-      <tr>
-        <td>stalled</td>
-        <td>
-          Fires when the browser is trying to get media data, but data is not
-          available
-        </td>
-      </tr>
-      <tr>
-        <td>suspend</td>
-        <td>Fires when the browser is intentionally not getting media data</td>
-      </tr>
-      <tr>
-        <td>timeupdate</td>
-        <td>Fires when the current playback position has changed</td>
-      </tr>
-      <tr>
-        <td>volumechange</td>
-        <td>Fires when the volume has been changed</td>
-      </tr>
-      <tr>
-        <td>waiting</td>
-        <td>
-          Fires when the video stops because it needs to buffer the next frame
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</article>
+      <h3>HTML Audio/Video Events</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>abort</td>
+            <td>Fires when the loading of an audio/video is aborted</td>
+          </tr>
+          <tr>
+            <td>canplay</td>
+            <td>Fires when the browser can start playing the audio/video</td>
+          </tr>
+          <tr>
+            <td>canplaythrough</td>
+            <td>Fires when the browser can play through the audio/video without stopping for buffering</td>
+          </tr>
+          <tr>
+            <td>durationchange</td>
+            <td>Fires when the duration of the audio/video is changed</td>
+          </tr>
+          <tr>
+            <td>emptied</td>
+            <td>Fires when the current playlist is empty</td>
+          </tr>
+          <tr>
+            <td>ended</td>
+            <td>Fires when the current playlist is ended</td>
+          </tr>
+          <tr>
+            <td>error</td>
+            <td>Fires when an error occurred during the loading of an audio/video</td>
+          </tr>
+          <tr>
+            <td>loadeddata</td>
+            <td>Fires when the browser has loaded the current frame of the audio/video</td>
+          </tr>
+          <tr>
+            <td>loadedmetadata</td>
+            <td>Fires when the browser has loaded meta data for the audio/video</td>
+          </tr>
+          <tr>
+            <td>loadstart</td>
+            <td>Fires when the browser starts looking for the audio/video</td>
+          </tr>
+          <tr>
+            <td>pause</td>
+            <td>Fires when the audio/video has been paused</td>
+          </tr>
+          <tr>
+            <td>play</td>
+            <td>Fires when the audio/video has been started or is no longer paused</td>
+          </tr>
+          <tr>
+            <td>playing</td>
+            <td>Fires when the audio/video is playing after having been paused or stopped for buffering</td>
+          </tr>
+          <tr>
+            <td>progress</td>
+            <td>Fires when the browser is downloading the audio/video</td>
+          </tr>
+          <tr>
+            <td>ratechange</td>
+            <td>Fires when the playing speed of the audio/video is changed</td>
+          </tr>
+          <tr>
+            <td>seeked</td>
+            <td>Fires when the user is finished moving/skipping to a new position in the audio/video</td>
+          </tr>
+          <tr>
+            <td>seeking</td>
+            <td>Fires when the user starts moving/skipping to a new position in the audio/video</td>
+          </tr>
+          <tr>
+            <td>stalled</td>
+            <td>Fires when the browser is trying to get media data, but data is not available</td>
+          </tr>
+          <tr>
+            <td>suspend</td>
+            <td>Fires when the browser is intentionally not getting media data</td>
+          </tr>
+          <tr>
+            <td>timeupdate</td>
+            <td>Fires when the current playback position has changed</td>
+          </tr>
+          <tr>
+            <td>volumechange</td>
+            <td>Fires when the volume has been changed</td>
+          </tr>
+          <tr>
+            <td>waiting</td>
+            <td>Fires when the video stops because it needs to buffer the next frame</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

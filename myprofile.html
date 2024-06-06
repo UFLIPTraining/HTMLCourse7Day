@@ -1,213 +1,167 @@
----
-layout: default
-title: My Profile
-nav_order: 8
----
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <section>
-    <h2>
-      <!-- <audio
-        controls
-        autoplay
-        loop
-        hidden
-        src="src/img/Duel of the Fates.mp3"
-      ></audio> -->
-    </h2>
-    <a href="#">
-      <img
-        src="src/img/profile.jpg"
-        alt="User Profile Picture"
-        width="100"
-        height="100"
-      />
-    </a>
-    <p><strong>YounglingSlayer22</strong></p>
-    <p><strong>Ani</strong></p>
-    <p>
-      <strong>Bio:</strong> Passionate web developer and HTML enthusiast.
-      Sharing everything I know about web development and design. Looking to
-      expand my Empire of knowledge
-    </p>
-    <p><strong>Posts:</strong> 37</p>
-    <p><strong>Followers:</strong> 457</p>
-    <p><strong>Following:</strong> 66</p>
-  </section>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP HTML Course</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="icon" href="src/img/favicon.png" type="image/png">
+  <script src="src/js/main.js" defer></script>
 </head>
-<hr />
 <body>
-  <section>
-    <h2>My Posts</h2>
-    <div>
+  <header>
+    <h1>UFLIP HTML Course</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="src/img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="section1.html">Section 1</a></li>
+      <li><a href="section2.html">Section 2</a></li>
+      <li><a href="section3.html">Section 3</a></li>
+      <li><a href="section4.html">Section 4</a></li>
+      <li><a href="section5.html">Section 5</a></li>
+      <li><a href="myprofile.html" class="active">My Profile</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
       <a href="#">
-        <img
-          src="src/img/post1.jpg"
-          alt="Post Image 1"
-          width="280"
-          height="157"
-          title="Exploring the Basics of HTML"
-        />
+        <img src="src/img/profilepicture.webp" alt="User Profile Picture" width="100" height="100">
       </a>
+      <p><strong>C0DEMAKERS</strong></p>
+      <p><strong>James</strong></p>
       <p>
-        Exploring the Basics of HTML <a href="#">❤</a> <a href="#">💬</a>
-        <a href="#">Share</a>
+        Passionate web developer and HTML enthusiast. Sharing everything I know about web
+        development and design. Looking to expand my empire of knowledge.
       </p>
-    </div>
-    <br />
-    <div>
-      <a href="#">
-        <img
-          src="src/img/post2.jpg"
-          alt="Post Image 2"
-          width="280"
-          height="157"
-          title="Advanced HTML Techniques"
-        />
-      </a>
-      <p>
-        Advanced HTML Techniques <a href="#">❤</a> <a href="#">💬</a>
-        <a href="#">Share</a>
-      </p>
-    </div>
-    <br />
-    <div>
-      <a href="#">
-        <img
-          src="src/img/post3.jpg"
-          alt="Post Image 3"
-          width="280"
-          height="157"
-          title="Introduction to HTML5"
-        />
-      </a>
-      <p>
-        Introduction to HTML5 <a href="#">❤</a> <a href="#">💬</a>
-        <a href="#">Share</a>
-      </p>
-    </div>
-    <br />
-    <div>
-      <a href="#">
-        <img
-          src="src/img/post4.jpg"
-          alt="Post Image 4"
-          width="280"
-          height="157"
-          title="Responsive Design with HTML"
-        />
-      </a>
-      <p>
-        Responsive Design with HTML <a href="#">❤</a> <a href="#">💬</a>
-        <a href="#">Share</a>
-      </p>
-    </div>
-    <br />
-    <div>
-      <a href="#">
-        <img
-          src="src/img/post5.jpg"
-          alt="Post Image 5"
-          width="280"
-          height="157"
-          title="Using Semantic HTML"
-        />
-      </a>
-      <p>
-        Using Semantic HTML <a href="#">❤</a> <a href="#">💬</a>
-        <a href="#">Share</a>
-      </p>
-    </div>
-    <br />
-    <div>
-      <a href="#">
-        <img
-          src="src/img/post6.jpg"
-          alt="Post Image 6"
-          width="280"
-          height="157"
-          title="SEO Best Practices"
-        />
-      </a>
-      <p>
-        SEO Best Practices <a href="#">❤</a> <a href="#">💬</a>
-        <a href="#">Share</a>
-      </p>
-    </div>
-    <br />
-    <div>
-      <video width="280" height="157" controls muted>
-        <source
-          src="src/img/You were my brother Anakin! I loved you....mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      <p>
-        I can't believe this happened! <a href="#">❤</a> <a href="#">💬</a>
-        <a href="#">Share</a>
-      </p>
-    </div>
-    <br />
-  </section>
+      <p><strong>Posts: </strong>9</p>
+      <p><strong>Followers: </strong>47,385</p>
+      <p><strong>Following: </strong>1,682</p>
+    </section>
+
+    <section>
+      <h2>My Posts</h2>
+      <div class="posts-grid">
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost1.jpg" alt="Post Image 1" title="Exploring the Basics of HTML">
+          </a>
+          <p>
+            Exploring the Basics of HTML <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost2.jpg" alt="Post Image 2" title="Advanced HTML Techniques">
+          </a>
+          <p>
+            Advanced HTML Techniques <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost3.jpg" alt="Post Image 3" title="Introduction to HTML5">
+          </a>
+          <p>
+            Introduction to HTML5 <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost4.jpg" alt="Post Image 4" title="Responsive Design with HTML">
+          </a>
+          <p>
+            Responsive Design with HTML <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost5.jpg" alt="Post Image 5" title="Using Semantic HTML">
+          </a>
+          <p>
+            Using Semantic HTML <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost6.jpg" alt="Post Image 6" title="SEO Best Practices">
+          </a>
+          <p>
+            SEO Best Practices <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost7.png" alt="Post Image 7" title="Desktop Wallpaper">
+          </a>
+          <p>
+            Desktop Wallpaper <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost8.jpg" alt="Post Image 8" title="Example Post 8">
+          </a>
+          <p>
+             Simple Function <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+        <div class="post">
+          <a href="#">
+            <img src="src/img/eXpost9.jpg" alt="Post Image 9" title="Example Post 9">
+          </a>
+          <p>
+             Queries <br><a href="#">❤</a> <a href="#">💬</a> <a href="#">Share</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section>
+        <h2>Suggested Accounts:</h2>
+        <div class="suggested-account">
+          <img src="src/img/user1.jpg" alt="User 1" class="profile-pic">
+          <p>
+            <strong>Luke Skywalker</strong><br>I am a Jedi, like my father before me.
+            <a href="javascript:void(0);" onclick="playRickRoll();">Follow</a>
+          </p>
+        </div>
+        <div class="suggested-account">
+          <img src="src/img/user2.png" alt="User 2" class="profile-pic">
+          <p>
+            <strong>Yoda</strong><br>Do or do not. There is no try.
+            <a href="javascript:void(0);" onclick="playRickRoll();">Follow</a>
+          </p>
+        </div>
+        <div class="suggested-account">
+          <img src="src/img/user3.jpg" alt="User 3" class="profile-pic">
+          <p>
+            <strong>Obi-Wan Kenobi</strong><br>The Force will be with you, always.
+            <a href="javascript:void(0);" onclick="playRickRoll();">Follow</a>
+          </p>
+        </div>
+      </section>
+    </footer>
+  </main>
+  <script>
+    function playRickRoll() {
+      const rickRollVideo = document.createElement("video");
+      rickRollVideo.src = "src/img/RickRollv2.mp4";
+      rickRollVideo.autoplay = true;
+      rickRollVideo.hidden = true;
+      document.body.appendChild(rickRollVideo);
+    }
+  </script>
 </body>
-<hr />
-<footer>
-  <section>
-    <h2>Suggested Accounts:</h2>
-
-    <div>
-      <img
-        src="src/img/user1.jpg"
-        alt="User 1"
-        width="150"
-        height="150"
-        alt="Picture of Mark Hamill aka Luke Skywalker"
-      />
-      <p>
-        <strong>Luke Skywalker</strong><br />Bio: Lover of CSS and design. I
-        like to give a good Chuckle.
-        <a href="javascript:void(0);" onclick="playRickRoll();">Follow</a>
-      </p>
-    </div>
-    <div>
-      <img
-        src="src/img/user2.png"
-        alt="User 2"
-        width="150"
-        height="150"
-        alt="Picture of Yoda"
-      />
-      <p>
-        <strong>Yoda</strong><br />Bio: Enthusiast of JavaScript I am. Sometimes
-        shrouded judgement is.
-        <a href="javascript:void(0);" onclick="playRickRoll();">Follow</a>
-      </p>
-    </div>
-    <div>
-      <img
-        src="src/img/user3.jpg"
-        alt="User 3"
-        width="150"
-        height="150"
-        alt="Picture of Obi-Wan Kenobi"
-      />
-      <p>
-        <strong>Obi-Wan Kenobi</strong><br />Bio: I prefer a more civilized
-        approach. Backend guru and database wizard. Always on the hunt for Data
-        Linking.
-        <a href="javascript:void(0);" onclick="playRickRoll();">Follow</a>
-      </p>
-    </div>
-  </section>
-</footer>
-
-<script>
-  function playRickRoll() {
-    const rickRollVideo = document.createElement("video");
-    rickRollVideo.src = "src/img/RickRollv2.mp4";
-    rickRollVideo.autoplay = true;
-    rickRollVideo.hidden = true;
-    document.body.appendChild(rickRollVideo);
-  }
-</script>
+</html>
