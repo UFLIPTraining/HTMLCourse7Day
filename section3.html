@@ -37,78 +37,153 @@
 
   <main id="main-content">
     <section>
-      <h2>Welcome to Section 3: Forms and Input</h2>
+      <h2>Welcome to Section 3: Text Formatting, Lists, and Tables</h2>
       <p>
-        In this section, we will delve into creating forms in HTML, understanding different input types, and learning how to collect user data efficiently. Forms are a crucial part of web development, allowing interaction between users and web applications.
+        This section we'll learn how to enhance the readability and appearance of
+        our blog posts using various HTML tags for text formatting. We'll also
+        explore how to effectively organize content using lists and tables.
       </p>
     </section>
 
     <section>
-      <h2>Creating Forms</h2>
+      <h3>Text Formatting Examples</h3>
       <p>
-        A form in HTML is used to collect user input. Form elements can include input fields, checkboxes, radio buttons, submit buttons, and more. Here's a basic example of an HTML form:
+        <strong>Bold Text:</strong> Use the <strong>&lt;strong&gt;</strong> tag to emphasize text.
       </p>
-      <pre>
-&lt;form action="/submit-form" method="POST"&gt;
-  &lt;label for="name"&gt;Name:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name"&gt;
-  &lt;br&gt;
-  &lt;label for="email"&gt;Email:&lt;/label&gt;
-  &lt;input type="email" id="email" name="email"&gt;
-  &lt;br&gt;
-  &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;
-      </pre>
+      <p>
+        <em>Italic Text:</em> Use the <em>&lt;em&gt;</em> tag to italicize text.
+      </p>
+      <p>
+        <u>Underlined Text:</u> Although not commonly recommended, you can underline text for special emphasis.
+      </p>
+      <p>
+        <mark>Highlighted Text:</mark> Use the <mark>&lt;mark&gt;</mark> tag to highlight text.
+      </p>
+      <p>
+        <del>Strikethrough Text:</del> Use the <del>&lt;del&gt;</del> tag to show deletion.
+      </p>
+      <p>
+        <ins>Inserted Text:</ins> Use the <ins>&lt;ins&gt;</ins> tag to show additions to the document.
+      </p>
+      <p>
+        <sub>Subscript</sub> and <sup>Superscript</sup> formatting.
+      </p>
+      <p>
+        <blockquote>Blockquote:</blockquote> Use the <code>&lt;blockquote&gt;</code> tag to indicate a block of quoted text.
+      </p>
+      <p>
+        <code>Inline Code:</code> Use the <code>&lt;code&gt;</code> tag to display inline code.
+      </p>
     </section>
-
+  
     <section>
-      <h2>Understanding Input Types</h2>
-      <p>
-        HTML provides various input types to collect different types of data. Some commonly used input types include:
-      </p>
+      <h3>Lists</h3>
+      <p>Lists are used to group related items together:</p>
+      <p>Unordered List:</p>
       <ul>
-        <li>
-          <code>&lt;input type="text"&gt;</code>: Used for single-line text input.
-        </li>
-        <li>
-          <code>&lt;input type="email"&gt;</code>: Used for email input.
-        </li>
-        <li>
-          <code>&lt;input type="password"&gt;</code>: Used for password input.
-        </li>
-        <li>
-          <code>&lt;input type="radio"&gt;</code>: Used for selecting one option from multiple choices.
-        </li>
-        <li>
-          <code>&lt;input type="checkbox"&gt;</code>: Used for selecting multiple options.
-        </li>
-        <li>
-          <code>&lt;input type="submit"&gt;</code>: Used for form submission.
-        </li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
       </ul>
-      <p>Here's an example demonstrating different input types:</p>
-      <pre>
-&lt;form action="/submit-form" method="POST"&gt;
-  &lt;label for="username"&gt;Username:&lt;/label&gt;
-  &lt;input type="text" id="username" name="username"&gt;
-  &lt;br&gt;
-  &lt;label for="pwd"&gt;Password:&lt;/label&gt;
-  &lt;input type="password" id="pwd" name="pwd"&gt;
-  &lt;br&gt;
-  &lt;label&gt;Gender:&lt;/label&gt;
-  &lt;input type="radio" id="male" name="gender" value="male"&gt;
-  &lt;label for="male"&gt;Male&lt;/label&gt;
-  &lt;input type="radio" id="female" name="gender" value="female"&gt;
-  &lt;label for="female"&gt;Female&lt;/label&gt;
-  &lt;br&gt;
-  &lt;label for="subscribe"&gt;Subscribe to newsletter:&lt;/label&gt;
-  &lt;input type="checkbox" id="subscribe" name="subscribe"&gt;
-  &lt;br&gt;
-  &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;
+      <button id="show-exercise-example-btn" class="show-example-btn">Show Example</button>
+      <pre id="exercise-example-code" style="display: none;">
+  &lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;/ul&gt;
+      </pre>
+  
+      <p>Ordered List:</p>
+      <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+      </ol> 
+        <button id="show-exercise-example-btn" class="show-example-btn">Show Example</button>
+        <pre id="exercise-example-code" style="display: none;">
+    &lt;ol&gt;
+      &lt;li&gt;Item 1&lt;/li&gt;
+      &lt;li&gt;Item 2&lt;/li&gt;
+      &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
+        </pre>
+    </section>
+  
+    <section>
+      <h3>Tables</h3>
+      <p>Tables are used to display tabular data:</p>
+      <table border="1">
+        <caption>
+          Basic Table Layout
+        </caption>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Table Footer</td>
+          </tr>
+        </tfoot>
+      </table>
+      <button id="show-exercise-example-btn" class="show-example-btn">Show Example</button>
+      <pre id="exercise-example-code" style="display: none;">
+  &lt;table border="1"&gt;
+    &lt;caption&gt;Basic Table Layout&lt;/caption&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Column 1&lt;/th&gt;
+        &lt;th&gt;Column 2&lt;/th&gt;
+        &lt;th&gt;Column 3&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+        &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+      &lt;tr&gt;
+        &lt;td colspan="3"&gt;Table Footer&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tfoot&gt;
+  &lt;/table&gt;
       </pre>
     </section>
-
+  
+    <section>
+      <h3>Accessibility Tips for Lists and Tables</h3>
+      <p>Here are some tips to make lists and tables more accessible:</p>
+      <ul>
+        <li>Use descriptive headings and captions for tables.</li>
+        <li>Provide context and descriptions for list items.</li>
+        <li>Ensure proper semantic structure for both lists and tables to aid screen readers.</li>
+      </ul>
+    </section>
+  
     <section>
       <h3>Exercise: Create a Formatted Web Page</h3>
       <p>Create an HTML document that includes the following elements:</p>
@@ -118,10 +193,8 @@
         <li>A table with a header, body, and footer.</li>
         <li>Use a header with navigation links, a main section, and a footer from Sections 1 and 2.</li>
       </ul>
-
-      <button id="show-image-example-btn" class="show-example-btn">Show Example</button>
-      <pre id="image-example-code" style="display: none;">
-        
+      <button id="show-exercise-example-btn" class="show-example-btn">Show Example</button>
+      <pre id="exercise-example-code" style="display: none;">
   &lt;!DOCTYPE html&gt;
   &lt;html&gt;
   &lt;head&gt;
