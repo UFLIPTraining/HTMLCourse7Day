@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background: #1c75bc;
+  background: #9747ff;
   color: #fff;
   padding: 1em;
   text-align: center;
@@ -55,7 +55,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background: #1c75bc;
+  background: #9747ff;
   color: #fff;
 }
 
@@ -117,7 +117,7 @@ footer p {
 }
 
 .dropdown-content li a:hover {
-  background: #1c75bc;
+  background: #9747ff;
 }
 
 /* Show the dropdown menu on hover */
@@ -157,7 +157,7 @@ form {
 
 .form-group input[type="submit"] {
   width: auto;
-  background: #1c75bc;
+  background: #9747ff;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -165,7 +165,7 @@ form {
 }
 
 .form-group input[type="submit"]:hover {
-  background: #166ab4;
+  background: #9747ff;
 }
 
 /* Posts Grid Styling */
@@ -237,7 +237,7 @@ table th, table td {
 }
 
 table th {
-  background-color: #1c75bc;
+  background-color: #9747ff;
   color: #fff;
   font-weight: bold;
 }
@@ -265,7 +265,7 @@ a:hover {
 .form-group input[type="submit"],
 .show-example-btn {
   width: auto;
-  background: #1c75bc;
+  background: #9747ff;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -277,7 +277,7 @@ a:hover {
 
 .form-group input[type="submit"]:hover,
 .show-example-btn:hover {
-  background: #166ab4;
+  background: #9747ff;
 }
 
 /* Center to Left Alignment for Sections */
@@ -293,11 +293,12 @@ a {
 
 a:hover {
   color: #bebcbc; /* Optional: Change on hover */
+}
 
 /* Show/Hide Example Button Styling */
 .show-example-btn {
   width: auto;
-  background: #1c75bc;
+  background: #9747ff;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -309,5 +310,5 @@ a:hover {
 }
 
 .show-example-btn:hover {
-  background: #166ab4;
+  background: #9747ff;
 }
