@@ -72,6 +72,10 @@
         edit HTML and CSS in real-time. To access these tools, right-click on a
         webpage and select "Inspect" or press `F12`.
       </p>
+      <h3>Exercise: Setup Your HTML Editor</h3>
+      <p>
+        Download and install Visual Studio Code. Create a new file and save it as `index.html`.
+      </p>
     </section>
 
     <section>
@@ -91,6 +95,10 @@
         In this example, the <code>href</code> attribute specifies the URL of the
         page the link goes to. The closing tag for the link element is
         <code>&lt;/a&gt;</code>.
+      </p>
+      <h3>Exercise: Add Attributes</h3>
+      <p>
+        Add an anchor tag to your `index.html` that links to your favorite website. 
       </p>
     </section>
 
@@ -120,6 +128,10 @@
           Closing tag is <code>&lt;/span&gt;</code>.
         </li>
       </ul>
+      <h3>Exercise: Use Common HTML Tags</h3>
+      <p>
+        Add a `div` element containing a `span` element with some text in your `index.html` file.
+      </p>
     </section>
 
     <section>
@@ -149,6 +161,10 @@
           <code>&lt;h6&gt;</code> as the lowest.
         </li>
       </ul>
+      <h3>Exercise: Inline vs Block Elements</h3>
+      <p>
+        Add examples of inline and block elements to your `index.html` file. Observe how they behave differently in the browser.
+      </p>
     </section>
 
     <section>
@@ -166,6 +182,10 @@
       <pre>
 &lt;p style="color: blue;"&gt;This is a blue paragraph.&lt;/p&gt;
       </pre>
+      <h3>Exercise: Add Basic CSS</h3>
+      <p>
+        Create a `styles.css` file and link it to your `index.html`. Add some basic styles to change the color of text and the background color of your page.
+      </p>
     </section>
 
     <section>
@@ -179,55 +199,10 @@
         <li><code>&lt;img&gt;</code>: Embeds an image</li>
         <li><code>&lt;input&gt;</code>: Defines an input field</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Example of Using Semantic Elements</h2>
+      <h3>Exercise: Use Self-Closing Tags</h3>
       <p>
-        Here's an example of how these elements can be used together in an HTML
-        document:
+        Add an image and a line break to your `index.html` file using self-closing tags.
       </p>
-      <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Your Page Title Here&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
-        &lt;!-- Navigation section -->
-        &lt;nav&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/nav&gt;
-    &lt;/header&gt;
-    &lt;!-- Main content section -->
-    &lt;section&gt;
-        &lt;h2&gt;Main Content&lt;/h2&gt;
-        &lt;!-- Article within the main content -->
-        &lt;article&gt;
-            &lt;h3&gt;Article Title&lt;/h3&gt;
-            &lt;p&gt;This is the main content of the article.&lt;/p&gt;
-        &lt;/article&gt;
-    &lt;/section&gt;
-    &lt;!-- Sidebar section -->
-    &lt;aside&gt;
-        &lt;h3&gt;Related Content&lt;/h3&gt;
-        &lt;p&gt;This is some related content.&lt;/p&gt;
-    &lt;/aside&gt;
-    &lt;!-- Footer section -->
-    &lt;footer&gt;
-        &lt;p&gt;© 2024 My Website&lt;/p&gt;
-    &lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-      </pre>
     </section>
 
     <section>
@@ -239,6 +214,10 @@
       <pre>
 &lt;!-- This is a comment in HTML --&gt;
       </pre>
+      <h3>Exercise: Add Comments</h3>
+      <p>
+        Add comments to your `index.html` file explaining the purpose of each section.
+      </p>
     </section>
 
     <section>
@@ -251,6 +230,10 @@
 &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;script src="script.js"&gt;&lt;/script&gt;
       </pre>
+      <h3>Exercise: Link External Files</h3>
+      <p>
+        Create a `script.js` file and link it to your `index.html`. Add a simple JavaScript function that changes the text of a paragraph when a button is clicked.
+      </p>
     </section>
 
     <section>
@@ -261,6 +244,10 @@ To display a less than sign, we write &amp;lt; which appears as &lt;.
 To display a greater than sign, we write &amp;gt; which appears as &gt;.
 To display an ampersand, we write &amp;amp; which appears as &amp;.
       </pre>
+      <h3>Exercise: Use HTML Entities</h3>
+      <p>
+        Add examples of HTML entities to your `index.html` file. Include less than, greater than, and ampersand symbols.
+      </p>
     </section>
 
     <section>
@@ -327,22 +314,28 @@ To display an ampersand, we write &amp;amp; which appears as &amp;.
 &lt;/html&gt;
       </pre>
     </section>
+    
+    <section>
+      <h2>Quiz</h2>
+      <p>Test your knowledge of the concepts covered in this section by taking the quiz.</p>
+      <button id="take-quiz-btn" class="show-example-btn" onclick="window.open('https://forms.gle/zsig2abfckPYFYfGA', '_blank')">Take the Quiz</button>
+    </section>
   </main>
 
 <script>
-  document.querySelectorAll('.show-example-btn').forEach(button => {
-    button.addEventListener('click', function() {
-      const exampleCode = this.nextElementSibling;
-      if (exampleCode.style.display === 'none') {
-        exampleCode.style.display = 'block';
-        this.textContent = 'Hide Example';
-      } else {
-        exampleCode.style.display = 'none';
-        this.textContent = 'Show Example';
-      }
-    });
+document.querySelectorAll('.show-example-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    const exampleCode = this.nextElementSibling;
+    if (exampleCode.style.display === 'none') {
+      exampleCode.style.display = 'block';
+      this.textContent = 'Hide Example';
+    } else {
+      exampleCode.style.display = 'none';
+      this.textContent = 'Show Example';
+    }
   });
-  </script>
-  
+});
+</script>
+
 </body>
 </html>

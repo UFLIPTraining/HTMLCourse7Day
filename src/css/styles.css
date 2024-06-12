@@ -312,3 +312,16 @@ a:hover {
 .show-example-btn:hover {
   background: #9747ff;
 }
+
+/* Center the quiz iframe */
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quiz-container iframe {
+  max-width: 100%;
+  border: 0;
+}

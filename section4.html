@@ -110,18 +110,70 @@
 
     <section>
       <h2>JavaScript Interactions</h2>
-      <p>Add dynamic validations and interactions using JavaScript:</p>
-      <pre>
+      <p>JavaScript allows you to add dynamic interactions and validations to your HTML forms. Here’s how you can integrate JavaScript into your HTML:</p>
+      <ol>
+        <li>Create a <code>&lt;script&gt;</code> tag in your HTML file, typically just before the closing <code>&lt;/body&gt;</code> tag.</li>
+        <li>Inside the <code>&lt;script&gt;</code> tag, add your JavaScript code. For example, to add validation to the form:
+          <pre>
 &lt;script&gt;
 document.getElementById('myForm').onsubmit = function() {
     let name = document.getElementById('name').value;
-    if (name.length < 4) {
+    if (name.length &lt; 4) {
         alert('Name must be at least 4 characters long.');
         return false;
     }
     return true;
 };
 &lt;/script&gt;
+          </pre>
+        </li>
+      </ol>
+      <p>Here's how the complete HTML document with JavaScript validation looks:</p>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Form with Validation&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form action="submit.php" method="post" id="myForm"&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="age"&gt;Age:&lt;/label&gt;
+            &lt;input type="number" id="age" name="age" min="16" max="100" required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="phone"&gt;Phone:&lt;/label&gt;
+            &lt;input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please add your area code." required&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for="comment"&gt;Comment:&lt;/label&gt;
+            &lt;textarea id="comment" name="comment" rows="4" required&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;input type="submit" value="Submit"&gt;
+    &lt;/form&gt;
+
+    &lt;script&gt;
+    document.getElementById('myForm').onsubmit = function() {
+        let name = document.getElementById('name').value;
+        if (name.length &lt; 4) {
+            alert('Name must be at least 4 characters long.');
+            return false;
+        }
+        return true;
+    };
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
       </pre>
     </section>
 
@@ -170,7 +222,7 @@ document.getElementById('myForm').onsubmit = function() {
               &lt;input type="text" id="name" name="name" required /&gt;
             &lt;/div&gt;
             &lt;div class="form-group"&gt;
-              &lt;label for="email"&gt;Email:&lt;/label&gt;
+              &lt;label for="email"&gt;Email&lt;/label&gt;
               &lt;input type="email" id="email" name="email" required /&gt;
             &lt;/div&gt;
             &lt;div class="form-group"&gt;
@@ -187,36 +239,48 @@ document.getElementById('myForm').onsubmit = function() {
             &lt;/div&gt;
             &lt;input type="submit" value="Submit" /&gt;
         &lt;/form&gt;
+
+        &lt;script&gt;
+        document.getElementById('myForm').onsubmit = function() {
+          let name = document.getElementById('name').value;
+          if (name.length &lt; 4) {
+            alert('Name must be at least 4 characters long.');
+            return false;
+          }
+          return true;
+        };
+        &lt;/script&gt;
+
     &lt;/section&gt;
     &lt;footer&gt;
-        &lt;p&gt;© 2024 My Web Page&lt;/footer&gt;
+        &lt;p&gt;© 2024 My Web Page&lt;/p&gt;
+    &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;
       </pre>
     </section>
+
+    <section>
+      <h2>Quiz</h2>
+      <p>Test your knowledge of the concepts covered in this section by taking the quiz.</p>
+      <button id="take-quiz-btn" class="show-example-btn" onclick="window.open('https://forms.gle/TMhQNTG1M1RDDpmW6', '_blank')">Take the Quiz</button>
+    </section>
+
+    
   </main>
 
   <script>
-    document.getElementById('show-form-example-btn').addEventListener('click', function() {
-      const exampleCode = document.getElementById('form-example-code');
-      if (exampleCode.style.display === 'none') {
-        exampleCode.style.display = 'block';
-        this.textContent = 'Hide Example';
-      } else {
-        exampleCode.style.display = 'none';
-        this.textContent = 'Show Example';
-      }
-    });
-
-    document.getElementById('show-exercise-example-btn').addEventListener('click', function() {
-      const exampleCode = document.getElementById('exercise-example-code');
-      if (exampleCode.style.display === 'none') {
-        exampleCode.style.display = 'block';
-        this.textContent = 'Hide Example';
-      } else {
-        exampleCode.style.display = 'none';
-        this.textContent = 'Show Example';
-      }
+    document.querySelectorAll('.show-example-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const exampleCode = this.nextElementSibling;
+        if (exampleCode.style.display === 'none') {
+          exampleCode.style.display = 'block';
+          this.textContent = 'Hide Example';
+        } else {
+          exampleCode.style.display = 'none';
+          this.textContent = 'Show Example';
+        }
+      });
     });
 
     document.getElementById("myForm").onsubmit = function () {
@@ -228,5 +292,7 @@ document.getElementById('myForm').onsubmit = function() {
       return true;
     };
   </script>
+
+
 </body>
 </html>
